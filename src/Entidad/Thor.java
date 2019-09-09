@@ -1,9 +1,9 @@
-package juego;
+package Entidad;
 
 public class Thor extends Aliado {
 
-	private static final int ALCANCE_THOR=1,IMPACTO_THOR=20;
-	
+	private static final int ALCANCE_THOR = 1, IMPACTO_THOR = 20;
+
 	public Thor() {
 		vida = MAX_VIDA;
 		alcance = ALCANCE_THOR;

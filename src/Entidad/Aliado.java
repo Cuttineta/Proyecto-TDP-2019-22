@@ -1,11 +1,19 @@
 package Entidad;
 
 public abstract class Aliado extends Personaje {
+	
+	protected static final int MAX_VIDA = 100;
+	protected int vida, alcance, impacto;
 
-	public abstract int getVida();
+	public int getVida() {
+		return vida;
+	}
+		
+	public int getAlcance() {
+		return alcance;
+	}	
 
-	public abstract int getAlcance();
-
-	public abstract int getImpacto();
-
+	public int getImpacto() {
+		return impacto;
+	}
 }
