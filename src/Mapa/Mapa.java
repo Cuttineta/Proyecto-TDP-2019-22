@@ -14,7 +14,7 @@ public class Mapa {
 		matriz = new Celda[6][10];
 		for (int i = 0; i < matriz.length; i++)
 			for (int j = 0; i < matriz[0].length; j++) {
-				if (i + j / 2 != 0) {
+				if ((i + j) / 2 != 0) {
 					matriz[i][j] = new Celda(imgClara);
 				} else
 					matriz[i][j] = new Celda(imgOscura);

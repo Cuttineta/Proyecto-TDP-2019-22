@@ -10,8 +10,8 @@ public class GUI extends Canvas {
 
 	private static final long serialVersionUID = 1L;
 
-	private static final int ANCHO = 800;
-	private static final int ALTO = 600;
+	private static final int ANCHO = 1024;
+	private static final int ALTO = 700;
 
 	private static final String NOMBRE = "Juego";
 
@@ -33,7 +33,6 @@ public class GUI extends Canvas {
 
 	public static final void main(String args[]) {
 		GUI g = new GUI();
-
 	}
 
 }
