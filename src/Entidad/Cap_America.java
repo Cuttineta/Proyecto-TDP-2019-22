@@ -2,30 +2,11 @@ package Entidad;
 
 public class Cap_America extends Aliado {
 
-	private static final int MAX_VIDA = 100;
-	private int vida, alcance, impacto;
-
-	public Cap_America(int a, int i) {
+	private static final int ALCANCE_CAP=1,IMPACTO_CAP=20;
+	
+	public Cap_America() {
 		vida = MAX_VIDA;
-		alcance = a;
-		impacto = i;
+		alcance = ALCANCE_CAP;
+		impacto = IMPACTO_CAP;
 	}
-
-	@Override
-	public int getVida() {
-		return vida;
-	}
-
-	@Override
-	public int getAlcance() {
-
-		return alcance;
-	}
-
-	@Override
-	public int getImpacto() {
-
-		return impacto;
-	}
-
 }
