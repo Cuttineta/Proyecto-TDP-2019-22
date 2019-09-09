@@ -1,4 +1,4 @@
-package juego;
+package Mapa;
 
 public class Mapa {
 

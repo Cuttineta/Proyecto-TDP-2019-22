@@ -1,4 +1,4 @@
-package juego;
+package Entidad;
 
 public class Cap_America extends Aliado {
 

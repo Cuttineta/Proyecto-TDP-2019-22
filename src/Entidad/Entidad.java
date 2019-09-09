@@ -1,4 +1,4 @@
-package juego;
+package Entidad;
 
 public abstract class Entidad {
 
