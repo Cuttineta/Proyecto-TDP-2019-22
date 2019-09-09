@@ -9,4 +9,8 @@ public class Celda {
 		fondo = f;
 	}
 
+	public Image getImage() {
+		return fondo;
+	}
+
 }
