@@ -15,7 +15,6 @@ public class GUI extends Canvas implements Runnable{
 
 	private static JFrame ventana;
 	private static Thread thread;
-	private static volatile boolean funcionamiento = false;
 
 	private GUI() {
 		setPreferredSize(new Dimension(ANCHO, ALTO));
@@ -35,13 +34,11 @@ public class GUI extends Canvas implements Runnable{
 	}
 
 	private synchronized void start() {
-		funcionamiento = true;
 		thread = new Thread(this);
 		thread.start();
 	}
 	
 	private synchronized void finish() {
-		funcionamiento = false;
 		try {
 			thread.join();
 		} catch (InterruptedException e) {
@@ -59,7 +56,7 @@ public class GUI extends Canvas implements Runnable{
 	@Override
 	public void run() {
 		System.nanoTime();
-		while(funcionamiento) {
+		while(true) {
 			refresh();
 			showToScreen();
 		}
