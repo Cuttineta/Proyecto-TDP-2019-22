@@ -42,12 +42,26 @@ public class GUI extends Canvas implements Runnable{
 	
 	private synchronized void finish() {
 		funcionamiento = false;
+		try {
+			thread.join();
+		} catch (InterruptedException e) {
+		}
+	}
+	
+	private void refresh() {
+		
+	}
+	
+	private void showToScreen() {
+		
 	}
 	
 	@Override
 	public void run() {
+		System.nanoTime();
 		while(funcionamiento) {
-			
+			refresh();
+			showToScreen();
 		}
 	}
 
