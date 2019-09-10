@@ -31,9 +31,11 @@ public class GUI extends Canvas implements Runnable {
 		ventana.pack();
 		ventana.setLocationRelativeTo(null);
 		ventana.setVisible(true);
-		/*fondo.setIcon(new ImageIcon("imágenes\\Sprites\\asfalto good.png"));
-		fondo.setPreferredSize(new Dimension(ANCHO, ALTO - 100));
-		ventana.getContentPane().add(fondo);*/
+		/*
+		 * fondo.setIcon(new ImageIcon("imágenes\\Sprites\\asfalto good.png"));
+		 * fondo.setPreferredSize(new Dimension(ANCHO, ALTO - 100));
+		 * ventana.getContentPane().add(fondo);
+		 */
 
 	}
 
