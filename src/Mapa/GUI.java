@@ -6,7 +6,7 @@ import java.awt.Dimension;
 
 import javax.swing.JFrame;
 
-public class GUI extends Canvas {
+public class GUI extends Canvas implements Runnable{
 
 	private static final long serialVersionUID = 1L;
 
@@ -14,11 +14,11 @@ public class GUI extends Canvas {
 	private static final int ALTO = 700;
 
 	private static JFrame ventana;
+	private static Thread thread;
+	private static volatile boolean funcionamiento = false;
 
 	private GUI() {
-
 		setPreferredSize(new Dimension(ANCHO, ALTO));
-
 		ventana = new JFrame("Juego");
 		ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		ventana.setResizable(false);
@@ -30,7 +30,25 @@ public class GUI extends Canvas {
 	}
 
 	public static final void main(String args[]) {
-		GUI g = new GUI();
+		GUI gui = new GUI();
+		gui.start();
+	}
+
+	private synchronized void start() {
+		funcionamiento = true;
+		thread = new Thread(this);
+		thread.start();
+	}
+	
+	private synchronized void finish() {
+		funcionamiento = false;
+	}
+	
+	@Override
+	public void run() {
+		while(funcionamiento) {
+			
+		}
 	}
 
 }
