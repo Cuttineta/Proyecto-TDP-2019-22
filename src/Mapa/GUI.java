@@ -1,18 +1,9 @@
 package Mapa;
 
-import java.awt.BorderLayout;
-import java.awt.Canvas;
-import java.awt.Dimension;
-import java.awt.Image;
-import java.io.File;
-import java.io.IOException;
-
-import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
 import java.awt.Font;
 
@@ -51,7 +42,11 @@ public class GUI extends JFrame implements Runnable {
 
 	private void agregarDibujo() {
 
+
 		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/imágenes/Sprites/asfalto good.png"));
+
+		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/imágenes/Sprites/asfalto good.png"));
+
 		fondo = new JLabel(imagen);
 		fondo.setBounds(0, 35, ANCHO, ALTO);
 
