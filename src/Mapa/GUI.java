@@ -4,9 +4,11 @@ import java.awt.BorderLayout;
 import java.awt.Canvas;
 import java.awt.Dimension;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 
-public class GUI extends Canvas {
+public class GUI extends Canvas implements Runnable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -14,23 +16,62 @@ public class GUI extends Canvas {
 	private static final int ALTO = 700;
 
 	private static JFrame ventana;
+	private static Thread thread;
+	private static volatile boolean funcionamiento = false;
 
 	private GUI() {
-
+		setBounds(0, 0, 1024, 700);
 		setPreferredSize(new Dimension(ANCHO, ALTO));
-
 		ventana = new JFrame("Juego");
 		ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		ventana.setResizable(false);
+<<<<<<< HEAD
 		ventana.setLayout(new BorderLayout());
 		//ventana.add(this, BorderLayout.CENTER);
+=======
+		ventana.getContentPane().setLayout(new BorderLayout());
+		ventana.getContentPane().add(this);
+>>>>>>> 28d1e30f6f1fd98370f31d43215cfc08bfea223a
 		ventana.pack();
 		ventana.setLocationRelativeTo(null);
 		ventana.setVisible(true);
+
 	}
 
 	public static final void main(String args[]) {
-		GUI g = new GUI();
+		GUI gui = new GUI();
+		gui.start();
 	}
 
+	private synchronized void start() {
+		thread = new Thread(this);
+		thread.start();
+	}
+
+	private synchronized void finish() {
+		try {
+			thread.join();
+		} catch (InterruptedException e) {
+		}
+	}
+
+	private void refresh() {
+
+	}
+
+	private void showToScreen() {
+
+	}
+
+	@Override
+	public void run() {
+		while (funcionamiento) {
+			System.nanoTime();
+			while (true) {
+				refresh();
+				showToScreen();
+			}
+		}
+
+	}
 }
