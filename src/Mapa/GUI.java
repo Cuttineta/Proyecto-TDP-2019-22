@@ -18,7 +18,6 @@ public class GUI extends JFrame implements Runnable {
 	private JLabel fondo;
 	private JPanel contentPane;
 	private static Thread thread;
-	private static volatile boolean funcionamiento = false;
 	private JButton btnSalir;
 	private JLabel lblMonedas;
 
@@ -90,12 +89,10 @@ public class GUI extends JFrame implements Runnable {
 
 	@Override
 	public void run() {
-		while (funcionamiento) {
 			System.nanoTime();
 			while (true) {
 				refresh();
 				showToScreen();
 			}
-		}
 	}
 }
