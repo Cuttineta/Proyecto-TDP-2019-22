@@ -51,7 +51,6 @@ public class GUI extends Canvas implements Runnable {
 	}
 
 	private void refresh() {
-
 	}
 
 	private void showToScreen() {
