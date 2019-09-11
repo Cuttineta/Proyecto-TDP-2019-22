@@ -6,6 +6,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JButton;
 import java.awt.Font;
+import java.awt.Image;
 
 public class GUI extends JFrame implements Runnable {
 
@@ -42,12 +43,10 @@ public class GUI extends JFrame implements Runnable {
 
 	private void agregarDibujo() {
 
-
-		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/imágenes/Sprites/asfalto good.png"));
+		ImageIcon imagen = new ImageIcon("Imagenes/Sprites/FondoMapa/asfalto good.png");
 		fondo = new JLabel(imagen);
 
 		fondo.setBounds(0, 35, ANCHO, ALTO);
-
 
 		getContentPane().add(fondo);
 
