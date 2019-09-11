@@ -18,7 +18,7 @@ public class GUI extends JFrame implements Runnable {
 
 	private static final long serialVersionUID = 1L;
 
-	private static final int ANCHO = 1024;
+	private static final int ANCHO = 800;
 	private static final int ALTO = 700;
 
 	private JLabel fondo;
