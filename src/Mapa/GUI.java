@@ -1,18 +1,9 @@
 package Mapa;
 
-import java.awt.BorderLayout;
-import java.awt.Canvas;
-import java.awt.Dimension;
-import java.awt.Image;
-import java.io.File;
-import java.io.IOException;
-
-import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
 import java.awt.Font;
 
@@ -56,13 +47,7 @@ public class GUI extends JFrame implements Runnable {
 =======
 >>>>>>> 925801cc7cc7f3d093043d2718a08dcb6c151da3
 
-		/*
-		 * ImageIcon imagen = new
-		 * ImageIcon(this.getClass().getResource("/imagenes/Sprites/asfalto good.png"));
-		 * fondo = new JLabel(imagen);
-		 */
-
-		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/im·genes/Sprites/asfalto good.png"));
+		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/im√°genes/Sprites/asfalto good.png"));
 		fondo = new JLabel(imagen);
 		fondo.setBounds(0, 0, ANCHO, ALTO);
 
