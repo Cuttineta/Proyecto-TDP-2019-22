@@ -13,6 +13,8 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+import java.awt.Font;
 
 public class GUI extends JFrame implements Runnable {
 
@@ -25,6 +27,8 @@ public class GUI extends JFrame implements Runnable {
 	private JPanel contentPane;
 	private static Thread thread;
 	private static volatile boolean funcionamiento = false;
+	private JButton btnSalir;
+	private JLabel lblMonedas;
 
 	public GUI() {
 
@@ -32,7 +36,7 @@ public class GUI extends JFrame implements Runnable {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(0, 0, ANCHO, ALTO);
 		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		// contentPane.setBorder(null);
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		agregarDibujo();
@@ -46,12 +50,41 @@ public class GUI extends JFrame implements Runnable {
 	}
 
 	private void agregarDibujo() {
+<<<<<<< HEAD
 		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/imágenes/Sprites/asfalto good.png"));
 		fondo = new JLabel(imagen);
+=======
+>>>>>>> 925801cc7cc7f3d093043d2718a08dcb6c151da3
 
+		/*
+		 * ImageIcon imagen = new
+		 * ImageIcon(this.getClass().getResource("/imagenes/Sprites/asfalto good.png"));
+		 * fondo = new JLabel(imagen);
+		 */
+
+		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/imágenes/Sprites/asfalto good.png"));
+		fondo = new JLabel(imagen);
 		fondo.setBounds(0, 0, ANCHO, ALTO);
 
-		this.add(fondo);
+		getContentPane().add(fondo);
+
+		JButton btnPausa = new JButton("Pausa");
+		btnPausa.setBounds(685, 0, 89, 23);
+		contentPane.add(btnPausa);
+
+		btnSalir = new JButton("Salir");
+		btnSalir.setBounds(685, 39, 89, 23);
+		contentPane.add(btnSalir);
+
+		JLabel lblPuntaje = new JLabel("PUNTAJE:");
+		lblPuntaje.setFont(new Font("Tahoma", Font.ITALIC, 13));
+		lblPuntaje.setBounds(546, 4, 57, 28);
+		contentPane.add(lblPuntaje);
+
+		lblMonedas = new JLabel("MONEDAS: ");
+		lblMonedas.setFont(new Font("Tahoma", Font.ITALIC, 13));
+		lblMonedas.setBounds(546, 35, 73, 27);
+		contentPane.add(lblMonedas);
 	}
 
 	private synchronized void start() {
