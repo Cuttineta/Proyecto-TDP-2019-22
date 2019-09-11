@@ -22,8 +22,13 @@ public class GUI extends Canvas implements Runnable {
 		ventana = new JFrame("Juego");
 		ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		ventana.setResizable(false);
+<<<<<<< HEAD
+		ventana.setLayout(new BorderLayout());
+		//ventana.add(this, BorderLayout.CENTER);
+=======
 		ventana.getContentPane().setLayout(new BorderLayout());
 		ventana.getContentPane().add(this);
+>>>>>>> 28d1e30f6f1fd98370f31d43215cfc08bfea223a
 		ventana.pack();
 		ventana.setLocationRelativeTo(null);
 		ventana.setVisible(true);
