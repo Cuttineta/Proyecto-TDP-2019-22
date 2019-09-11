@@ -17,7 +17,6 @@ public class GUI extends JFrame implements Runnable {
 	private JLabel fondo;
 	private JPanel contentPane;
 	private static Thread thread;
-	private static volatile boolean funcionamiento = false;
 	private JButton btnSalir;
 	private JLabel lblMonedas;
 
@@ -43,7 +42,7 @@ public class GUI extends JFrame implements Runnable {
 	private void agregarDibujo() {
 
 
-		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/imágenes/Sprites/asfalto good.png"));
+		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/imï¿½genes/Sprites/asfalto good.png"));
 		fondo = new JLabel(imagen);
 
 		fondo.setBounds(0, 35, ANCHO, ALTO);
@@ -91,12 +90,10 @@ public class GUI extends JFrame implements Runnable {
 
 	@Override
 	public void run() {
-		while (funcionamiento) {
 			System.nanoTime();
 			while (true) {
 				refresh();
 				showToScreen();
 			}
-		}
 	}
 }
