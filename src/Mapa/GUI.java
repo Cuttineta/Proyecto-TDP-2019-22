@@ -41,14 +41,12 @@ public class GUI extends JFrame implements Runnable {
 	}
 
 	private void agregarDibujo() {
-<<<<<<< HEAD
+
 		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/im·genes/Sprites/asfalto good.png"));
 		fondo = new JLabel(imagen);
-=======
->>>>>>> 925801cc7cc7f3d093043d2718a08dcb6c151da3
 
-		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/im√°genes/Sprites/asfalto good.png"));
-		fondo = new JLabel(imagen);
+		ImageIcon imagen1 = new ImageIcon(this.getClass().getResource("/im·genes/Sprites/asfalto good.png"));
+		fondo = new JLabel(imagen1);
 		fondo.setBounds(0, 0, ANCHO, ALTO);
 
 		getContentPane().add(fondo);
