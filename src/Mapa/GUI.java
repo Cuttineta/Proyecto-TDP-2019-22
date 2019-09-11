@@ -23,7 +23,7 @@ public class GUI extends Canvas {
 		ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		ventana.setResizable(false);
 		ventana.setLayout(new BorderLayout());
-		ventana.add(this, BorderLayout.CENTER);
+		//ventana.add(this, BorderLayout.CENTER);
 		ventana.pack();
 		ventana.setLocationRelativeTo(null);
 		ventana.setVisible(true);
