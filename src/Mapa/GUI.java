@@ -51,15 +51,9 @@ public class GUI extends JFrame implements Runnable {
 
 	private void agregarDibujo() {
 
-		/*
-		 * ImageIcon imagen = new
-		 * ImageIcon(this.getClass().getResource("/imagenes/Sprites/asfalto good.png"));
-		 * fondo = new JLabel(imagen);
-		 */
-
 		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/imágenes/Sprites/asfalto good.png"));
 		fondo = new JLabel(imagen);
-		fondo.setBounds(0, 0, ANCHO, ALTO);
+		fondo.setBounds(0, 35, ANCHO, ALTO);
 
 		getContentPane().add(fondo);
 
