@@ -3,10 +3,7 @@ package Mapa;
 import java.awt.BorderLayout;
 import java.awt.Canvas;
 import java.awt.Dimension;
-
-import javax.swing.ImageIcon;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 
 public class GUI extends Canvas implements Runnable {
 
@@ -19,7 +16,7 @@ public class GUI extends Canvas implements Runnable {
 	private static Thread thread;
 	private static volatile boolean funcionamiento = false;
 
-	private GUI() {
+	public GUI() {
 		setBounds(0, 0, 1024, 700);
 		setPreferredSize(new Dimension(ANCHO, ALTO));
 		ventana = new JFrame("Juego");
