@@ -42,7 +42,7 @@ public class GUI extends JFrame implements Runnable {
 
 	private void agregarDibujo() {
 
-		ImageIcon imagen = new ImageIcon("Imagenes/Sprites/FondoMapa/asfalto good.png");
+		ImageIcon imagen = new ImageIcon("C:\\Users\\Lautaro\\Documents\\GitHub\\Proyecto-TDP-2019-22\\src\\Imagenes\\Sprites\\FondoMapa\\asfalto good.png");
 		fondo = new JLabel(imagen);
 
 		fondo.setBounds(0, 35, ANCHO, ALTO);
