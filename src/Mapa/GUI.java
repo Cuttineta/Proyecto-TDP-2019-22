@@ -7,12 +7,11 @@ import javax.swing.JPanel;
 import javax.swing.JButton;
 import java.awt.Font;
 import java.awt.Image;
-<<<<<<< HEAD
+
 import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 import java.util.List;
-=======
->>>>>>> parent of 57c56d3... new background system
+
 
 public class GUI extends JFrame implements Runnable {
 
@@ -29,7 +28,7 @@ public class GUI extends JFrame implements Runnable {
 
 	public GUI() {
 
-<<<<<<< HEAD
+
 		addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyPressed(KeyEvent arg0) {
@@ -39,14 +38,13 @@ public class GUI extends JFrame implements Runnable {
 			
 			}
 		});
-=======
->>>>>>> parent of 57c56d3... new background system
+
 		getContentPane().setLayout(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(0, 0, ANCHO, ALTO);
 		contentPane = new JPanel();
 		// contentPane.setBorder(null);
-<<<<<<< HEAD
+
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		agregarDibujo();
@@ -118,11 +116,10 @@ public class GUI extends JFrame implements Runnable {
 				showToScreen();
 			}
 	}
-}
+
 		contentPane.setLayout(null);
 		
-=======
->>>>>>> parent of 57c56d3... new background system
+
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		agregarDibujo();
