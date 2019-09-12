@@ -7,6 +7,8 @@ import javax.swing.JPanel;
 import javax.swing.JButton;
 import java.awt.Font;
 import java.awt.Image;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
@@ -27,8 +29,6 @@ public class GUI extends JFrame implements Runnable {
 	private JLabel lblMonedas;
 
 	public GUI() {
-
-
 		addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyPressed(KeyEvent arg0) {
@@ -57,7 +57,7 @@ public class GUI extends JFrame implements Runnable {
 		gui.start();
 	}
 
-	private void agregarDibujo() {
+	private void agregarDibujo1() {
 
 		ImageIcon imagen = new ImageIcon("C:\\Users\\Lautaro\\Documents\\GitHub\\Proyecto-TDP-2019-22\\src\\Imagenes\\Sprites\\FondoMapa\\asfalto good.png");
 		fondo = new JLabel(imagen);
@@ -89,43 +89,38 @@ public class GUI extends JFrame implements Runnable {
 		contentPane.add(lblMonedas);
 	}
 
-	private synchronized void start() {
+	private synchronized void start1() {
 		thread = new Thread(this);
 		thread.start();
 	}
 
-	private synchronized void finish() {
+	private synchronized void finish1() {
 		try {
 			thread.join();
 		} catch (InterruptedException e) {
 		}
 	}
 
-	private void refresh() {
+	private void refresh1() {
 	}
 
-	private void showToScreen() {
+	private void showToScreen1() {
 
 	}
 
-	@Override
-	public void run() {
+	public void run1() {
 			System.nanoTime();
+			setContentPane(contentPane);
+			contentPane.setLayout(null);
+			agregarDibujo1();
 			while (true) {
 				refresh();
 				showToScreen();
 			}
 	}
+	
 
-		contentPane.setLayout(null);
-		
-
-		setContentPane(contentPane);
-		contentPane.setLayout(null);
-		agregarDibujo();
-	}
-
-	public static final void main(String args[]) {
+	public static final void main1(String args[]) {
 		GUI gui = new GUI();
 		gui.setVisible(true);
 		gui.setResizable(false);
@@ -134,7 +129,7 @@ public class GUI extends JFrame implements Runnable {
 
 	private void agregarDibujo() {
 
-		ImageIcon imagen = new ImageIcon("C:\\Users\\Lautaro\\Documents\\GitHub\\Proyecto-TDP-2019-22\\src\\Imagenes\\Sprites\\FondoMapa\\asfalto good.png");
+		ImageIcon imagen = new ImageIcon("src/Imagenes/Fondo/asfalto.jpg");
 		fondo = new JLabel(imagen);
 
 		fondo.setBounds(0, 35, ANCHO, ALTO);
@@ -150,13 +145,13 @@ public class GUI extends JFrame implements Runnable {
 		contentPane.add(btnSalir);
 
 		JLabel lblPuntaje = new JLabel("PUNTAJE:");
-		lblPuntaje.setFont(new Font("Tahoma", Font.ITALIC, 13));
-		lblPuntaje.setBounds(546, 4, 57, 28);
+		lblPuntaje.setFont(new Font("Tahoma", Font.ITALIC, 12));
+		lblPuntaje.setBounds(536, 4, 57, 28);
 		contentPane.add(lblPuntaje);
 
 		lblMonedas = new JLabel("MONEDAS: ");
-		lblMonedas.setFont(new Font("Tahoma", Font.ITALIC, 13));
-		lblMonedas.setBounds(546, 35, 73, 27);
+		lblMonedas.setFont(new Font("Tahoma", Font.ITALIC, 12));
+		lblMonedas.setBounds(536, 35, 73, 27);
 		contentPane.add(lblMonedas);
 	}
 
