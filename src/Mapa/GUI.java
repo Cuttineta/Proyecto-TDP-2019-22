@@ -41,7 +41,7 @@ public class GUI extends JFrame implements Runnable {
 	public static final void main(String args[]) {
 		GUI gui = new GUI();
 		gui.setVisible(true);
-		gui.setResizable(true);
+		gui.setResizable(false);
 		gui.start();
 	}
 
