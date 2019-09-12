@@ -1,10 +1,13 @@
 package Entidad;
 
+import Mapa.Celda;
+
 public class IronMan extends Aliado {
 
-	private static final int ALCANCE=1,IMPACTO=20;
-	
-	public IronMan() {
+	private static final int ALCANCE = 1, IMPACTO = 20;
+
+	public IronMan(Celda c) {
+		super(c);
 		vida = MAX_VIDA;
 		alcance = ALCANCE;
 		impacto = IMPACTO;
