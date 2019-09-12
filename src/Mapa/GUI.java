@@ -57,76 +57,6 @@ public class GUI extends JFrame implements Runnable {
 		gui.start();
 	}
 
-	private void agregarDibujo1() {
-
-		ImageIcon imagen = new ImageIcon("C:\\Users\\Lautaro\\Documents\\GitHub\\Proyecto-TDP-2019-22\\src\\Imagenes\\Sprites\\FondoMapa\\asfalto good.png");
-		fondo = new JLabel(imagen);
-
-		fondo.setBounds(0, 35, ANCHO, ALTO);
-
-		getContentPane().add(fondo);
-		setBounds(0, 0, 1980, 1040);
-	
-		contentPane = new JPanelConFondo();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-
-		JButton btnPausa = new JButton("Pausa");
-		btnPausa.setBounds(685, 0, 89, 23);
-		contentPane.add(btnPausa);
-
-		btnSalir = new JButton("Salir");
-		btnSalir.setBounds(685, 39, 89, 23);
-		contentPane.add(btnSalir);
-
-		JLabel lblPuntaje = new JLabel("PUNTAJE:");
-		lblPuntaje.setFont(new Font("Tahoma", Font.ITALIC, 13));
-		lblPuntaje.setBounds(546, 4, 57, 28);
-		contentPane.add(lblPuntaje);
-
-		lblMonedas = new JLabel("MONEDAS: ");
-		lblMonedas.setFont(new Font("Tahoma", Font.ITALIC, 13));
-		lblMonedas.setBounds(546, 35, 73, 27);
-		contentPane.add(lblMonedas);
-	}
-
-	private synchronized void start1() {
-		thread = new Thread(this);
-		thread.start();
-	}
-
-	private synchronized void finish1() {
-		try {
-			thread.join();
-		} catch (InterruptedException e) {
-		}
-	}
-
-	private void refresh1() {
-	}
-
-	private void showToScreen1() {
-
-	}
-
-	public void run1() {
-			System.nanoTime();
-			setContentPane(contentPane);
-			contentPane.setLayout(null);
-			agregarDibujo1();
-			while (true) {
-				refresh();
-				showToScreen();
-			}
-	}
-	
-
-	public static final void main1(String args[]) {
-		GUI gui = new GUI();
-		gui.setVisible(true);
-		gui.setResizable(false);
-		gui.start();
-	}
-
 	private void agregarDibujo() {
 
 		ImageIcon imagen = new ImageIcon("src/Imagenes/Fondo/asfalto.jpg");
@@ -155,12 +85,12 @@ public class GUI extends JFrame implements Runnable {
 		contentPane.add(lblMonedas);
 	}
 
-	private synchronized void start() {
+	private  void start() {
 		thread = new Thread(this);
 		thread.start();
 	}
 
-	private synchronized void finish() {
+	private  void finish() {
 		try {
 			thread.join();
 		} catch (InterruptedException e) {
@@ -171,7 +101,6 @@ public class GUI extends JFrame implements Runnable {
 	}
 
 	private void showToScreen() {
-
 	}
 
 	@Override
