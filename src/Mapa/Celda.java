@@ -1,7 +1,6 @@
 package Mapa;
 
 import javax.swing.JLabel;
-
 import Entidad.Entidad;
 
 public class Celda {
