@@ -11,6 +11,7 @@ public class JPanelConFondo extends JPanel {
     private Image imagen= new ImageIcon("src/Sprites/asfalto.jpg").getImage();
 
     public void paint(Graphics g) {
+    	
         g.drawImage(imagen, 0, 0, getWidth(), getHeight(),this);
         setOpaque(false);
         super.paint(g);
