@@ -14,7 +14,6 @@ import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 import java.util.List;
 
-
 public class GUI extends JFrame implements Runnable {
 
 	private static final long serialVersionUID = 1L;
@@ -48,7 +47,7 @@ public class GUI extends JFrame implements Runnable {
 
 	private void agregarDibujo() {
 
-		ImageIcon imagen = new ImageIcon("src/Imagenes/Fondo/asfalto.jpg");
+		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/asfalto.jpg"));
 		fondo = new JLabel(imagen);
 
 		fondo.setBounds(0, 35, ANCHO, ALTO);
@@ -74,12 +73,12 @@ public class GUI extends JFrame implements Runnable {
 		contentPane.add(lblMonedas);
 	}
 
-	private  void start() {
+	private void start() {
 		thread = new Thread(this);
 		thread.start();
 	}
 
-	private  void finish() {
+	private void finish() {
 		try {
 			thread.join();
 		} catch (InterruptedException e) {
@@ -94,10 +93,10 @@ public class GUI extends JFrame implements Runnable {
 
 	@Override
 	public void run() {
-			System.nanoTime();
-			while (true) {
-				refresh();
-				showToScreen();
-			}
+		System.nanoTime();
+		while (true) {
+			refresh();
+			showToScreen();
+		}
 	}
 }
