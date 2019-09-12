@@ -15,4 +15,36 @@ public class Celda {
 		misEntidades = new Entidad[5];
 	}
 
+	public int getFila() {
+		return fila;
+	}
+
+	public void setFila(int fila) {
+		this.fila = fila;
+	}
+
+	public int getColumna() {
+		return columna;
+	}
+
+	public void setColumna(int columna) {
+		this.columna = columna;
+	}
+
+	public JLabel getGrafico() {
+		return grafico;
+	}
+
+	public void setGrafico(JLabel grafico) {
+		this.grafico = grafico;
+	}
+
+	public Entidad[] getMisEntidades() {
+		return misEntidades;
+	}
+
+	public void setMisEntidades(Entidad[] misEntidades) {
+		this.misEntidades = misEntidades;
+	}
+
 }

@@ -18,10 +18,8 @@ import java.util.List;
 public class GUI extends JFrame implements Runnable {
 
 	private static final long serialVersionUID = 1L;
-
 	private static final int ANCHO = 800;
 	private static final int ALTO = 700;
-
 	private JLabel fondo;
 	private JPanel contentPane;
 	private static Thread thread;
@@ -29,15 +27,6 @@ public class GUI extends JFrame implements Runnable {
 	private JLabel lblMonedas;
 
 	public GUI() {
-		addKeyListener(new KeyAdapter() {
-			@Override
-			public void keyPressed(KeyEvent arg0) {
-			}
-			public void keyReleased(KeyEvent arg0) {
-				
-			
-			}
-		});
 
 		getContentPane().setLayout(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -53,7 +42,7 @@ public class GUI extends JFrame implements Runnable {
 	public static final void main(String args[]) {
 		GUI gui = new GUI();
 		gui.setVisible(true);
-		gui.setResizable(false);
+		gui.setResizable(true);
 		gui.start();
 	}
 
