@@ -27,10 +27,11 @@ public class GUI extends JFrame {
 	private static final long serialVersionUID = 1L;
 
 	private JPanel contentPane;
-	
+
 	
 
 	
+
 	/**
 	 * Launch the application.
 	 */
@@ -50,7 +51,9 @@ public class GUI extends JFrame {
 		addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyPressed(KeyEvent arg0) {
+
 				//keyListener(arg0);	
+
 			}
 			public void keyReleased(KeyEvent arg0) {
 				

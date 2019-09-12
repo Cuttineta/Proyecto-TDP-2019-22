@@ -1,6 +1,8 @@
 package Mapa;
 
+
 import java.awt.Color;
+
 import java.awt.Graphics;
 import java.awt.Image;
 
@@ -9,6 +11,7 @@ import javax.swing.JPanel;
  
 public class JPanelConFondo extends JPanel { 
  
+
     private Image imagen= new ImageIcon("C:\\Users\\Lautaro\\Desktop\\asfalto.png").getImage();
     public void paint(Graphics g) {
         g.drawImage(imagen, 0, 0, getWidth(), getHeight(),this);
@@ -19,8 +22,13 @@ public class JPanelConFondo extends JPanel {
         super.paint(g);
     }
  
-    
 
- 
-    //...
+    private Image imagen= new ImageIcon("src/Imagenes/Fondo/asfalto.jpg").getImage();
+
+    public void paint(Graphics g) {
+        g.drawImage(imagen, 0, 0, getWidth(), getHeight(),this);
+        setOpaque(false);
+        super.paint(g);
+    }
+
 }
