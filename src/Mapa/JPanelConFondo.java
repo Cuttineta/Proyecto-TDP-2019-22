@@ -8,10 +8,9 @@ import javax.swing.JPanel;
  
 public class JPanelConFondo extends JPanel { 
  
-    private Image imagen= new ImageIcon("src/Sprites/asfalto.jpg").getImage();
+    private Image imagen= new ImageIcon("src/Imagenes/Fondo/asfalto.jpg").getImage();
 
     public void paint(Graphics g) {
-    	
         g.drawImage(imagen, 0, 0, getWidth(), getHeight(),this);
         setOpaque(false);
         super.paint(g);
