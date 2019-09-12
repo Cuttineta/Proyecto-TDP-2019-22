@@ -6,13 +6,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JButton;
 import java.awt.Font;
-import java.awt.Image;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
-
-import javax.swing.border.Border;
-import javax.swing.border.EmptyBorder;
-import java.util.List;
 
 public class GUI extends JFrame implements Runnable {
 
