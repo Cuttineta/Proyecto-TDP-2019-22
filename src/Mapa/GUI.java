@@ -6,6 +6,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JButton;
 import java.awt.Font;
+import java.awt.Toolkit;
 
 public class GUI extends JFrame implements Runnable {
 
@@ -35,6 +36,7 @@ public class GUI extends JFrame implements Runnable {
 		GUI gui = new GUI();
 		gui.setVisible(true);
 		gui.setResizable(false);
+		gui.setLocationRelativeTo(null);
 		gui.start();
 	}
 
