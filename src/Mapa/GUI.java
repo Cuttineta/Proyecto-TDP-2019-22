@@ -6,7 +6,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JButton;
 import java.awt.Font;
-import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.Color;
@@ -17,7 +16,7 @@ public class GUI extends JFrame implements Runnable {
 	private static final int ANCHO = 950;
 	private static final int ALTO = 700;
 	private JLabel fondo;
-	private JPanel fondoTienda;
+	private JLabel fondoTienda;
 	private JPanel contentPane;
 	private static Thread thread;
 	private JButton btnSalir;
@@ -46,14 +45,9 @@ public class GUI extends JFrame implements Runnable {
 
 	private void agregarDibujo() {
 
-		btnIronMan = new JButton(
-				new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
-		btnIronMan.setBackground(Color.LIGHT_GRAY);
-
-		contentPane.add(btnIronMan);
-
 		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/asfalto2.png"));
 		fondo = new JLabel(imagen);
+
 		fondo.setOpaque(false);
 
 		fondo.setBounds(0, 31, ANCHO, ALTO);
@@ -64,6 +58,7 @@ public class GUI extends JFrame implements Runnable {
 
 		ImageIcon tienda = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/metal.png"));
 		fondoTienda = new JLabel(tienda);
+
 		fondoTienda.setOpaque(false);
 
 		fondoTienda.setBounds(-19, 1, 703, 98);
@@ -92,6 +87,15 @@ public class GUI extends JFrame implements Runnable {
 		lblMonedas.setFont(new Font("Tahoma", Font.ITALIC, 12));
 		lblMonedas.setBounds(674, 31, 73, 27);
 		contentPane.add(lblMonedas);
+
+		btnIronMan = new JButton();
+		btnIronMan.setBackground(new Color(0, 0, 0, 0));
+		btnIronMan.setOpaque(true);
+		btnIronMan.setBounds(10, 1, 73, 81);
+		btnIronMan
+				.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
+
+		contentPane.add(btnIronMan);
 	}
 
 	private void start() {
