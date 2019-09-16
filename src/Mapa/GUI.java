@@ -48,6 +48,9 @@ public class GUI extends JFrame implements Runnable {
 
 		fondo.setBounds(0, 31, ANCHO, ALTO);
 
+		fondo.setBounds(0, 70, 950, 583);
+
+
 		getContentPane().add(fondo);
 		
 		
