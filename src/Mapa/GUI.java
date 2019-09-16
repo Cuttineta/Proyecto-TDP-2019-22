@@ -11,7 +11,7 @@ import java.awt.Toolkit;
 public class GUI extends JFrame implements Runnable {
 
 	private static final long serialVersionUID = 1L;
-	private static final int ANCHO = 800;
+	private static final int ANCHO = 950;
 	private static final int ALTO = 700;
 	private JLabel fondo;
 	private JLabel fondoTienda;
@@ -43,7 +43,7 @@ public class GUI extends JFrame implements Runnable {
 
 	private void agregarDibujo() {
 
-		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/asfalto.jpg"));
+		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/asfalto2.png"));
 		fondo = new JLabel(imagen);
 
 		fondo.setBounds(0, 35, ANCHO, ALTO);
@@ -58,21 +58,21 @@ public class GUI extends JFrame implements Runnable {
 		getContentPane().add(fondoTienda);
 
 		JButton btnPausa = new JButton("Pausa");
-		btnPausa.setBounds(685, 0, 89, 23);
+		btnPausa.setBounds(804, 1, 89, 23);
 		contentPane.add(btnPausa);
 
 		btnSalir = new JButton("Salir");
-		btnSalir.setBounds(685, 39, 89, 23);
+		btnSalir.setBounds(804, 34, 89, 23);
 		contentPane.add(btnSalir);
 
 		JLabel lblPuntaje = new JLabel("PUNTAJE:");
 		lblPuntaje.setFont(new Font("Tahoma", Font.ITALIC, 12));
-		lblPuntaje.setBounds(536, 4, 57, 28);
+		lblPuntaje.setBounds(646, -3, 57, 28);
 		contentPane.add(lblPuntaje);
 
 		lblMonedas = new JLabel("MONEDAS: ");
 		lblMonedas.setFont(new Font("Tahoma", Font.ITALIC, 12));
-		lblMonedas.setBounds(536, 35, 73, 27);
+		lblMonedas.setBounds(646, 31, 73, 27);
 		contentPane.add(lblMonedas);
 	}
 
