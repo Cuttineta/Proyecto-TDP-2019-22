@@ -26,7 +26,7 @@ public class GUI extends JFrame implements Runnable {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(0, 0, ANCHO, ALTO);
 		contentPane = new JPanel();
-		// contentPane.setBorder(null);
+		 contentPane.setBorder(null);
 
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
@@ -46,15 +46,15 @@ public class GUI extends JFrame implements Runnable {
 		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/asfalto2.png"));
 		fondo = new JLabel(imagen);
 
-		fondo.setBounds(0, 35, ANCHO, ALTO);
+		fondo.setBounds(0, 31, ANCHO, ALTO);
 
 		getContentPane().add(fondo);
 		
 		
-		ImageIcon tienda = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/metal.jpg"));
+		ImageIcon tienda = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/metal.png"));
 		fondoTienda = new JLabel(tienda);
 		
-		fondoTienda.setBounds(0,0,500, ALTO);
+		fondoTienda.setBounds(-12,1,703, 98);
 		getContentPane().add(fondoTienda);
 
 		JButton btnPausa = new JButton("Pausa");
@@ -67,12 +67,12 @@ public class GUI extends JFrame implements Runnable {
 
 		JLabel lblPuntaje = new JLabel("PUNTAJE:");
 		lblPuntaje.setFont(new Font("Tahoma", Font.ITALIC, 12));
-		lblPuntaje.setBounds(646, -3, 57, 28);
+		lblPuntaje.setBounds(674, 1, 57, 28);
 		contentPane.add(lblPuntaje);
 
 		lblMonedas = new JLabel("MONEDAS: ");
 		lblMonedas.setFont(new Font("Tahoma", Font.ITALIC, 12));
-		lblMonedas.setBounds(646, 31, 73, 27);
+		lblMonedas.setBounds(674, 31, 73, 27);
 		contentPane.add(lblMonedas);
 	}
 
