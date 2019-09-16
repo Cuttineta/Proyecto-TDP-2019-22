@@ -7,6 +7,8 @@ import javax.swing.JPanel;
 import javax.swing.JButton;
 import java.awt.Font;
 import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class GUI extends JFrame implements Runnable {
 
@@ -49,14 +51,12 @@ public class GUI extends JFrame implements Runnable {
 
 		fondo.setBounds(0, 70, 950, 583);
 
-
 		getContentPane().add(fondo);
-		
-		
+
 		ImageIcon tienda = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/metal.png"));
 		fondoTienda = new JLabel(tienda);
-		
-		fondoTienda.setBounds(-12,1,703, 98);
+
+		fondoTienda.setBounds(-12, 1, 703, 98);
 		getContentPane().add(fondoTienda);
 
 		JButton btnPausa = new JButton("Pausa");
@@ -66,6 +66,12 @@ public class GUI extends JFrame implements Runnable {
 		btnSalir = new JButton("Salir");
 		btnSalir.setBounds(804, 34, 89, 23);
 		contentPane.add(btnSalir);
+
+		btnSalir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
 
 		JLabel lblPuntaje = new JLabel("PUNTAJE:");
 		lblPuntaje.setFont(new Font("Tahoma", Font.ITALIC, 12));
@@ -104,4 +110,5 @@ public class GUI extends JFrame implements Runnable {
 			showToScreen();
 		}
 	}
+
 }
