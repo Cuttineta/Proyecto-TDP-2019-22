@@ -21,6 +21,7 @@ public class GUI extends JFrame implements Runnable {
 	private static Thread thread;
 	private JButton btnSalir;
 	private JLabel lblMonedas;
+	private JButton btnIronMan, btnHawkeye, btnCapAmerica, btnHulk, btnThor, btnStrange;
 
 	public GUI() {
 
