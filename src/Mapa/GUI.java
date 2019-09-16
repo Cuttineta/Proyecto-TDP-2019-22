@@ -56,7 +56,7 @@ public class GUI extends JFrame implements Runnable {
 		ImageIcon tienda = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/metal.png"));
 		fondoTienda = new JLabel(tienda);
 
-		fondoTienda.setBounds(-12, 1, 703, 98);
+		fondoTienda.setBounds(-19, 1, 703, 98);
 		getContentPane().add(fondoTienda);
 
 		JButton btnPausa = new JButton("Pausa");
