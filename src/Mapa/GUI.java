@@ -9,6 +9,7 @@ import java.awt.Font;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.Color;
 
 public class GUI extends JFrame implements Runnable {
 
@@ -16,7 +17,7 @@ public class GUI extends JFrame implements Runnable {
 	private static final int ANCHO = 950;
 	private static final int ALTO = 700;
 	private JLabel fondo;
-	private JLabel fondoTienda;
+	private JPanel fondoTienda;
 	private JPanel contentPane;
 	private static Thread thread;
 	private JButton btnSalir;
@@ -45,8 +46,15 @@ public class GUI extends JFrame implements Runnable {
 
 	private void agregarDibujo() {
 
+		btnIronMan = new JButton(
+				new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
+		btnIronMan.setBackground(Color.LIGHT_GRAY);
+
+		contentPane.add(btnIronMan);
+
 		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/asfalto2.png"));
 		fondo = new JLabel(imagen);
+		fondo.setOpaque(false);
 
 		fondo.setBounds(0, 31, ANCHO, ALTO);
 
@@ -56,6 +64,7 @@ public class GUI extends JFrame implements Runnable {
 
 		ImageIcon tienda = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/metal.png"));
 		fondoTienda = new JLabel(tienda);
+		fondoTienda.setOpaque(false);
 
 		fondoTienda.setBounds(-19, 1, 703, 98);
 		getContentPane().add(fondoTienda);
