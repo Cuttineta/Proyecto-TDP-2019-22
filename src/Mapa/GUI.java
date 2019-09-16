@@ -14,6 +14,7 @@ public class GUI extends JFrame implements Runnable {
 	private static final int ANCHO = 800;
 	private static final int ALTO = 700;
 	private JLabel fondo;
+	private JLabel fondoTienda;
 	private JPanel contentPane;
 	private static Thread thread;
 	private JButton btnSalir;
@@ -48,6 +49,13 @@ public class GUI extends JFrame implements Runnable {
 		fondo.setBounds(0, 35, ANCHO, ALTO);
 
 		getContentPane().add(fondo);
+		
+		
+		ImageIcon tienda = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/metal.jpg"));
+		fondoTienda = new JLabel(tienda);
+		
+		fondoTienda.setBounds(0,0,500, ALTO);
+		getContentPane().add(fondoTienda);
 
 		JButton btnPausa = new JButton("Pausa");
 		btnPausa.setBounds(685, 0, 89, 23);
