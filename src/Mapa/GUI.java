@@ -45,7 +45,7 @@ public class GUI extends JFrame implements Runnable {
 		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/asfalto2.png"));
 		fondo = new JLabel(imagen);
 
-		fondo.setBounds(0, 35, ANCHO, ALTO);
+		fondo.setBounds(0, 70, 950, 583);
 
 		getContentPane().add(fondo);
 
