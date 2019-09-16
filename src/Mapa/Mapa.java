@@ -2,9 +2,11 @@ package Mapa;
 
 public class Mapa {
 
-	private Celda[][] matriz;
+	protected Celda[][] matriz;
+	protected Juego juego;
 
-	public Mapa() {
+	public Mapa(Juego juego) {
+		this.juego = juego;
 		matriz = new Celda[6][10];
 		for (int i = 0; i < matriz.length; i++)
 			for (int j = 0; i < matriz[0].length; j++)
@@ -18,5 +20,9 @@ public class Mapa {
 			toRet = matriz[f][c];
 
 		return toRet;
+	}
+
+	public Juego getJuego() {
+		return juego;
 	}
 }

@@ -14,6 +14,7 @@ import java.awt.Color;
 
 public class GUI extends JFrame implements Runnable {
 
+	private Juego j;
 	private static final long serialVersionUID = 1L;
 	private static final int ANCHO = 950;
 	private static final int ALTO = 700;
