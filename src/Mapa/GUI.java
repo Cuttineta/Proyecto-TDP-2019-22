@@ -26,7 +26,6 @@ public class GUI extends JFrame implements Runnable {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(0, 0, ANCHO, ALTO);
 		contentPane = new JPanel();
-		 contentPane.setBorder(null);
 
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
