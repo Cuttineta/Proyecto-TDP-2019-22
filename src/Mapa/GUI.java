@@ -102,6 +102,8 @@ public class GUI extends JFrame implements Runnable {
 		btnHawkeye.setBounds(93, 1, 73, 81);
 		btnHawkeye.setOpaque(true);
 		btnHawkeye.setBackground(new Color(0, 0, 0, 0));
+		btnHawkeye
+				.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Hawkeye/estatico.png")));
 		contentPane.add(btnHawkeye);
 
 		btnHulk = new JButton();
