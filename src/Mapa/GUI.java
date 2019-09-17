@@ -104,32 +104,17 @@ public class GUI extends JFrame implements Runnable {
 					   int ejeX=e.getX();
 					   int ejeY=e.getY();
 
-					   imagenIronMan.setBounds(ejeX-(ejeX%92),ejeY-92,50,70);
+					   imagenIronMan.setBounds((e.getX()/92)*92+46,(( e.getY() - 92)/92)*92+46, 50, 70);
 					   
 					  
-				    fondo.add(imagenIronMan);
-				    contentPane.removeMouseListener(null);
+				   // fondo.add(imagenIronMan);
+				  //  contentPane.removeMouseListener(null);
 
 				   }
 				   
 				   
 				  }); 
 
-				imagenIronMan.setIcon(
-						new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
-				imagenIronMan.setOpaque(true);
-				imagenIronMan.setBackground(new Color(0, 0, 0, 0));
-
-				contentPane.addMouseListener(new MouseAdapter() {
-
-					public void mouseClicked(MouseEvent e) {
-						imagenIronMan.setBounds(e.getX(), e.getY() - 92, 50, 70);
-
-						fondo.add(imagenIronMan);
-
-					}
-
-				});
 
 			}
 		});
@@ -145,8 +130,7 @@ public class GUI extends JFrame implements Runnable {
 		btnHawkeye.setBounds(93, 1, 73, 81);
 		btnHawkeye.setOpaque(true);
 		btnHawkeye.setBackground(new Color(0, 0, 0, 0));
-		btnHawkeye
-				.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Hawkeye/estatico.png")));
+		btnHawkeye.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Hawkeye/estatico.png")));
 		contentPane.add(btnHawkeye);
 
 		btnHulk = new JButton();

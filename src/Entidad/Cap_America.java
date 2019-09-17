@@ -11,5 +11,6 @@ public class Cap_America extends Aliado {
 		vida = MAX_VIDA;
 		alcance = ALCANCE;
 		impacto = IMPACTO;
+		
 	}
 }
