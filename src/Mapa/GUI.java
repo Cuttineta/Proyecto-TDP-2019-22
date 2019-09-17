@@ -25,8 +25,6 @@ public class GUI extends JFrame implements Runnable {
 	private JButton btnSalir;
 	private JLabel lblMonedas;
 	private JButton btnIronMan, btnHawkeye, btnCapAmerica, btnHulk, btnThor, btnStrange;
-	
-	
 
 	public GUI() {
 
@@ -49,8 +47,7 @@ public class GUI extends JFrame implements Runnable {
 	}
 
 	private void agregarDibujo() {
-		
-		
+
 		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/asfalto2.png"));
 		fondo = new JLabel(imagen);
 
@@ -96,23 +93,21 @@ public class GUI extends JFrame implements Runnable {
 		btnIronMan.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JLabel imagenIronMan = new JLabel();
-				   imagenIronMan.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
-				   imagenIronMan.setOpaque(true);
-				   imagenIronMan.setBackground(new Color(0, 0, 0, 0));
+				imagenIronMan.setIcon(
+						new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
+				imagenIronMan.setOpaque(true);
+				imagenIronMan.setBackground(new Color(0, 0, 0, 0));
 
-				  contentPane.addMouseListener(new MouseAdapter() {
-				   
-				   public void mouseClicked(MouseEvent e){
-					   
+				contentPane.addMouseListener(new MouseAdapter() {
 
-					   imagenIronMan.setBounds(e.getX(),e.getY()-92,50,70);
-					   
-					  
-				    fondo.add(imagenIronMan);
+					public void mouseClicked(MouseEvent e) {
+						imagenIronMan.setBounds(e.getX(), e.getY() - 92, 50, 70);
 
-				   }
-				   
-				  }); 
+						fondo.add(imagenIronMan);
+
+					}
+
+				});
 			}
 		});
 		btnIronMan.setBackground(new Color(0, 0, 0, 0));
@@ -137,6 +132,30 @@ public class GUI extends JFrame implements Runnable {
 		btnHulk.setBounds(175, 1, 73, 81);
 		btnHulk.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Hulk/h estatico.png")));
 		contentPane.add(btnHulk);
+
+		btnCapAmerica = new JButton();
+		btnCapAmerica.setBackground(new Color(0, 0, 0, 0));
+		btnCapAmerica.setOpaque(true);
+		btnCapAmerica.setBounds(260, 1, 73, 81);
+		btnCapAmerica.setIcon(
+				new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Cap America/estatico.png")));
+		contentPane.add(btnCapAmerica);
+
+		btnStrange = new JButton();
+		btnStrange.setBackground(new Color(0, 0, 0, 0));
+		btnStrange.setOpaque(true);
+		btnStrange.setBounds(350, 1, 73, 81);
+		btnStrange
+				.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Dr Strange/tienda.png")));
+		contentPane.add(btnStrange);
+
+		btnThor = new JButton();
+		btnThor.setBackground(new Color(0, 0, 0, 0));
+		btnThor.setOpaque(true);
+		btnThor.setBounds(440, 1, 73, 81);
+		btnThor.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Thor/estatico.png")));
+		contentPane.add(btnThor);
+
 	}
 
 	private void start() {
