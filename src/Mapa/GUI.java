@@ -97,6 +97,19 @@ public class GUI extends JFrame implements Runnable {
 				.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
 
 		contentPane.add(btnIronMan);
+
+		btnHawkeye = new JButton();
+		btnHawkeye.setBounds(93, 1, 73, 81);
+		btnHawkeye.setOpaque(true);
+		btnHawkeye.setBackground(new Color(0, 0, 0, 0));
+		contentPane.add(btnHawkeye);
+
+		btnHulk = new JButton();
+		btnHulk.setOpaque(true);
+		btnHulk.setBackground(new Color(0, 0, 0, 0));
+		btnHulk.setBounds(175, 1, 73, 81);
+		btnHulk.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Hulk/h estatico.png")));
+		contentPane.add(btnHulk);
 	}
 
 	private void start() {
@@ -125,5 +138,4 @@ public class GUI extends JFrame implements Runnable {
 			showToScreen();
 		}
 	}
-
 }
