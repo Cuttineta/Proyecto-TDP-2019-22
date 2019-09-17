@@ -99,18 +99,21 @@ public class GUI extends JFrame implements Runnable {
 				   imagenIronMan.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
 				   imagenIronMan.setOpaque(true);
 				   imagenIronMan.setBackground(new Color(0, 0, 0, 0));
-
+				   
 				  contentPane.addMouseListener(new MouseAdapter() {
 				   
 				   public void mouseClicked(MouseEvent e){
-					   
+					   int ejeX=e.getX();
+					   int ejeY=e.getY();
 
-					   imagenIronMan.setBounds(e.getX(),e.getY()-92,50,70);
+					   imagenIronMan.setBounds(ejeX-(ejeX%92),ejeY-92,50,70);
 					   
 					  
 				    fondo.add(imagenIronMan);
+				    contentPane.removeMouseListener(null);
 
 				   }
+				   
 				   
 				  }); 
 			}
