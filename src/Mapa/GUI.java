@@ -8,6 +8,8 @@ import javax.swing.JButton;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.Color;
 
 public class GUI extends JFrame implements Runnable {
@@ -23,6 +25,8 @@ public class GUI extends JFrame implements Runnable {
 	private JButton btnSalir;
 	private JLabel lblMonedas;
 	private JButton btnIronMan, btnHawkeye, btnCapAmerica, btnHulk, btnThor, btnStrange;
+	
+	
 
 	public GUI() {
 
@@ -45,11 +49,10 @@ public class GUI extends JFrame implements Runnable {
 	}
 
 	private void agregarDibujo() {
-
+		
+		
 		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/asfalto2.png"));
 		fondo = new JLabel(imagen);
-
-		fondo.setOpaque(false);
 
 		fondo.setBounds(0, 31, ANCHO, ALTO);
 
@@ -90,6 +93,28 @@ public class GUI extends JFrame implements Runnable {
 		contentPane.add(lblMonedas);
 
 		btnIronMan = new JButton();
+		btnIronMan.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JLabel imagenIronMan = new JLabel();
+				   imagenIronMan.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
+				   imagenIronMan.setOpaque(true);
+				   imagenIronMan.setBackground(new Color(0, 0, 0, 0));
+
+				  contentPane.addMouseListener(new MouseAdapter() {
+				   
+				   public void mouseClicked(MouseEvent e){
+					   
+
+					   imagenIronMan.setBounds(e.getX(),e.getY()-92,50,70);
+					   
+					  
+				    fondo.add(imagenIronMan);
+
+				   }
+				   
+				  }); 
+			}
+		});
 		btnIronMan.setBackground(new Color(0, 0, 0, 0));
 		btnIronMan.setOpaque(true);
 		btnIronMan.setBounds(10, 1, 73, 81);
