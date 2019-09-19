@@ -75,8 +75,7 @@ public class GUI extends JFrame implements Runnable {
 		contentPane.add(lblMonedas);
 
 		btnIronMan = new JButton();
-
-		btnIronMan.setBackground(new Color(0, 0, 0, 0));
+		btnIronMan.setBackground(Color.LIGHT_GRAY);
 		btnIronMan.setOpaque(true);
 		btnIronMan.setBounds(10, 1, 73, 81);
 		btnIronMan.setIcon(new ImageIcon(GUI.class.getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
@@ -85,37 +84,37 @@ public class GUI extends JFrame implements Runnable {
 
 		btnHawkeye = new JButton();
 		btnHawkeye.setBounds(93, 1, 73, 81);
+		btnHawkeye.setBackground(Color.LIGHT_GRAY);
 		btnHawkeye.setOpaque(true);
-		btnHawkeye.setBackground(new Color(0, 0, 0, 0));
 		btnHawkeye
 				.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Hawkeye/estatico.png")));
 		contentPane.add(btnHawkeye);
 
 		btnHulk = new JButton();
 		btnHulk.setOpaque(true);
-		btnHulk.setBackground(new Color(0, 0, 0, 0));
+		btnHulk.setBackground(Color.LIGHT_GRAY);
 		btnHulk.setBounds(175, 1, 73, 81);
 		btnHulk.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Hulk/h estatico.png")));
 		contentPane.add(btnHulk);
 
 		btnCapAmerica = new JButton();
-		btnCapAmerica.setBackground(new Color(0, 0, 0, 0));
 		btnCapAmerica.setOpaque(true);
 		btnCapAmerica.setBounds(260, 1, 73, 81);
+		btnCapAmerica.setBackground(Color.LIGHT_GRAY);
 		btnCapAmerica.setIcon(
 				new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Cap America/estatico.png")));
 		contentPane.add(btnCapAmerica);
 
 		btnStrange = new JButton();
-		btnStrange.setBackground(new Color(0, 0, 0, 0));
 		btnStrange.setOpaque(true);
+		btnStrange.setBackground(Color.LIGHT_GRAY);
 		btnStrange.setBounds(350, 1, 73, 81);
 		btnStrange
 				.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Dr Strange/tienda.png")));
 		contentPane.add(btnStrange);
 
 		btnThor = new JButton();
-		btnThor.setBackground(new Color(0, 0, 0, 0));
+		btnThor.setBackground(Color.LIGHT_GRAY);
 		btnThor.setOpaque(true);
 		btnThor.setBounds(440, 1, 73, 81);
 		btnThor.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Thor/estatico.png")));
