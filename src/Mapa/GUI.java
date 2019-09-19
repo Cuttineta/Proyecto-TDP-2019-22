@@ -60,7 +60,7 @@ public class GUI extends JFrame implements Runnable {
 		btnSalir.setBounds(804, 34, 89, 23);
 		contentPane.add(btnSalir);
 
-		btnSalir.addActionListener(new ActionListener()) {
+		btnSalir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.exit(0);
 			}
@@ -77,86 +77,43 @@ public class GUI extends JFrame implements Runnable {
 		contentPane.add(lblMonedas);
 
 		btnIronMan = new JButton();
-
-
-		btnHawkeye = new JButton();
-		btnIronMan.addActionListener(new ActionListener()) {
-			public void actionPerformed(ActionEvent e) {
-				JLabel imagenIronMan = new JLabel();
-
-				   imagenIronMan.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
-				   imagenIronMan.setOpaque(true);
-				   imagenIronMan.setBackground(new Color(0, 0, 0, 0));
-				   
-				  contentPane.addMouseListener(new MouseAdapter()) {
-				   
-				   public void mouseClicked(MouseEvent e){
-					   int ejeX=e.getX();
-					   int ejeY=e.getY();
-
-					   imagenIronMan.setBounds((e.getX()/92)*92+46,(( e.getY() - 92)/92)*92+46, 50, 70);
-					   
-					  
-				   fondo.add(imagenIronMan);
-				    
-
-				   }
-				   
-				   
-				  }); 
-
-
-		btnIronMan.setBackground(new Color(0, 0, 0, 0));
-
 		btnIronMan.setBackground(Color.LIGHT_GRAY);
-
 		btnIronMan.setOpaque(true);
 		btnIronMan.setBounds(10, 1, 73, 81);
 		btnIronMan.setIcon(new ImageIcon(GUI.class.getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
-
 		contentPane.add(btnIronMan);
 
 		btnHawkeye = new JButton();
 		btnHawkeye.setBounds(93, 1, 73, 81);
 		btnHawkeye.setOpaque(true);
-
-		btnHawkeye.setBackground(new Color(0, 0, 0, 0));
-		btnHawkeye
-				.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Hawkeye/estatico.png")));
-
+		btnHawkeye.setBackground(Color.LIGHT_GRAY);
 		btnHawkeye.setIcon(new ImageIcon(GUI.class.getResource("/Imagenes/Sprites/Aliados/Hawkeye/estatico.png")));
 		contentPane.add(btnHawkeye);
 
 		btnHulk = new JButton();
 		btnHulk.setOpaque(true);
-		btnHulk.setBackground(new Color(0, 0, 0, 0));
+		btnHulk.setBackground(Color.LIGHT_GRAY);
 		btnHulk.setBounds(175, 1, 73, 81);
 		btnHulk.setIcon(new ImageIcon(GUI.class.getResource("/Imagenes/Sprites/Aliados/Hulk/h estatico.png")));
 		contentPane.add(btnHulk);
 
 		btnCapAmerica = new JButton();
-		btnCapAmerica.setBackground(new Color(0, 0, 0, 0));
 		btnCapAmerica.setOpaque(true);
 		btnCapAmerica.setBounds(260, 1, 73, 81);
-
-		btnCapAmerica.setIcon(
-				new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Cap America/estatico.png")));
-
 		btnCapAmerica.setBackground(Color.LIGHT_GRAY);
 		btnCapAmerica
 				.setIcon(new ImageIcon(GUI.class.getResource("/Imagenes/Sprites/Aliados/Cap America/estatico.png")));
-
 		contentPane.add(btnCapAmerica);
 
 		btnStrange = new JButton();
-		btnStrange.setBackground(new Color(0, 0, 0, 0));
+		btnStrange.setBackground(Color.LIGHT_GRAY);
 		btnStrange.setOpaque(true);
 		btnStrange.setBounds(350, 1, 73, 81);
 		btnStrange.setIcon(new ImageIcon(GUI.class.getResource("/Imagenes/Sprites/Aliados/Dr Strange/tienda.png")));
 		contentPane.add(btnStrange);
 
 		btnThor = new JButton();
-		btnThor.setBackground(new Color(0, 0, 0, 0));
+		btnThor.setBackground(Color.LIGHT_GRAY);
 		btnThor.setOpaque(true);
 		btnThor.setBounds(440, 1, 73, 81);
 		btnThor.setIcon(new ImageIcon(GUI.class.getResource("/Imagenes/Sprites/Aliados/Thor/estatico.png")));
@@ -198,8 +155,7 @@ public class GUI extends JFrame implements Runnable {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
-
-		}
+}
