@@ -8,6 +8,8 @@ import javax.swing.JButton;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.Color;
 
 public class GUI extends JFrame implements Runnable {
@@ -41,7 +43,7 @@ public class GUI extends JFrame implements Runnable {
 		gui.setVisible(true);
 		gui.setResizable(false);
 		gui.setLocationRelativeTo(null);
-		gui.start();
+		// gui.start();
 	}
 
 	private void agregarDibujo() {
@@ -101,7 +103,7 @@ public class GUI extends JFrame implements Runnable {
 					   
 					  
 				   fondo.add(imagenIronMan);
-				    contentPane.removeMouseListener(null);
+				    
 
 				   }
 				   
@@ -169,32 +171,24 @@ public class GUI extends JFrame implements Runnable {
 		getContentPane().add(fondoTienda);
 
 
-	}
+	}}
 
 	private void start() {
-		thread = new Thread(this);
+		thread = new Thread();
 		thread.start();
 	}
 
-	private void finish() {
-		try {
-			thread.join();
-		} catch (InterruptedException e) {
+	
+
+
+	
+
+
 		}
-	}
-
-	private void refresh() {
-	}
-
-	private void showToScreen() {
-	}
 
 	@Override
 	public void run() {
-		System.nanoTime();
-		while (true) {
-			refresh();
-			showToScreen();
-		}
+		// TODO Auto-generated method stub
+
 	}
 }
