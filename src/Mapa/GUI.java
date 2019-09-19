@@ -50,12 +50,6 @@ public class GUI extends JFrame implements Runnable {
 
 		ImageIcon tienda = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/metal.png"));
 
-		fondoTienda = new JLabel(tienda);
-
-		fondoTienda.setBounds(-19, 1, 703, 98);
-		getContentPane().add(fondoTienda);
-
-
 		JButton btnPausa = new JButton("Pausa");
 		btnPausa.setBounds(804, 1, 89, 23);
 		contentPane.add(btnPausa);
@@ -82,43 +76,13 @@ public class GUI extends JFrame implements Runnable {
 
 		btnIronMan = new JButton();
 		btnIronMan.setBackground(Color.LIGHT_GRAY);
-
-
-		btnHawkeye = new JButton();
-		btnIronMan.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				JLabel imagenIronMan = new JLabel();
-
-				   imagenIronMan.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
-				   imagenIronMan.setOpaque(true);
-				   imagenIronMan.setBackground(new Color(0, 0, 0, 0));
-				   
-				  contentPane.addMouseListener(new MouseAdapter() {
-				   
-				   public void mouseClicked(MouseEvent e){
-					   int ejeX=e.getX();
-					   int ejeY=e.getY();
-
-					   imagenIronMan.setBounds((e.getX()/92)*92+46,(( e.getY() - 92)/92)*92+46, 50, 70);
-					   
-					  
-				   fondo.add(imagenIronMan);
-				    contentPane.removeMouseListener(null);
-
-				   }
-				   
-				   
-				  }); 
-
-
-		btnIronMan.setBackground(new Color(0, 0, 0, 0));
 		btnIronMan.setOpaque(true);
 		btnIronMan.setBounds(10, 1, 73, 81);
 		btnIronMan.setIcon(new ImageIcon(GUI.class.getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
 
 		contentPane.add(btnIronMan);
 
-		
+		btnHawkeye = new JButton();
 		btnHawkeye.setBounds(93, 1, 73, 81);
 		btnHawkeye.setBackground(Color.LIGHT_GRAY);
 		btnHawkeye.setOpaque(true);
@@ -163,13 +127,11 @@ public class GUI extends JFrame implements Runnable {
 		fondo.setBounds(0, 70, 950, 583);
 
 		getContentPane().add(fondo);
-		fondoTienda = new JLabel(tienda);
 
-		fondoTienda.setOpaque(false);
+		fondoTienda = new JLabel(tienda);
 
 		fondoTienda.setBounds(-19, 1, 703, 98);
 		getContentPane().add(fondoTienda);
-
 
 	}
 
