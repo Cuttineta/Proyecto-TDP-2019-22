@@ -60,8 +60,6 @@ public class GUI extends JFrame implements Runnable {
 		ImageIcon tienda = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/metal.png"));
 		fondoTienda = new JLabel(tienda);
 
-		fondoTienda.setOpaque(false);
-
 		fondoTienda.setBounds(-19, 1, 703, 98);
 		getContentPane().add(fondoTienda);
 
@@ -90,6 +88,7 @@ public class GUI extends JFrame implements Runnable {
 		contentPane.add(lblMonedas);
 
 		btnIronMan = new JButton();
+		btnHawkeye = new JButton();
 		btnIronMan.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JLabel imagenIronMan = new JLabel();
@@ -107,8 +106,8 @@ public class GUI extends JFrame implements Runnable {
 					   imagenIronMan.setBounds((e.getX()/92)*92+46,(( e.getY() - 92)/92)*92+46, 50, 70);
 					   
 					  
-				   // fondo.add(imagenIronMan);
-				  //  contentPane.removeMouseListener(null);
+				   fondo.add(imagenIronMan);
+				    contentPane.removeMouseListener(null);
 
 				   }
 				   
@@ -126,7 +125,7 @@ public class GUI extends JFrame implements Runnable {
 
 		contentPane.add(btnIronMan);
 
-		btnHawkeye = new JButton();
+		
 		btnHawkeye.setBounds(93, 1, 73, 81);
 		btnHawkeye.setOpaque(true);
 		btnHawkeye.setBackground(new Color(0, 0, 0, 0));
@@ -162,6 +161,7 @@ public class GUI extends JFrame implements Runnable {
 		btnThor.setBounds(440, 1, 73, 81);
 		btnThor.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Thor/estatico.png")));
 		contentPane.add(btnThor);
+	
 
 	}
 
