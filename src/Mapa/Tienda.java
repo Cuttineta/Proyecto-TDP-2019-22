@@ -16,15 +16,16 @@ public class Tienda extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 
+	private Juego j;
 	private int monedas, puntaje;
 	private ImageIcon imgTienda = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/metal.png"));
 	private JButton btnIronMan, btnHawkeye, btnCapAmerica, btnHulk, btnThor, btnStrange, btnSalir, btnPausa;
 	private GUI g;
-	private JLabel lblMonedas;
+	private JLabel lblMonedas, lblPuntaje, totalPuntaje, totalMonedas;
 
 	public Tienda(GUI graf) {
+		j = graf.j;
 		this.g = graf;
-
 		JLabel fondoTienda = new JLabel(imgTienda);
 		agregarBotones();
 		fondoTienda.setBounds(-30, 1, 703, 98);
@@ -33,6 +34,7 @@ public class Tienda extends JPanel {
 	}
 
 	private void agregarBotones() {
+
 		btnIronMan = new JButton();
 		btnIronMan.setBackground(Color.LIGHT_GRAY);
 		btnIronMan.setOpaque(true);
@@ -93,7 +95,7 @@ public class Tienda extends JPanel {
 			}
 		});
 
-		JLabel lblPuntaje = new JLabel("PUNTAJE:");
+		lblPuntaje = new JLabel("PUNTAJE:");
 		lblPuntaje.setFont(new Font("Tahoma", Font.ITALIC, 12));
 		lblPuntaje.setBounds(674, 1, 57, 28);
 		g.getContentPane().add(lblPuntaje);
@@ -102,5 +104,16 @@ public class Tienda extends JPanel {
 		lblMonedas.setFont(new Font("Tahoma", Font.ITALIC, 12));
 		lblMonedas.setBounds(674, 31, 73, 27);
 		g.getContentPane().add(lblMonedas);
+
+		totalPuntaje = new JLabel("" + j.getPuntos());
+		totalPuntaje.setBounds(740, 1, 57, 28);
+		totalPuntaje.setFont(new Font("Tahoma", Font.ITALIC, 12));
+		g.getContentPane().add(totalPuntaje);
+
+		totalMonedas = new JLabel("" + j.getMonedas());
+		totalMonedas.setBounds(740, 31, 57, 28);
+		totalMonedas.setFont(new Font("Tahoma", Font.ITALIC, 12));
+		g.getContentPane().add(totalMonedas);
+
 	}
 }

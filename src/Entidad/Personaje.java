@@ -1,28 +1,22 @@
 package Entidad;
 
+import javax.swing.ImageIcon;
+
 import Mapa.Celda;
 
 public abstract class Personaje extends Entidad {
 	protected int vida, impacto, alcance, valor;
+	protected ImageIcon img;
 
 	public Personaje(Celda c) {
 		super(c);
 	}
 
-	public int getVida() {
-		return vida;
-	}
+	public abstract int getVida();
 
-	public int getImpacto() {
-		return impacto;
-	}
+	public abstract int getImpacto();
 
-	public int getAlcance() {
-		return alcance;
-	}
+	public abstract int getAlcance();
 
-	public int getValor() {
-		return valor;
-	}
-
+	public abstract int getValor();
 }

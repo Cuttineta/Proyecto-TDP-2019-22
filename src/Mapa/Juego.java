@@ -4,15 +4,24 @@ import Entidad.*;
 
 public class Juego {
 
-	protected int puntos;
+	protected int puntos, monedas;
 	protected Mapa mapa;
-	protected int monedas;
 	protected GUI gui;
 
-	public Juego() {
+	public Juego(GUI graf) {
 		puntos = 0;
-		mapa = new Mapa(this);
-		gui = new GUI();
+		monedas = 100;
+		// mapa = new Mapa(this);
+		gui = graf;
+
+	}
+
+	public int getMonedas() {
+		return monedas;
+	}
+
+	public int getPuntos() {
+		return puntos;
 
 	}
 

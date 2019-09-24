@@ -12,4 +12,27 @@ public class DrStrange extends Aliado {
 		alcance = ALCANCE;
 		impacto = IMPACTO;
 	}
+
+	public int getVida() {
+		return vida;
+	}
+
+	public int getImpacto() {
+
+		return impacto;
+	}
+
+	public int getAlcance() {
+
+		return alcance;
+	}
+
+	public int getValor() {
+
+		return valor;
+	}
+
+	public boolean enEspera() {
+		return esperando;
+	}
 }

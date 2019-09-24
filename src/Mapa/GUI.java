@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 
 public class GUI extends JFrame implements Runnable {
 
-	private Juego j;
+	public Juego j;
 	private Tienda tienda;
 	private static final long serialVersionUID = 1L;
 	private static final int ANCHO = 950;
@@ -21,6 +21,7 @@ public class GUI extends JFrame implements Runnable {
 	private static Thread thread;
 
 	public GUI() {
+		j = new Juego(this);
 		getContentPane().setLayout(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(0, 0, ANCHO, ALTO);
