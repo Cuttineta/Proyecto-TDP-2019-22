@@ -4,13 +4,20 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Image;
+import java.awt.MouseInfo;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
+import com.sun.glass.events.MouseEvent;
+
+import Herramientas.FabricaPersonajesConcreta;
 
 public class Tienda extends JPanel {
 
@@ -22,6 +29,7 @@ public class Tienda extends JPanel {
 	private JButton btnIronMan, btnHawkeye, btnCapAmerica, btnHulk, btnThor, btnStrange, btnSalir, btnPausa;
 	private GUI g;
 	private JLabel lblMonedas, lblPuntaje, totalPuntaje, totalMonedas;
+	private FabricaPersonajesConcreta f;
 
 	public Tienda(GUI graf) {
 		j = graf.j;
@@ -60,9 +68,30 @@ public class Tienda extends JPanel {
 		btnCapAmerica.setOpaque(true);
 		btnCapAmerica.setBounds(260, 10, 73, 81);
 		btnCapAmerica.setBackground(Color.LIGHT_GRAY);
-		btnCapAmerica.setIcon(
-				new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Cap America/estatico.png")));
+		btnCapAmerica.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Cap America/estatico.png")));
 		g.getContentPane().add(btnCapAmerica);
+		btnCapAmerica.addActionListener(new ActionListener () {
+			public void actionPerformed(ActionEvent e1) {
+				j.gui.getContentPane().addMouseListener(new MouseAdapter() {
+					   
+					   public void mouseClicked(MouseEvent e){
+						   int ejeX = e.getX();
+						   int ejeY= e.getY();
+						 
+					   }
+					   
+					   
+					  }); 
+				
+			}
+		});
+		
+				
+					   
+					   
+				
+			
+			
 
 		btnStrange = new JButton();
 		btnStrange.setBackground(Color.LIGHT_GRAY);
