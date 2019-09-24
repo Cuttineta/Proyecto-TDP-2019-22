@@ -77,7 +77,6 @@ public class GUI extends JFrame implements Runnable {
 		contentPane.add(lblMonedas);
 
 		btnIronMan = new JButton();
-<<<<<<< HEAD
 		btnIronMan.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JLabel imagenIronMan = new JLabel();
@@ -98,9 +97,8 @@ public class GUI extends JFrame implements Runnable {
 			}
 		});
 		btnIronMan.setBackground(new Color(0, 0, 0, 0));
-=======
 		btnIronMan.setBackground(Color.LIGHT_GRAY);
->>>>>>> 78e1d18f6388145267490eafb7a4d72faf09b585
+		btnIronMan.setBackground(Color.LIGHT_GRAY);
 		btnIronMan.setOpaque(true);
 		btnIronMan.setBounds(10, 1, 73, 81);
 		btnIronMan.setIcon(new ImageIcon(GUI.class.getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
