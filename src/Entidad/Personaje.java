@@ -5,10 +5,9 @@ import javax.swing.ImageIcon;
 import Mapa.Celda;
 
 public abstract class Personaje extends Entidad {
-	
+
 	protected static final int MAX_VIDA = 100;
 	protected int vida, impacto, alcance, valor;
-	protected ImageIcon img;
 
 	public Personaje(Celda c) {
 		super(c);

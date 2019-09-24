@@ -3,6 +3,7 @@ package Entidad;
 import Mapa.Celda;
 
 public abstract class Aliado extends Personaje {
+	
 
 	protected boolean esperando;
 
