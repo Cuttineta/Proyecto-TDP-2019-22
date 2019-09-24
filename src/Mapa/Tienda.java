@@ -39,16 +39,14 @@ public class Tienda extends JPanel {
 		btnIronMan.setBackground(Color.LIGHT_GRAY);
 		btnIronMan.setOpaque(true);
 		btnIronMan.setBounds(10, 10, 73, 81);
-		btnIronMan
-				.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
+		btnIronMan.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
 		g.getContentPane().add(btnIronMan);
 
 		btnHawkeye = new JButton();
 		btnHawkeye.setBounds(93, 10, 73, 81);
 		btnHawkeye.setOpaque(true);
 		btnHawkeye.setBackground(Color.LIGHT_GRAY);
-		btnHawkeye
-				.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Hawkeye/estatico.png")));
+		btnHawkeye.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Hawkeye/estatico.png")));
 		g.getContentPane().add(btnHawkeye);
 
 		btnHulk = new JButton();
@@ -70,8 +68,7 @@ public class Tienda extends JPanel {
 		btnStrange.setBackground(Color.LIGHT_GRAY);
 		btnStrange.setOpaque(true);
 		btnStrange.setBounds(350, 10, 73, 81);
-		btnStrange
-				.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Dr Strange/tienda.png")));
+		btnStrange.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Dr Strange/tienda.png")));
 		g.getContentPane().add(btnStrange);
 
 		btnThor = new JButton();

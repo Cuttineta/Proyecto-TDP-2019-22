@@ -8,8 +8,7 @@ import Mapa.Celda;
 public class Cap_America extends Aliado {
 
 	private static final int ALCANCE = 1, IMPACTO = 20;
-	private ImageIcon i = new ImageIcon(
-			this.getClass().getResource("/Imagenes/Sprites/Aliados/Cap America/estatico.png"));
+	private ImageIcon i = new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Cap America/estatico.png"));
 
 	public Cap_America(Celda c) {
 		super(c);

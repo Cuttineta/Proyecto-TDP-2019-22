@@ -22,12 +22,10 @@ public class GUI extends JFrame implements Runnable {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(0, 0, ANCHO, ALTO);
 		contentPane = new JPanel();
-
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		agregarDibujo();
 		tienda = new Tienda(this);
-
 	}
 
 	public static final void main(String args[]) {
