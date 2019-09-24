@@ -14,9 +14,9 @@ public class Celda {
 		miMapa = m;
 		this.fila = fila;
 		this.columna = columna;
-		misEntidades = new Entidad[6];
+		misEntidades = new Entidad[3];
 	}
-	
+
 	public int getFila() {
 		return fila;
 	}
@@ -32,8 +32,5 @@ public class Celda {
 	public Mapa getMiMapa() {
 		return miMapa;
 	}
-	
-	
-	
 
 }

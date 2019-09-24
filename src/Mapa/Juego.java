@@ -11,7 +11,7 @@ public class Juego {
 	public Juego(GUI graf) {
 		puntos = 0;
 		monedas = 100;
-		// mapa = new Mapa(this);
+		mapa = new Mapa(this);
 		gui = graf;
 
 	}
