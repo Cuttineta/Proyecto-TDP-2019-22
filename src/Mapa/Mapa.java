@@ -20,6 +20,13 @@ public class Mapa {
 		return toRet;
 	}
 
+	public void setCelda(int f, int c, Celda c1) {
+
+		if (f >= 0 && f < matriz.length && c >= 0 && c < matriz[0].length)
+			matriz[f][c] = c1;
+
+	}
+
 	public Juego getJuego() {
 		return juego;
 	}

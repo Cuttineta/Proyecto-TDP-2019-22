@@ -1,8 +1,5 @@
 package Mapa;
 
-import java.util.LinkedList;
-
-import Enemigo.Enemigo;
 import Entidad.*;
 
 public class Juego {
@@ -10,7 +7,6 @@ public class Juego {
 	protected int puntos, monedas;
 	protected Mapa mapa;
 	protected GUI gui;
-	protected LinkedList<Enemigo> enemigos;
 	protected boolean terminar;
 
 	public Juego(GUI graf) {
@@ -23,6 +19,14 @@ public class Juego {
 
 	public int getMonedas() {
 		return monedas;
+	}
+
+	public GUI getGUI() {
+		return gui;
+	}
+
+	public Mapa getMapa() {
+		return mapa;
 	}
 
 	public int getPuntos() {

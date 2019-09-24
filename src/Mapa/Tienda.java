@@ -2,21 +2,14 @@ package Mapa;
 
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Image;
-import java.awt.MouseInfo;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
+import java.awt.event.*;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import com.sun.glass.events.MouseEvent;
-
+import Entidad.Personaje;
 import Herramientas.FabricaPersonajesConcreta;
 
 public class Tienda extends JPanel {
@@ -47,14 +40,16 @@ public class Tienda extends JPanel {
 		btnIronMan.setBackground(Color.LIGHT_GRAY);
 		btnIronMan.setOpaque(true);
 		btnIronMan.setBounds(10, 10, 73, 81);
-		btnIronMan.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
+		btnIronMan
+				.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
 		g.getContentPane().add(btnIronMan);
 
 		btnHawkeye = new JButton();
 		btnHawkeye.setBounds(93, 10, 73, 81);
 		btnHawkeye.setOpaque(true);
 		btnHawkeye.setBackground(Color.LIGHT_GRAY);
-		btnHawkeye.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Hawkeye/estatico.png")));
+		btnHawkeye
+				.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Hawkeye/estatico.png")));
 		g.getContentPane().add(btnHawkeye);
 
 		btnHulk = new JButton();
@@ -68,36 +63,31 @@ public class Tienda extends JPanel {
 		btnCapAmerica.setOpaque(true);
 		btnCapAmerica.setBounds(260, 10, 73, 81);
 		btnCapAmerica.setBackground(Color.LIGHT_GRAY);
-		btnCapAmerica.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Cap America/estatico.png")));
+		btnCapAmerica.setIcon(
+				new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Cap America/estatico.png")));
 		g.getContentPane().add(btnCapAmerica);
-		btnCapAmerica.addActionListener(new ActionListener () {
-			public void actionPerformed(ActionEvent e1) {
-				j.gui.getContentPane().addMouseListener(new MouseAdapter() {
-					   
-					   public void mouseClicked(MouseEvent e){
-						   int ejeX = e.getX();
-						   int ejeY= e.getY();
-						 
-					   }
-					   
-					   
-					  }); 
-				
+
+		btnCapAmerica.addActionListener(new ActionListener() {
+
+			public void actionPerformed(ActionEvent e) {
+				j.getGUI().getContentPane().addMouseListener(new MouseAdapter() {
+					public void MouseClicked(MouseEvent e) {
+						int ejeX = e.getX();
+						int ejeY = e.getY();
+						Celda cel = new Celda((ejeX / 92) * 92, (ejeY / 92) * 92, j.getMapa());
+						Personaje a = f.crearCapAmerica(cel);
+
+					}
+				});
 			}
 		});
-		
-				
-					   
-					   
-				
-			
-			
 
 		btnStrange = new JButton();
 		btnStrange.setBackground(Color.LIGHT_GRAY);
 		btnStrange.setOpaque(true);
 		btnStrange.setBounds(350, 10, 73, 81);
-		btnStrange.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Dr Strange/tienda.png")));
+		btnStrange
+				.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Dr Strange/tienda.png")));
 		g.getContentPane().add(btnStrange);
 
 		btnThor = new JButton();
