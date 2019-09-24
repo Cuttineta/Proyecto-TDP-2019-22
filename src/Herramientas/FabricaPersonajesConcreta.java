@@ -37,13 +37,13 @@ public class FabricaPersonajesConcreta implements FabricaPersonajes {
 
 	@Override
 	public Personaje crearThanos(Celda c) {
-		// TODO Auto-generated method stub
+
 		return null;
 	}
 
 	@Override
 	public Personaje crearUltron(Celda c) {
-		// TODO Auto-generated method stub
+
 		return null;
 	}
 
