@@ -15,19 +15,17 @@ import java.awt.Color;
 public class GUI extends JFrame implements Runnable {
 
 	private Juego j;
+	private Tienda tienda;
 	private static final long serialVersionUID = 1L;
 	private static final int ANCHO = 950;
 	private static final int ALTO = 700;
 	private JLabel fondo;
-	private JLabel fondoTienda;
 	private JPanel contentPane;
 	private static Thread thread;
 	private JButton btnSalir;
 	private JLabel lblMonedas;
-	private JButton btnIronMan, btnHawkeye, btnCapAmerica, btnHulk, btnThor, btnStrange;
 
 	public GUI() {
-
 		getContentPane().setLayout(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(0, 0, ANCHO, ALTO);
@@ -36,6 +34,8 @@ public class GUI extends JFrame implements Runnable {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		agregarDibujo();
+		tienda = new Tienda(this);
+
 	}
 
 	public static final void main(String args[]) {
@@ -50,8 +50,6 @@ public class GUI extends JFrame implements Runnable {
 
 		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/asfalto2.png"));
 
-		ImageIcon tienda = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/metal.png"));
-
 		JButton btnPausa = new JButton("Pausa");
 		btnPausa.setBounds(804, 1, 89, 23);
 		contentPane.add(btnPausa);
@@ -60,7 +58,13 @@ public class GUI extends JFrame implements Runnable {
 		btnSalir.setBounds(804, 34, 89, 23);
 		contentPane.add(btnSalir);
 
-		
+
+		btnSalir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+
 
 		JLabel lblPuntaje = new JLabel("PUNTAJE:");
 		lblPuntaje.setFont(new Font("Tahoma", Font.ITALIC, 12));
@@ -71,6 +75,7 @@ public class GUI extends JFrame implements Runnable {
 		lblMonedas.setFont(new Font("Tahoma", Font.ITALIC, 12));
 		lblMonedas.setBounds(674, 31, 73, 27);
 		contentPane.add(lblMonedas);
+
 
 		btnIronMan = new JButton();
 
@@ -137,18 +142,12 @@ public class GUI extends JFrame implements Runnable {
 		btnThor.setIcon(new ImageIcon(GUI.class.getResource("/Imagenes/Sprites/Aliados/Thor/estatico.png")));
 		contentPane.add(btnThor);
 
+
 		fondo = new JLabel(imagen);
 
-		fondo.setBounds(0, 31, ANCHO, ALTO);
-
-		fondo.setBounds(0, 70, 950, 583);
+		fondo.setBounds(-10, 31, ANCHO, ALTO);
 
 		getContentPane().add(fondo);
-
-		fondoTienda = new JLabel(tienda);
-
-		fondoTienda.setBounds(-19, 1, 703, 98);
-		getContentPane().add(fondoTienda);
 
 	}
 
