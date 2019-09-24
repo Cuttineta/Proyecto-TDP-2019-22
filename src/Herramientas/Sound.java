@@ -33,7 +33,7 @@ public class Sound {
 		AudioData MD;
 		ContinuousAudioDataStream loop = null;
 		try {
-			BGM = new AudioStream(new FileInputStream("musica.mp3"));
+			BGM = new AudioStream(new FileInputStream("Multimedia/musica.mp3"));
 			MD = BGM.getData();
 			loop = new ContinuousAudioDataStream(MD);
 		} catch (IOException e) {
