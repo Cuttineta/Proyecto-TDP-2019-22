@@ -43,7 +43,7 @@ public class GUI extends JFrame implements Runnable {
 		gui.setVisible(true);
 		gui.setResizable(false);
 		gui.setLocationRelativeTo(null);
-		// gui.start();
+		gui.start();
 	}
 
 	private void agregarDibujo() {
@@ -60,11 +60,7 @@ public class GUI extends JFrame implements Runnable {
 		btnSalir.setBounds(804, 34, 89, 23);
 		contentPane.add(btnSalir);
 
-		btnSalir.addActionListener(new ActionListener()) {
-			public void actionPerformed(ActionEvent e) {
-				System.exit(0);
-			}
-		});
+		
 
 		JLabel lblPuntaje = new JLabel("PUNTAJE:");
 		lblPuntaje.setFont(new Font("Tahoma", Font.ITALIC, 12));
@@ -80,30 +76,10 @@ public class GUI extends JFrame implements Runnable {
 
 
 		btnHawkeye = new JButton();
-		btnIronMan.addActionListener(new ActionListener()) {
-			public void actionPerformed(ActionEvent e) {
-				JLabel imagenIronMan = new JLabel();
-
-				   imagenIronMan.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
-				   imagenIronMan.setOpaque(true);
-				   imagenIronMan.setBackground(new Color(0, 0, 0, 0));
-				   
-				  contentPane.addMouseListener(new MouseAdapter()) {
-				   
-				   public void mouseClicked(MouseEvent e){
-					   int ejeX=e.getX();
-					   int ejeY=e.getY();
-
-					   imagenIronMan.setBounds((e.getX()/92)*92+46,(( e.getY() - 92)/92)*92+46, 50, 70);
-					   
-					  
-				   fondo.add(imagenIronMan);
-				    
-
-				   }
-				   
-				   
-				  }); 
+		
+		
+	
+			
 
 
 		btnIronMan.setBackground(new Color(0, 0, 0, 0));
@@ -115,6 +91,7 @@ public class GUI extends JFrame implements Runnable {
 		btnIronMan.setIcon(new ImageIcon(GUI.class.getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
 
 		contentPane.add(btnIronMan);
+		
 
 		btnHawkeye = new JButton();
 		btnHawkeye.setBounds(93, 1, 73, 81);
@@ -139,12 +116,10 @@ public class GUI extends JFrame implements Runnable {
 		btnCapAmerica.setOpaque(true);
 		btnCapAmerica.setBounds(260, 1, 73, 81);
 
-		btnCapAmerica.setIcon(
-				new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Cap America/estatico.png")));
+		btnCapAmerica.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Cap America/estatico.png")));
 
 		btnCapAmerica.setBackground(Color.LIGHT_GRAY);
-		btnCapAmerica
-				.setIcon(new ImageIcon(GUI.class.getResource("/Imagenes/Sprites/Aliados/Cap America/estatico.png")));
+		btnCapAmerica.setIcon(new ImageIcon(GUI.class.getResource("/Imagenes/Sprites/Aliados/Cap America/estatico.png")));
 
 		contentPane.add(btnCapAmerica);
 
@@ -198,8 +173,7 @@ public class GUI extends JFrame implements Runnable {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
-
-		}
+}
