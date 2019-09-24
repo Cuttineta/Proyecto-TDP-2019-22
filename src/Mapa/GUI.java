@@ -15,19 +15,17 @@ import java.awt.Color;
 public class GUI extends JFrame implements Runnable {
 
 	private Juego j;
+	private Tienda tienda;
 	private static final long serialVersionUID = 1L;
 	private static final int ANCHO = 950;
 	private static final int ALTO = 700;
 	private JLabel fondo;
-	private JLabel fondoTienda;
 	private JPanel contentPane;
 	private static Thread thread;
 	private JButton btnSalir;
 	private JLabel lblMonedas;
-	private JButton btnIronMan, btnHawkeye, btnCapAmerica, btnHulk, btnThor, btnStrange;
 
 	public GUI() {
-
 		getContentPane().setLayout(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(0, 0, ANCHO, ALTO);
@@ -36,6 +34,8 @@ public class GUI extends JFrame implements Runnable {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		agregarDibujo();
+		tienda = new Tienda(this);
+
 	}
 
 	public static final void main(String args[]) {
@@ -43,14 +43,12 @@ public class GUI extends JFrame implements Runnable {
 		gui.setVisible(true);
 		gui.setResizable(false);
 		gui.setLocationRelativeTo(null);
-		// gui.start();
+		gui.start();
 	}
 
 	private void agregarDibujo() {
 
 		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/asfalto2.png"));
-
-		ImageIcon tienda = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/metal.png"));
 
 		JButton btnPausa = new JButton("Pausa");
 		btnPausa.setBounds(804, 1, 89, 23);
@@ -76,82 +74,11 @@ public class GUI extends JFrame implements Runnable {
 		lblMonedas.setBounds(674, 31, 73, 27);
 		contentPane.add(lblMonedas);
 
-		btnIronMan = new JButton();
-		btnIronMan.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				JLabel imagenIronMan = new JLabel();
-				imagenIronMan.setIcon(
-						new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
-				imagenIronMan.setOpaque(true);
-				imagenIronMan.setBackground(new Color(0, 0, 0, 0));
-
-				contentPane.addMouseListener(new MouseAdapter() {
-
-					public void mouseClicked(MouseEvent e) {
-						imagenIronMan.setBounds((e.getX()/92)*92+46, ((e.getY() - 100)/92)*92+46, 50, 70);
-						fondo.add(imagenIronMan);
-
-					}
-
-				});
-			}
-		});
-		btnIronMan.setBackground(new Color(0, 0, 0, 0));
-		btnIronMan.setBackground(Color.LIGHT_GRAY);
-		btnIronMan.setBackground(Color.LIGHT_GRAY);
-		btnIronMan.setOpaque(true);
-		btnIronMan.setBounds(10, 1, 73, 81);
-		btnIronMan.setIcon(new ImageIcon(GUI.class.getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png")));
-		contentPane.add(btnIronMan);
-
-		btnHawkeye = new JButton();
-		btnHawkeye.setBounds(93, 1, 73, 81);
-		btnHawkeye.setOpaque(true);
-		btnHawkeye.setBackground(Color.LIGHT_GRAY);
-		btnHawkeye.setIcon(new ImageIcon(GUI.class.getResource("/Imagenes/Sprites/Aliados/Hawkeye/estatico.png")));
-		contentPane.add(btnHawkeye);
-
-		btnHulk = new JButton();
-		btnHulk.setOpaque(true);
-		btnHulk.setBackground(Color.LIGHT_GRAY);
-		btnHulk.setBounds(175, 1, 73, 81);
-		btnHulk.setIcon(new ImageIcon(GUI.class.getResource("/Imagenes/Sprites/Aliados/Hulk/h estatico.png")));
-		contentPane.add(btnHulk);
-
-		btnCapAmerica = new JButton();
-		btnCapAmerica.setOpaque(true);
-		btnCapAmerica.setBounds(260, 1, 73, 81);
-		btnCapAmerica.setBackground(Color.LIGHT_GRAY);
-		btnCapAmerica
-				.setIcon(new ImageIcon(GUI.class.getResource("/Imagenes/Sprites/Aliados/Cap America/estatico.png")));
-		contentPane.add(btnCapAmerica);
-
-		btnStrange = new JButton();
-		btnStrange.setBackground(Color.LIGHT_GRAY);
-		btnStrange.setOpaque(true);
-		btnStrange.setBounds(350, 1, 73, 81);
-		btnStrange.setIcon(new ImageIcon(GUI.class.getResource("/Imagenes/Sprites/Aliados/Dr Strange/tienda.png")));
-		contentPane.add(btnStrange);
-
-		btnThor = new JButton();
-		btnThor.setBackground(Color.LIGHT_GRAY);
-		btnThor.setOpaque(true);
-		btnThor.setBounds(440, 1, 73, 81);
-		btnThor.setIcon(new ImageIcon(GUI.class.getResource("/Imagenes/Sprites/Aliados/Thor/estatico.png")));
-		contentPane.add(btnThor);
-
 		fondo = new JLabel(imagen);
 
-		fondo.setBounds(0, 31, ANCHO, ALTO);
-
-		fondo.setBounds(0, 70, 950, 583);
+		fondo.setBounds(-10, 31, ANCHO, ALTO);
 
 		getContentPane().add(fondo);
-
-		fondoTienda = new JLabel(tienda);
-
-		fondoTienda.setBounds(-19, 1, 703, 98);
-		getContentPane().add(fondoTienda);
 
 	}
 
