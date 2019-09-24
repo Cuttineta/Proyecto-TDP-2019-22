@@ -1,8 +1,11 @@
 package Mapa;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -13,9 +16,11 @@ public class Tienda extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 
+	private int monedas, puntaje;
 	private ImageIcon imgTienda = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/metal.png"));
-	private JButton btnIronMan, btnHawkeye, btnCapAmerica, btnHulk, btnThor, btnStrange;
+	private JButton btnIronMan, btnHawkeye, btnCapAmerica, btnHulk, btnThor, btnStrange, btnSalir, btnPausa;
 	private GUI g;
+	private JLabel lblMonedas;
 
 	public Tienda(GUI graf) {
 		this.g = graf;
@@ -74,5 +79,28 @@ public class Tienda extends JPanel {
 		btnThor.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Thor/estatico.png")));
 		g.getContentPane().add(btnThor);
 
+		btnPausa = new JButton("Pausa");
+		btnPausa.setBounds(804, 1, 89, 23);
+		g.getContentPane().add(btnPausa);
+
+		btnSalir = new JButton("Salir");
+		btnSalir.setBounds(804, 34, 89, 23);
+		g.getContentPane().add(btnSalir);
+
+		btnSalir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+
+		JLabel lblPuntaje = new JLabel("PUNTAJE:");
+		lblPuntaje.setFont(new Font("Tahoma", Font.ITALIC, 12));
+		lblPuntaje.setBounds(674, 1, 57, 28);
+		g.getContentPane().add(lblPuntaje);
+
+		lblMonedas = new JLabel("MONEDAS: ");
+		lblMonedas.setFont(new Font("Tahoma", Font.ITALIC, 12));
+		lblMonedas.setBounds(674, 31, 73, 27);
+		g.getContentPane().add(lblMonedas);
 	}
 }

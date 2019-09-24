@@ -19,8 +19,6 @@ public class GUI extends JFrame implements Runnable {
 	private JLabel fondo;
 	private JPanel contentPane;
 	private static Thread thread;
-	private JButton btnSalir;
-	private JLabel lblMonedas;
 
 	public GUI() {
 		getContentPane().setLayout(null);
@@ -46,30 +44,6 @@ public class GUI extends JFrame implements Runnable {
 	private void agregarDibujo() {
 
 		ImageIcon imagen = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/asfalto2.png"));
-
-		JButton btnPausa = new JButton("Pausa");
-		btnPausa.setBounds(804, 1, 89, 23);
-		contentPane.add(btnPausa);
-
-		btnSalir = new JButton("Salir");
-		btnSalir.setBounds(804, 34, 89, 23);
-		contentPane.add(btnSalir);
-
-		btnSalir.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				System.exit(0);
-			}
-		});
-
-		JLabel lblPuntaje = new JLabel("PUNTAJE:");
-		lblPuntaje.setFont(new Font("Tahoma", Font.ITALIC, 12));
-		lblPuntaje.setBounds(674, 1, 57, 28);
-		contentPane.add(lblPuntaje);
-
-		lblMonedas = new JLabel("MONEDAS: ");
-		lblMonedas.setFont(new Font("Tahoma", Font.ITALIC, 12));
-		lblMonedas.setBounds(674, 31, 73, 27);
-		contentPane.add(lblMonedas);
 
 		fondo = new JLabel(imagen);
 
