@@ -16,5 +16,22 @@ public class Celda {
 		this.columna = columna;
 		misEntidades = new Entidad[6];
 	}
+	
+	public int getFila() {
+		return fila;
+	}
+
+	public int getColumna() {
+		return columna;
+	}
+
+	public JLabel getGrafico() {
+		return grafico;
+	}
+
+	public Mapa getMiMapa() {
+		return miMapa;
+	}
+	
 
 }
