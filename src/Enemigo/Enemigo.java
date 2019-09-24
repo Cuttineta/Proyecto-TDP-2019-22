@@ -5,8 +5,8 @@ import Mapa.Celda;
 
 public abstract class Enemigo extends Personaje {
 
-	private int puntos, monedas, velocidad;
-	private boolean atacando;
+	protected int puntos, monedas, velocidad;
+	protected boolean atacando;
 
 	public Enemigo(Celda c) {
 		super(c);
