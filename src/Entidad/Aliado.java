@@ -4,7 +4,6 @@ import Mapa.Celda;
 
 public abstract class Aliado extends Personaje {
 
-	protected static final int MAX_VIDA = 100;
 	protected boolean esperando;
 
 	public Aliado(Celda c) {
