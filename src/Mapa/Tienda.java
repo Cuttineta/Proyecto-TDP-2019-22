@@ -70,14 +70,18 @@ public class Tienda extends JPanel {
 		btnCapAmerica.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
+
 				j.getGUI().getContentPane().addMouseListener(new MouseAdapter() {
+
 					public void MouseClicked(MouseEvent e) {
 						int ejeX = e.getX();
 						int ejeY = e.getY();
 						Celda cel = new Celda((ejeX / 92) * 92, (ejeY / 92) * 92, j.getMapa());
 						Personaje a = f.crearCapAmerica(cel);
-
+						cel.agregarEntidad(a);
+						cel.setEstado(true);
 					}
+
 				});
 			}
 		});
