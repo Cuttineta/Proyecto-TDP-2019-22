@@ -1,7 +1,5 @@
 package Entidad;
 
-import javax.swing.ImageIcon;
-
 import Mapa.Celda;
 
 public abstract class Personaje extends Entidad {

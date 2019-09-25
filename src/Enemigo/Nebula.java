@@ -3,7 +3,7 @@ package Enemigo;
 import Mapa.Celda;
 
 public class Nebula extends Enemigo {
-	
+
 	private static final int ALCANCE = 1, IMPACTO = 20;
 
 	public Nebula(Celda c) {
@@ -11,6 +11,9 @@ public class Nebula extends Enemigo {
 		alcance = ALCANCE;
 		impacto = IMPACTO;
 		atacando = false;
+		puntos = 100;
+		monedas = 75;
+
 	}
 
 	@Override
@@ -52,6 +55,5 @@ public class Nebula extends Enemigo {
 	public int getValor() {
 		return valor;
 	}
-	
 
 }

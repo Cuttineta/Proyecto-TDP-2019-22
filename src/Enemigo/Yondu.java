@@ -11,6 +11,9 @@ public class Yondu extends Enemigo {
 		alcance = ALCANCE;
 		impacto = IMPACTO;
 		atacando = false;
+		puntos = 100;
+		monedas=50;
+
 	}
 
 	@Override

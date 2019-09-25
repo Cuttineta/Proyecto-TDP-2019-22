@@ -3,7 +3,7 @@ package Enemigo;
 import Mapa.Celda;
 
 public class Ultron extends Enemigo {
-	
+
 	private static final int ALCANCE = 1, IMPACTO = 20;
 
 	public Ultron(Celda c) {
@@ -11,6 +11,8 @@ public class Ultron extends Enemigo {
 		alcance = ALCANCE;
 		impacto = IMPACTO;
 		atacando = false;
+		puntos = 125;
+		monedas = 100;
 	}
 
 	@Override
@@ -52,6 +54,5 @@ public class Ultron extends Enemigo {
 	public int getValor() {
 		return valor;
 	}
-	
 
 }

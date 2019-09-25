@@ -3,7 +3,7 @@ package Enemigo;
 import Mapa.Celda;
 
 public class Thanos extends Enemigo {
-	
+
 	private static final int ALCANCE = 1, IMPACTO = 20;
 
 	public Thanos(Celda c) {
@@ -11,6 +11,8 @@ public class Thanos extends Enemigo {
 		alcance = ALCANCE;
 		impacto = IMPACTO;
 		atacando = false;
+		puntos = 150;
+		monedas = 100;
 	}
 
 	@Override
@@ -52,6 +54,5 @@ public class Thanos extends Enemigo {
 	public int getValor() {
 		return valor;
 	}
-	
 
 }

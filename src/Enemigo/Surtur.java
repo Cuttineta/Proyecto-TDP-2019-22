@@ -3,7 +3,7 @@ package Enemigo;
 import Mapa.Celda;
 
 public class Surtur extends Enemigo {
-	
+
 	private static final int ALCANCE = 1, IMPACTO = 20;
 
 	public Surtur(Celda c) {
@@ -11,6 +11,8 @@ public class Surtur extends Enemigo {
 		alcance = ALCANCE;
 		impacto = IMPACTO;
 		atacando = false;
+		puntos = 100;
+		monedas = 75;
 	}
 
 	@Override
@@ -52,6 +54,5 @@ public class Surtur extends Enemigo {
 	public int getValor() {
 		return valor;
 	}
-	
 
 }
