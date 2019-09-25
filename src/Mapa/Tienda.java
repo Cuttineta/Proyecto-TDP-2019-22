@@ -9,8 +9,6 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import Entidad.Aliado;
-import Entidad.Cap_America;
 import Entidad.Personaje;
 import Herramientas.FabricaAbstracta;
 import Herramientas.FabricaConcreta;
@@ -86,10 +84,10 @@ public class Tienda extends JPanel {
 						Personaje a = f.crearCapAmerica(cel);
 						imgCap.setIcon(a.getImage().getIcon());
 						cel.agregarAliado(a);
-						System.out.println(cel.ocupado);
 						imgCap.setBounds(ejeX + 46, ejeY, 50, 70);
 						j.getGUI().getContentPane().add(imgCap);
 					}
+
 				});
 			}
 		});

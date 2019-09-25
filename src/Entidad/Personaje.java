@@ -11,11 +11,25 @@ public abstract class Personaje extends Entidad {
 		super(c);
 	}
 
+	/*
+	 * Retorna la vida del personaje
+	 */
 	public abstract int getVida();
 
+	/*
+	 * Retorna la fuerza de impacto del personaje
+	 */
+
 	public abstract int getImpacto();
+	/*
+	 * Retorna el alcance que tiene el personaje
+	 */
 
 	public abstract int getAlcance();
+
+	/*
+	 * Retorna el valor que tiene el personaje en la tienda
+	 */
 
 	public abstract int getValor();
 }

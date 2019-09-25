@@ -17,26 +17,26 @@ public class Hulk extends Aliado {
 		impacto = IMPACTO;
 		img.setIcon(i);
 	}
-
+	@Override
 	public int getVida() {
 		return vida;
 	}
-
+	@Override
 	public int getImpacto() {
 
 		return impacto;
 	}
-
+	@Override
 	public int getAlcance() {
 
 		return alcance;
 	}
-
+	@Override
 	public int getValor() {
 
 		return valor;
 	}
-
+	@Override
 	public boolean enEspera() {
 		return esperando;
 	}
