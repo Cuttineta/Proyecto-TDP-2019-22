@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 import Entidad.Aliado;
 import Entidad.Cap_America;
 import Entidad.Personaje;
-import Herramientas.FabricaAliadosConcreta;
+import Herramientas.FabricaAbstracta;
 
 public class Tienda extends JPanel {
 
@@ -24,7 +24,7 @@ public class Tienda extends JPanel {
 	private JButton btnIronMan, btnHawkeye, btnCapAmerica, btnHulk, btnThor, btnStrange, btnSalir, btnPausa;
 	private GUI g;
 	private JLabel lblMonedas, lblPuntaje, totalPuntaje, totalMonedas;
-	private FabricaAliadosConcreta f;
+	private FabricaAbstracta f;
 
 	public Tienda(GUI graf) {
 		j = graf.j;
@@ -81,15 +81,13 @@ public class Tienda extends JPanel {
 						int ejeY = (int) ((e.getY() - 102) / 93.1667);
 						System.out.println("X:" + ejeX + " - Y:" + ejeY);
 						Celda cel = j.getMapa().getCelda(ejeX, ejeY);
-						Aliado a = f.crearCapAmerica(cel);
+						//System.out.println(cel);
+						Personaje a = f.crearCapAmerica(cel);
 						imgCap.setIcon(a.getImage().getIcon());
 						cel.agregarAliado(a);
 						cel.setEstado(true);
-
 						imgCap.setBounds(ejeX + 46, ejeY, 50, 70);
-
 						j.getGUI().getContentPane().add(imgCap);
-
 					}
 				});
 			}
