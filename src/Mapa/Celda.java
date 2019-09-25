@@ -37,18 +37,25 @@ public class Celda {
 		return miMapa;
 	}
 
-	public void agregarEntidad(Entidad e) {
+	public void agregarAliado(Entidad e) {
+		if (!ocupado) {
+			misEntidades[size] = e;
+			ocupado = true;
+			size++;
+		}
+	}
+
+	public void agregarEnemigo(Entidad e) {
 		if (!ocupado) {
 			misEntidades[size] = e;
 			size++;
 		}
-		if (size == misEntidades.length) {
+		if(size==misEntidades.length) {
 			ocupado = true;
 		}
 	}
-
 	/*
-	 * Elimina la primer entidad que se agregó a la celda
+	 * Elimina la primer entidad que se agregï¿½ a la celda
 	 */
 	public void quitarEntidad() {
 		if (size > 0) {
