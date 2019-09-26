@@ -1,5 +1,6 @@
 package Mapa;
 
+import Splash_Screen.*;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -29,6 +30,9 @@ public class GUI extends JFrame implements Runnable {
 	}
 
 	public static final void main(String args[]) {
+		Generador_Splash sp = new Generador_Splash();
+		sp.cargarSplash();
+
 		GUI gui = new GUI();
 		gui.setVisible(true);
 		gui.setResizable(false);
