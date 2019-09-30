@@ -1,10 +1,11 @@
-package Mapa;
+package Game;
 
 import Splash_Screen.*;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JButton;
 
 public class GUI extends JFrame implements Runnable {
 
@@ -30,8 +31,10 @@ public class GUI extends JFrame implements Runnable {
 	}
 
 	public static final void main(String args[]) {
-		Generador_Splash sp = new Generador_Splash();
-		sp.cargarSplash();
+		/*
+		 * Generador_Splash sp = new Generador_Splash(); //Splash screen
+		 * sp.cargarSplash();
+		 */
 
 		GUI gui = new GUI();
 		gui.setVisible(true);
@@ -49,6 +52,11 @@ public class GUI extends JFrame implements Runnable {
 		fondo.setBounds(-10, 31, ANCHO, ALTO);
 
 		getContentPane().add(fondo);
+
+		/*
+		 * JButton btnNewButton = new JButton("M"); btnNewButton.setBounds(866, 75, 31,
+		 * 23); contentPane.add(btnNewButton);
+		 */
 
 	}
 
@@ -73,5 +81,4 @@ public class GUI extends JFrame implements Runnable {
 	@Override
 	public void run() {
 	}
-
 }

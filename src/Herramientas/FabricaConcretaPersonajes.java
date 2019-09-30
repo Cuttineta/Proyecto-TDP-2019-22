@@ -1,10 +1,10 @@
 package Herramientas;
 
 import Entidad.*;
+import Game.Celda;
 import Enemigo.*;
-import Mapa.Celda;
 
-public class FabricaConcreta implements FabricaAbstracta{
+public class FabricaConcretaPersonajes implements FabricaAbstractaPersonajes{
 
 	@Override
 	public Personaje crearIronMan(Celda c) {

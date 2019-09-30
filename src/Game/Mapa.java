@@ -1,15 +1,18 @@
-package Mapa;
+package Game;
 
 public class Mapa {
 
 	protected Celda[][] matriz;
-	protected Juego juego;
+//	protected Juego juego;
+	protected int filas, columnas;
 
 	public Mapa(Juego juego) {
-		this.juego = juego;
+		// this.juego = juego;
 		matriz = new Celda[6][10];
-		for (int i = 0; i < matriz.length; i++)
-			for (int j = 0; j < matriz[0].length; j++)
+		filas = 6;
+		columnas = 10;
+		for (int i = 0; i < columnas; i++)
+			for (int j = 0; j < filas; j++)
 				matriz[i][j] = new Celda(i, j, this);
 	}
 
@@ -20,14 +23,12 @@ public class Mapa {
 		return toRet;
 	}
 
-	public void setCelda(int f, int c, Celda c1) {
-
-		if (f >= 0 && f < matriz.length && c >= 0 && c < matriz[0].length)
-			matriz[f][c] = c1;
-
+	public int getFilas() {
+		return filas;
 	}
 
-	public Juego getJuego() {
-		return juego;
+	public int getColumnas() {
+		return columnas;
 	}
+
 }

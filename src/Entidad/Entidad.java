@@ -2,7 +2,7 @@ package Entidad;
 
 import javax.swing.JLabel;
 
-import Mapa.Celda;
+import Game.Celda;
 
 public abstract class Entidad {
 

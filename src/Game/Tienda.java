@@ -1,4 +1,4 @@
-package Mapa;
+package Game;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -10,20 +10,19 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import Entidad.Personaje;
-import Herramientas.FabricaAbstracta;
-import Herramientas.FabricaConcreta;
+import Herramientas.FabricaAbstractaPersonajes;
+import Herramientas.FabricaConcretaPersonajes;
 
 public class Tienda extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 
 	private Juego j;
-	private int monedas, puntaje;
 	private ImageIcon imgTienda = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/metal.png"));
 	private JButton btnIronMan, btnHawkeye, btnCapAmerica, btnHulk, btnThor, btnStrange, btnSalir, btnPausa;
 	private GUI g;
 	private JLabel lblMonedas, lblPuntaje, totalPuntaje, totalMonedas;
-	private FabricaAbstracta f;
+	private FabricaAbstractaPersonajes f;
 
 	public Tienda(GUI graf) {
 		j = graf.j;
@@ -32,7 +31,7 @@ public class Tienda extends JPanel {
 		agregarBotones();
 		fondoTienda.setBounds(-30, 1, 703, 98);
 		g.getContentPane().add(fondoTienda);
-		f = new FabricaConcreta();
+		f = new FabricaConcretaPersonajes();
 
 	}
 
@@ -60,7 +59,10 @@ public class Tienda extends JPanel {
 		btnHulk.setBounds(175, 10, 73, 81);
 		btnHulk.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Hulk/h estatico.png")));
 		g.getContentPane().add(btnHulk);
-
+		
+		
+		//btnCapAmerica = boton.crearBoton();
+		
 		btnCapAmerica = new JButton();
 		btnCapAmerica.setOpaque(true);
 		btnCapAmerica.setBounds(260, 10, 73, 81);
@@ -83,7 +85,7 @@ public class Tienda extends JPanel {
 						Celda cel = j.getMapa().getCelda(ejeX, ejeY);
 						Personaje a = f.crearCapAmerica(cel);
 						imgCap.setIcon(a.getImage().getIcon());
-						cel.agregarAliado(a);
+						// cel.agregarAliado(a);
 						imgCap.setBounds(ejeX + 46, ejeY, 50, 70);
 						j.getGUI().getContentPane().add(imgCap);
 					}

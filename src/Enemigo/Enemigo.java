@@ -1,7 +1,7 @@
 package Enemigo;
 
 import Entidad.Personaje;
-import Mapa.Celda;
+import Game.Celda;
 
 public abstract class Enemigo extends Personaje {
 

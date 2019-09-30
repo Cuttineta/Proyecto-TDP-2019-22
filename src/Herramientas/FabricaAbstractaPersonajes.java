@@ -1,9 +1,9 @@
 package Herramientas;
 
 import Entidad.Personaje;
-import Mapa.Celda;
+import Game.Celda;
 
-public interface FabricaAbstracta {
+public interface FabricaAbstractaPersonajes {
 	
 	// Aliados
 		Personaje crearIronMan(Celda c);

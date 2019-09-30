@@ -1,6 +1,6 @@
 package Entidad;
 
-import Mapa.Celda;
+import Game.Celda;
 
 public abstract class Personaje extends Entidad {
 

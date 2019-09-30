@@ -1,6 +1,6 @@
 package Enemigo;
 
-import Mapa.Celda;
+import Game.Celda;
 
 public class Thanos extends Enemigo {
 
