@@ -8,8 +8,8 @@ import Entidad.Personaje;
 public class FabricaConcretaHulk extends FabricaConcretaPersonajes {
 
 	@Override
-	public Personaje crearPersonaje(Point p) {
-		return new Hulk(p);
+	public Personaje crearPersonaje(int x,int y) {
+		return new Hulk(x,y);
 	}
 
 }
