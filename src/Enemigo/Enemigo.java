@@ -1,7 +1,5 @@
 package Enemigo;
 
-import java.awt.Point;
-
 import Entidad.Personaje;
 
 public abstract class Enemigo extends Personaje {
@@ -9,8 +7,8 @@ public abstract class Enemigo extends Personaje {
 	protected int puntos, monedas, velocidad;
 	protected boolean atacando;
 
-	public Enemigo(Point p) {
-		super(p);
+	public Enemigo(int x, int y) {
+		super(x,y);
 	}
 
 	/*

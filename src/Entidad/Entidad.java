@@ -7,32 +7,27 @@ import javax.swing.JLabel;
 public abstract class Entidad {
 
 	protected JLabel img;
-	protected Point pos;
+	protected int fila;
+	protected int col;
 
 	/*
 	 * Crea una nueva entidad ubicada en la pos
 	 * 
 	 * @param p point en donde va a estar posicionada la entidad
 	 */
-	public Entidad(Point p) {
-		pos = p;
+	public Entidad(int x,int y) {
+		fila = x;
+		col = y;
+		
 		img = new JLabel();
 
-	}
-
-	/*
-	 * Devuelve el Point en la que esta situada la entidad
-	 */
-
-	public Point getPos() {
-		return pos;
 	}
 	
 	/*
 	 * Devuelve la fila en la que esta situada la entidad
 	 */
 	public double getFila() {
-		return pos.getY();
+		return fila;
 	}
 	
 	
@@ -40,7 +35,7 @@ public abstract class Entidad {
 	 * Devuelve la columna en la que esta situada la entidad
 	 */
 	public double getColumna() {
-		return pos.getX();
+		return col;
 	}
 
 	/*
@@ -59,8 +54,8 @@ public abstract class Entidad {
 			img.setIcon(null);
 			img = null;
 		}
-		if (pos != null) {
+		/*if (pos != null) {
 
-		}
+		}*/
 	}
 }

@@ -1,13 +1,12 @@
 package Enemigo;
 
-import java.awt.Point;
 
 public class Nebula extends Enemigo {
 
 	private static final int ALCANCE = 1, IMPACTO = 20;
 
-	public Nebula(Point p) {
-		super(p);
+	public Nebula(int x, int y) {
+		super(x,y);
 		alcance = ALCANCE;
 		impacto = IMPACTO;
 		atacando = false;

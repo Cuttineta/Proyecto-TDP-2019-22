@@ -1,7 +1,5 @@
 package Aliado;
 
-import java.awt.Point;
-
 import javax.swing.ImageIcon;
 
 public class Cap_America extends Aliado {
@@ -9,8 +7,8 @@ public class Cap_America extends Aliado {
 	private static final int ALCANCE = 1, IMPACTO = 20;
 	private ImageIcon i = new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Cap America/estatico.png"));
 
-	public Cap_America(Point p) {
-		super(p);
+	public Cap_America(int x, int y) {
+		super(x,y);
 		vida = MAX_VIDA;
 		alcance = ALCANCE;
 		impacto = IMPACTO;

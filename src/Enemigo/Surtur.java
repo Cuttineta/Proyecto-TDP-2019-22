@@ -1,13 +1,12 @@
 package Enemigo;
 
-import java.awt.Point;
 
 public class Surtur extends Enemigo {
 
 	private static final int ALCANCE = 1, IMPACTO = 20;
 
-	public Surtur(Point p) {
-		super(p);
+	public Surtur(int x, int y) {
+		super(x,y);
 		alcance = ALCANCE;
 		impacto = IMPACTO;
 		atacando = false;

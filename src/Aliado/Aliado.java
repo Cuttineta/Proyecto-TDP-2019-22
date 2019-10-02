@@ -9,8 +9,8 @@ public abstract class Aliado extends Personaje {
 	protected boolean esperando;
 	protected int precio;
 
-	public Aliado(Point p) {
-		super(p);
+	public Aliado(int x, int y) {
+		super(x,y);
 		vida = MAX_VIDA;
 		esperando = true;
 	}
