@@ -88,7 +88,7 @@ public class Tienda extends JPanel {
 						Celda cel = j.getMapa().getCelda(ejeX, ejeY);
 						Personaje a = f.crearPersonaje(cel);
 						imgCap.setIcon(a.getImage().getIcon());
-						// cel.agregarAliado(a);
+						//cel.agregarAliado(a);
 						imgCap.setBounds(ejeX + 46, ejeY, 50, 70);
 						j.getGUI().getContentPane().add(imgCap);
 					}
