@@ -15,7 +15,7 @@ public class Generador_Splash {
 
 		for (int i = 0; i <= 100; i++) {
 			try {
-				Thread.sleep(60);
+				Thread.sleep(15);
 				if (i > 0 && i < 20)
 					ventana.textfield.setText("Cargando archivos");
 				if (i > 20 && i < 40)

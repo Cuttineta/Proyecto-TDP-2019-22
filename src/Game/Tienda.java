@@ -11,7 +11,6 @@ import javax.swing.JPanel;
 
 import Entidad.Personaje;
 import Factory.FabricaAbstractaPersonajes;
-import Factory.FabricaConcretaPersonajes;
 
 public class Tienda extends JPanel {
 
@@ -21,6 +20,7 @@ public class Tienda extends JPanel {
 	private ImageIcon imgTienda = new ImageIcon(this.getClass().getResource("/Imagenes/Fondo/metal.png"));
 	private JButton btnIronMan, btnHawkeye, btnCapAmerica, btnHulk, btnThor, btnStrange, btnSalir, btnPausa;
 	private GUI g;
+	private Personaje toAdd;
 	private JLabel lblMonedas, lblPuntaje, totalPuntaje, totalMonedas;
 	private FabricaAbstractaPersonajes f;
 

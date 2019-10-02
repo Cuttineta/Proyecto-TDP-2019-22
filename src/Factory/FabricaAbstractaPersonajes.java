@@ -4,7 +4,7 @@ import java.awt.Point;
 
 import Entidad.Personaje;
 
-public interface FabricaAbstractaPersonajes {
+public interface FabricaAbstractaPersonajes{
 	
-		Personaje crearPersonaje(Point ps);
+		Personaje crearPersonaje(Point p);
 }
