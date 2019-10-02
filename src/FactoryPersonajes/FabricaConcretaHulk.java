@@ -5,7 +5,7 @@ import java.awt.Point;
 import Aliado.Hulk;
 import Entidad.Personaje;
 
-public class FabricaConcretaHulk extends FabricaConcretaPersonajes {
+public class FabricaConcretaHulk implements FabricaAbstractaPersonajes {
 
 	@Override
 	public Personaje crearPersonaje(int x,int y) {

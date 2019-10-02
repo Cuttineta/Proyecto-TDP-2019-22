@@ -3,7 +3,7 @@ package FactoryPersonajes;
 import Aliado.Hawkeye;
 import Entidad.Personaje;
 
-public class FabricaConcretaHawkeye extends FabricaConcretaPersonajes {
+public class FabricaConcretaHawkeye implements FabricaAbstractaPersonajes {
 
 	@Override
 	public Personaje crearPersonaje(int x,int y) {

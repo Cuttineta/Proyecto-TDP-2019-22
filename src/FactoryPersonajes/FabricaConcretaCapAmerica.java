@@ -3,7 +3,7 @@ package FactoryPersonajes;
 import Aliado.Cap_America;
 import Entidad.Personaje;
 
-public class FabricaConcretaCapAmerica extends FabricaConcretaPersonajes {
+public class FabricaConcretaCapAmerica implements FabricaAbstractaPersonajes {
 
 	@Override
 	public Personaje crearPersonaje(int x,int y) {
