@@ -1,6 +1,5 @@
 package Aliado;
 
-import java.awt.Point;
 import javax.swing.ImageIcon;
 
 public class Thor extends Aliado {
@@ -8,8 +7,8 @@ public class Thor extends Aliado {
 	private static final int ALCANCE = 1, IMPACTO = 20;
 	private ImageIcon i = new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Thor/estatico.png"));
 
-	public Thor(Point p) {
-		super(p);
+	public Thor(int x, int y) {
+		super(x,y);
 		vida = MAX_VIDA;
 		alcance = ALCANCE;
 		impacto = IMPACTO;

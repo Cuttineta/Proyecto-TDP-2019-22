@@ -1,8 +1,8 @@
-package Factory;
+package FactoryPersonajes;
 
 import Entidad.Personaje;
 
 public interface FabricaAbstractaPersonajes{
 	
-		Personaje crearPersonaje(int x,int y);
+	public Personaje crearPersonaje(int x,int y);
 }

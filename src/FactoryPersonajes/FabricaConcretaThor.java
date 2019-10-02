@@ -1,4 +1,4 @@
-package Factory;
+package FactoryPersonajes;
 
 import Aliado.Thor;
 import Entidad.Personaje;

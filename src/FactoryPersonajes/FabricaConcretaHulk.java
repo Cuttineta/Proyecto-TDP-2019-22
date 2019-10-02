@@ -1,4 +1,4 @@
-package Factory;
+package FactoryPersonajes;
 
 import java.awt.Point;
 

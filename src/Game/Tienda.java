@@ -10,7 +10,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import Entidad.Personaje;
-import Factory.FabricaAbstractaPersonajes;
+import FactoryPersonajes.FabricaAbstractaPersonajes;
 
 public class Tienda extends JPanel {
 

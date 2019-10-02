@@ -1,13 +1,11 @@
 package Enemigo;
 
-import java.awt.Point;
-
 public class UltronSentry extends Enemigo {
 
 	private static final int ALCANCE = 1, IMPACTO = 20;
 
-	public UltronSentry(Point p) {
-		super(p);
+	public UltronSentry(int x, int y) {
+		super(x,y);
 		alcance = ALCANCE;
 		impacto = IMPACTO;
 		atacando = false;

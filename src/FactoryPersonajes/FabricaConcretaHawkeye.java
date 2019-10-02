@@ -1,4 +1,4 @@
-package Factory;
+package FactoryPersonajes;
 
 import Aliado.Hawkeye;
 import Entidad.Personaje;
