@@ -1,7 +1,5 @@
 package Aliado;
 
-import java.awt.Point;
-
 import javax.swing.ImageIcon;
 
 public class Hulk extends Aliado {
@@ -9,8 +7,8 @@ public class Hulk extends Aliado {
 	private static final int ALCANCE = 1, IMPACTO = 20;
 	private ImageIcon i = new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Hulk/h estatico.png"));
 
-	public Hulk(Point p) {
-		super(p);
+	public Hulk(int x, int y) {
+		super(x,y);
 		vida = MAX_VIDA;
 		alcance = ALCANCE;
 		impacto = IMPACTO;

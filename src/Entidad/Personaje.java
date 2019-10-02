@@ -1,14 +1,13 @@
 package Entidad;
 
-import java.awt.Point;
 
 public abstract class Personaje extends Entidad {
 
 	protected static final int MAX_VIDA = 100;
 	protected int vida, impacto, alcance;
 
-	public Personaje(Point p) {
-		super(p);
+	public Personaje(int x, int y) {
+		super(x,y);
 	}
 
 	/*

@@ -1,13 +1,11 @@
 package Enemigo;
 
-import java.awt.Point;
-
 public class Thanos extends Enemigo {
 
 	private static final int ALCANCE = 1, IMPACTO = 20;
 
-	public Thanos(Point p) {
-		super(p);
+	public Thanos(int x, int y) {
+		super(x,y);
 		alcance = ALCANCE;
 		impacto = IMPACTO;
 		atacando = false;
