@@ -9,8 +9,8 @@ import Entidad.Personaje;
 public class FabricaConcretaDrStrange implements FabricaAbstractaPersonajes {
 
 	@Override
-	public Personaje crearPersonaje(Point p) {
-		return new DrStrange(p);
+	public Personaje crearPersonaje(int x,int y) {
+		return new DrStrange(x,y);
 	}
 
 }
