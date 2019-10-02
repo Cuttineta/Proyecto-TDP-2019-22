@@ -31,10 +31,9 @@ public class GUI extends JFrame implements Runnable {
 	}
 
 	public static final void main(String args[]) {
-		/*
-		 * Generador_Splash sp = new Generador_Splash(); //Splash screen
-		 * sp.cargarSplash();
-		 */
+
+		Generador_Splash sp = new Generador_Splash(); // Splash screen
+		sp.cargarSplash();
 
 		GUI gui = new GUI();
 		gui.setVisible(true);

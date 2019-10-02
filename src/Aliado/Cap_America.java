@@ -1,23 +1,21 @@
-package Entidad;
+package Aliado;
+
+import java.awt.Point;
 
 import javax.swing.ImageIcon;
-import javax.swing.JLabel;
 
-import Game.Celda;
-
-public class DrStrange extends Aliado {
+public class Cap_America extends Aliado {
 
 	private static final int ALCANCE = 1, IMPACTO = 20;
+	private ImageIcon i = new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Cap America/estatico.png"));
 
-	private ImageIcon i = new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Dr Strange/tienda.png"));
-
-	public DrStrange(Celda c) {
-		super(c);
+	public Cap_America(Point p) {
+		super(p);
 		vida = MAX_VIDA;
 		alcance = ALCANCE;
 		impacto = IMPACTO;
+		precio = 50;
 		img.setIcon(i);
-
 	}
 
 	@Override
@@ -38,9 +36,9 @@ public class DrStrange extends Aliado {
 	}
 
 	@Override
-	public int getValor() {
+	public int getPrecio() {
 
-		return valor;
+		return precio;
 	}
 
 	@Override

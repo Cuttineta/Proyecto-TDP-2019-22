@@ -1,13 +1,13 @@
 package Enemigo;
 
-import Game.Celda;
+import java.awt.Point;
 
 public class Yondu extends Enemigo {
 	
 	private static final int ALCANCE = 1, IMPACTO = 20;
 
-	public Yondu(Celda c) {
-		super(c);
+	public Yondu(Point p) {
+		super(p);
 		alcance = ALCANCE;
 		impacto = IMPACTO;
 		atacando = false;
@@ -50,11 +50,5 @@ public class Yondu extends Enemigo {
 	public int getAlcance() {
 		return alcance;
 	}
-
-	@Override
-	public int getValor() {
-		return valor;
-	}
-	
 
 }

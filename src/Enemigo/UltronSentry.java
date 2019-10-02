@@ -1,13 +1,13 @@
 package Enemigo;
 
-import Game.Celda;
+import java.awt.Point;
 
 public class UltronSentry extends Enemigo {
 
 	private static final int ALCANCE = 1, IMPACTO = 20;
 
-	public UltronSentry(Celda c) {
-		super(c);
+	public UltronSentry(Point p) {
+		super(p);
 		alcance = ALCANCE;
 		impacto = IMPACTO;
 		atacando = false;
@@ -48,11 +48,6 @@ public class UltronSentry extends Enemigo {
 	@Override
 	public int getAlcance() {
 		return alcance;
-	}
-
-	@Override
-	public int getValor() {
-		return valor;
 	}
 
 }

@@ -1,13 +1,13 @@
 package Enemigo;
 
-import Game.Celda;
+import java.awt.Point;
 
 public class Surtur extends Enemigo {
 
 	private static final int ALCANCE = 1, IMPACTO = 20;
 
-	public Surtur(Celda c) {
-		super(c);
+	public Surtur(Point p) {
+		super(p);
 		alcance = ALCANCE;
 		impacto = IMPACTO;
 		atacando = false;
@@ -48,11 +48,6 @@ public class Surtur extends Enemigo {
 	@Override
 	public int getAlcance() {
 		return alcance;
-	}
-
-	@Override
-	public int getValor() {
-		return valor;
 	}
 
 }

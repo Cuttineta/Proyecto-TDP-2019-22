@@ -1,13 +1,13 @@
 package Enemigo;
 
-import Game.Celda;
+import java.awt.Point;
 
 public class Thanos extends Enemigo {
 
 	private static final int ALCANCE = 1, IMPACTO = 20;
 
-	public Thanos(Celda c) {
-		super(c);
+	public Thanos(Point p) {
+		super(p);
 		alcance = ALCANCE;
 		impacto = IMPACTO;
 		atacando = false;
@@ -49,10 +49,4 @@ public class Thanos extends Enemigo {
 	public int getAlcance() {
 		return alcance;
 	}
-
-	@Override
-	public int getValor() {
-		return valor;
-	}
-
 }

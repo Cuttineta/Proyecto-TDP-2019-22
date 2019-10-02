@@ -1,15 +1,16 @@
 package Enemigo;
 
+import java.awt.Point;
+
 import Entidad.Personaje;
-import Game.Celda;
 
 public abstract class Enemigo extends Personaje {
 
 	protected int puntos, monedas, velocidad;
 	protected boolean atacando;
 
-	public Enemigo(Celda c) {
-		super(c);
+	public Enemigo(Point p) {
+		super(p);
 	}
 
 	/*

@@ -31,7 +31,7 @@ public class Tienda extends JPanel {
 		agregarBotones();
 		fondoTienda.setBounds(-30, 1, 703, 98);
 		g.getContentPane().add(fondoTienda);
-		f = new FabricaConcretaPersonajes();
+		//f = new FabricaAbstractaPersonajes();
 
 	}
 
@@ -83,7 +83,7 @@ public class Tienda extends JPanel {
 						int ejeY = (int) ((e.getY() - 102) / 93.1667);
 						System.out.println("X:" + ejeX + " - Y:" + ejeY);
 						Celda cel = j.getMapa().getCelda(ejeX, ejeY);
-						Personaje a = f.crearCapAmerica(cel);
+						Personaje a = f.crearPersonaje(cel);
 						imgCap.setIcon(a.getImage().getIcon());
 						// cel.agregarAliado(a);
 						imgCap.setBounds(ejeX + 46, ejeY, 50, 70);

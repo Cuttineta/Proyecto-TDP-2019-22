@@ -1,20 +1,19 @@
-package Entidad;
+package Aliado;
 
+import java.awt.Point;
 import javax.swing.ImageIcon;
-import javax.swing.JLabel;
 
-import Game.Celda;
-
-public class IronMan extends Aliado {
+public class Thor extends Aliado {
 
 	private static final int ALCANCE = 1, IMPACTO = 20;
-	private ImageIcon i = new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/IronMan/estatico.png"));
+	private ImageIcon i = new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Thor/estatico.png"));
 
-	public IronMan(Celda c) {
-		super(c);
+	public Thor(Point p) {
+		super(p);
 		vida = MAX_VIDA;
 		alcance = ALCANCE;
 		impacto = IMPACTO;
+		precio = 50;
 		img.setIcon(i);
 	}
 
@@ -22,25 +21,22 @@ public class IronMan extends Aliado {
 	public int getVida() {
 		return vida;
 	}
-
+	
 	@Override
 	public int getImpacto() {
-
 		return impacto;
 	}
-
+	
 	@Override
 	public int getAlcance() {
-
 		return alcance;
 	}
-
+	
 	@Override
-	public int getValor() {
-
-		return valor;
+	public int getPrecio() {
+		return precio;
 	}
-
+	
 	@Override
 	public boolean enEspera() {
 		return esperando;

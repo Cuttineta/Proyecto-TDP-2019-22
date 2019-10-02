@@ -1,13 +1,16 @@
-package Entidad;
+package Aliado;
 
-import Game.Celda;
+import java.awt.Point;
+
+import Entidad.Personaje;
 
 public abstract class Aliado extends Personaje {
 
 	protected boolean esperando;
+	protected int precio;
 
-	public Aliado(Celda c) {
-		super(c);
+	public Aliado(Point p) {
+		super(p);
 		vida = MAX_VIDA;
 		esperando = true;
 	}
@@ -17,5 +20,7 @@ public abstract class Aliado extends Personaje {
 	 * contrario, comenzara a disparar
 	 */
 	public abstract boolean enEspera();
+	
+	public abstract int getPrecio();
 
 }

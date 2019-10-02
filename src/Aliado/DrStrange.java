@@ -1,20 +1,20 @@
-package Entidad;
+package Aliado;
+
+import java.awt.Point;
 
 import javax.swing.ImageIcon;
-import javax.swing.JLabel;
 
-import Game.Celda;
-
-public class Thor extends Aliado {
+public class DrStrange extends Aliado {
 
 	private static final int ALCANCE = 1, IMPACTO = 20;
-	private ImageIcon i = new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Thor/estatico.png"));
+	private ImageIcon i = new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Dr Strange/tienda.png"));
 
-	public Thor(Celda c) {
-		super(c);
+	public DrStrange(Point p) {
+		super(p);
 		vida = MAX_VIDA;
 		alcance = ALCANCE;
 		impacto = IMPACTO;
+		precio = 50;
 		img.setIcon(i);
 	}
 
@@ -22,21 +22,22 @@ public class Thor extends Aliado {
 	public int getVida() {
 		return vida;
 	}
+
 	@Override
 	public int getImpacto() {
-
 		return impacto;
 	}
+
 	@Override
 	public int getAlcance() {
-
 		return alcance;
 	}
-	@Override
-	public int getValor() {
 
-		return valor;
+	@Override
+	public int getPrecio() {
+		return precio;
 	}
+
 	@Override
 	public boolean enEspera() {
 		return esperando;

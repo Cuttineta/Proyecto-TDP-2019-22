@@ -11,8 +11,8 @@ public class Mapa {
 		matriz = new Celda[6][10];
 		filas = 6;
 		columnas = 10;
-		for (int i = 0; i < columnas; i++)
-			for (int j = 0; j < filas; j++)
+		for (int i = 0; i < matriz.length; i++)
+			for (int j = 0; j < matriz[0].length; j++)
 				matriz[i][j] = new Celda(i, j, this);
 	}
 

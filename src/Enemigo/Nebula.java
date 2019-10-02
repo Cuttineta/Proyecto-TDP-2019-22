@@ -1,19 +1,18 @@
 package Enemigo;
 
-import Game.Celda;
+import java.awt.Point;
 
 public class Nebula extends Enemigo {
 
 	private static final int ALCANCE = 1, IMPACTO = 20;
 
-	public Nebula(Celda c) {
-		super(c);
+	public Nebula(Point p) {
+		super(p);
 		alcance = ALCANCE;
 		impacto = IMPACTO;
 		atacando = false;
 		puntos = 100;
 		monedas = 75;
-
 	}
 
 	@Override
@@ -49,11 +48,6 @@ public class Nebula extends Enemigo {
 	@Override
 	public int getAlcance() {
 		return alcance;
-	}
-
-	@Override
-	public int getValor() {
-		return valor;
 	}
 
 }

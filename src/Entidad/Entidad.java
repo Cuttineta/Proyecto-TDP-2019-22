@@ -1,31 +1,46 @@
 package Entidad;
 
-import javax.swing.JLabel;
+import java.awt.Point;
 
-import Game.Celda;
+import javax.swing.JLabel;
 
 public abstract class Entidad {
 
 	protected JLabel img;
-	protected Celda miCelda;
+	protected Point pos;
 
 	/*
-	 * Crea una nueva entidad ubicada en la celda c
+	 * Crea una nueva entidad ubicada en la pos
 	 * 
-	 * @param c celda en la que va a estar posicionada la entidad
+	 * @param p point en donde va a estar posicionada la entidad
 	 */
-	public Entidad(Celda c) {
-		miCelda = c;
+	public Entidad(Point p) {
+		pos = p;
 		img = new JLabel();
 
 	}
 
 	/*
-	 * Devuelve la celda en la que esta situada la entidad
+	 * Devuelve el Point en la que esta situada la entidad
 	 */
 
-	public Celda getCelda() {
-		return miCelda;
+	public Point getPos() {
+		return pos;
+	}
+	
+	/*
+	 * Devuelve la fila en la que esta situada la entidad
+	 */
+	public double getFila() {
+		return pos.getY();
+	}
+	
+	
+	/*
+	 * Devuelve la columna en la que esta situada la entidad
+	 */
+	public double getColumna() {
+		return pos.getX();
 	}
 
 	/*
@@ -36,14 +51,15 @@ public abstract class Entidad {
 	}
 
 	/*
-	 * 
+	 * TODO corregir la destrucción
+	 * Destruye la entidad
 	 */
 	public void destruir() {
 		if (img != null) {
 			img.setIcon(null);
 			img = null;
 		}
-		if (miCelda != null) {
+		if (pos != null) {
 
 		}
 	}
