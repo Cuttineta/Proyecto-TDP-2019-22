@@ -31,8 +31,12 @@ public class Tienda extends JPanel {
 		agregarBotones();
 		fondoTienda.setBounds(-30, 1, 703, 98);
 		g.getContentPane().add(fondoTienda);
-		//f = new FabricaAbstractaPersonajes();
+		// f = new FabricaAbstractaPersonajes();
 
+	}
+
+	public void setToAdd(Personaje p) {
+		toAdd = p;
 	}
 
 	private void agregarBotones() {
@@ -59,10 +63,9 @@ public class Tienda extends JPanel {
 		btnHulk.setBounds(175, 10, 73, 81);
 		btnHulk.setIcon(new ImageIcon(this.getClass().getResource("/Imagenes/Sprites/Aliados/Hulk/h estatico.png")));
 		g.getContentPane().add(btnHulk);
-		
-		
-		//btnCapAmerica = boton.crearBoton();
-		
+
+		// btnCapAmerica = boton.crearBoton();
+
 		btnCapAmerica = new JButton();
 		btnCapAmerica.setOpaque(true);
 		btnCapAmerica.setBounds(260, 10, 73, 81);
