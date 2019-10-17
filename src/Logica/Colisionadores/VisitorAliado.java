@@ -11,11 +11,11 @@ import Logica.Entidades.Enemigos.Thanos;
 import Logica.Entidades.Obstaculos.Barro;
 import Logica.Entidades.Obstaculos.Piedra;
 
-public class ColisionadorDefensor extends Colisionador{
+public class VisitorAliado extends Visitor{
 
 	private Aliado d;
 	
-	public ColisionadorDefensor(Aliado def) {
+	public VisitorAliado(Aliado def) {
 		d = def;
 	}
 

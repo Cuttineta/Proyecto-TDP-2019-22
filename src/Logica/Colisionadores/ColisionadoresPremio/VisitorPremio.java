@@ -1,6 +1,6 @@
 package Logica.Colisionadores.ColisionadoresPremio;
 
-import Logica.Colisionadores.Colisionador;
+import Logica.Colisionadores.Visitor;
 import Logica.Entidades.Aliados.DrStrange;
 import Logica.Entidades.Aliados.Ironman;
 import Logica.Entidades.Aliados.Hulk;
@@ -11,7 +11,7 @@ import Logica.Entidades.Enemigos.Thanos;
 import Logica.Entidades.Obstaculos.Barro;
 import Logica.Entidades.Obstaculos.Piedra;
 
-public class ColisionadorPremio extends Colisionador{
+public class VisitorPremio extends Visitor{
 
 	@Override
 	public void serChocado(Thanos e) {

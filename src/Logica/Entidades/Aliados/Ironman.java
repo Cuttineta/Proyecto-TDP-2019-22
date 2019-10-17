@@ -1,7 +1,7 @@
 package Logica.Entidades.Aliados;
 
 import Grafica.Entidades.Aliados.IronmanGrafico;
-import Logica.Colisionadores.ColisionadorDefensor;
+import Logica.Colisionadores.VisitorAliado;
 import Logica.Entidades.Entidad;
 import Logica.Entidades.Enemigos.Thanos;
 import Logica.Mapa.Mapa;
@@ -10,7 +10,7 @@ public class Ironman extends Aliado {
 
 	public Ironman(int x, int y, Mapa m) {
 		super(x, y, m);
-		super.col = new ColisionadorDefensor(this);
+		super.col = new VisitorAliado(this);
 		this.grafico = new IronmanGrafico(x, y, m.getPanelMapa(), this);
 	}
 

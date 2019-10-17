@@ -3,7 +3,7 @@ package Logica.Entidades;
 import java.awt.Point;
 
 import Grafica.Entidades.EntidadGrafica;
-import Logica.Colisionadores.Colisionador;
+import Logica.Colisionadores.Visitor;
 import Logica.Mapa.Mapa;
 import Logica.Mapa.Posicion;
 
@@ -11,17 +11,21 @@ public abstract class Entidad implements Prototype{
 	protected int life;
 	protected Posicion miCelda;
 	protected Mapa mapa;
+	protected boolean mover;
+	protected boolean atacar;
 	protected EntidadGrafica grafico;
 	protected int lugarEnMapa;
-	protected Colisionador col;
+	protected Visitor col;
 
 	public Entidad(int x, int y, Mapa m) {
 		mapa = m;
+		mover = true;
+		atacar = false;
 		miCelda = new Posicion(x, y);
 		grafico = new EntidadGrafica(x, y, m.getPanelMapa(), this);
 	}
 
-	public Colisionador getColisionador() {
+	public Visitor getColisionador() {
 		return col;
 	}
 
@@ -31,6 +35,22 @@ public abstract class Entidad implements Prototype{
 
 	public void setLife(int lp) {
 		life = life - lp;
+	}
+	
+	public boolean mePuedoMover() {
+		return mover;
+	}
+
+	public void mover(boolean mov) {
+		mover = mov;
+	}
+
+	public boolean puedoAtacar() {
+		return atacar;
+	}
+
+	public void atacar(boolean atac) {
+		atacar = atac;
 	}
 
 	public Posicion getPos() {

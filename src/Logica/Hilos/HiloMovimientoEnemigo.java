@@ -22,10 +22,10 @@ public class HiloMovimientoEnemigo extends Thread {
 	public void run() {
 		Enemigo enemigo = toExecute.get(0);
 		int y = enemigo.getPos().getPunto().y;
-		for (int i = 800; i > 0; i = i - 3) {
+		for (int i = 1200; i > 0; i = i - 3) {
 			enemigo.getGrafico().cambiarPos(i, y);
 			try {
-				sleep(60);
+				sleep(65);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}

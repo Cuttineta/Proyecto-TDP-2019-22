@@ -15,7 +15,7 @@ public class PanelTienda extends JPanel {
 	private static final long serialVersionUID = 1L;
 	private Tienda tienda;
 	private Juego juego;
-	private JButton colocables[];
+	private JButton botones[];
 	private String palabras[] = { "Cap America", "Hulk", "Dr Strange", "Hawkeye", "Ironman","Thor" };
 	private JLabel fondo;
 
@@ -35,7 +35,7 @@ public class PanelTienda extends JPanel {
 	}
 
 	public void crearBotones() {
-		colocables = new JButton[palabras.length];
+		botones = new JButton[palabras.length];
 		OyenteB oyente = new OyenteB();
 		for (int i = 0; i < palabras.length; i++) {
 			crearBoton(i, oyente);
@@ -43,24 +43,22 @@ public class PanelTienda extends JPanel {
 	}
 
 	private void crearBoton(int i, OyenteB oyente) {
-		colocables[i] = new JButton();
-		colocables[i].setBorder(null);
-		colocables[i].setBorderPainted(false);
-		colocables[i].setContentAreaFilled(false);
-		colocables[i].setActionCommand(palabras[i]);
-		colocables[i].setIcon(new ImageIcon("SpritesAvengers/Aliados/" + palabras[i] + "/estatico.png"));
-		colocables[i].setFocusable(false);
-		colocables[i].setBounds(15,100*i , 70, 70);
-		colocables[i].addActionListener(oyente);
-		this.add(colocables[i]);
-	}
-
-	
+		botones[i] = new JButton();
+		botones[i].setBorder(null);
+		botones[i].setBorderPainted(false);
+		botones[i].setContentAreaFilled(false);
+		botones[i].setActionCommand(palabras[i]);
+		botones[i].setIcon(new ImageIcon("SpritesAvengers/Aliados/" + palabras[i] + "/estatico.png"));
+		botones[i].setFocusable(false);
+		botones[i].setBounds(15,100*i,70,70);
+		botones[i].addActionListener(oyente);
+		this.add(botones[i]);
+	}	
 
 	public Tienda getTienda() {
 		return tienda;
 	}
-
+	
 	private class OyenteB implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
 			String s = e.getActionCommand();

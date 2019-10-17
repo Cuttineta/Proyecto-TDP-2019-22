@@ -1,7 +1,7 @@
 package Logica.Entidades.Aliados;
 
 import Grafica.Entidades.Aliados.HulkGrafico;
-import Logica.Colisionadores.ColisionadorDefensor;
+import Logica.Colisionadores.VisitorAliado;
 import Logica.Entidades.Entidad;
 import Logica.Entidades.Enemigos.Thanos;
 import Logica.Mapa.Mapa;
@@ -16,7 +16,7 @@ public class Hulk extends Aliado {
 		this.range = 1;
 		this.cost = 30;
 		this.grafico = new HulkGrafico(x, y, m.getPanelMapa(), this);
-		super.col = new ColisionadorDefensor(this);
+		super.col = new VisitorAliado(this);
 	}
 
 	@Override

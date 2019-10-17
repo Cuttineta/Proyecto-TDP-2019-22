@@ -2,7 +2,7 @@ package Logica.Entidades.Enemigos;
 
 import Grafica.Entidades.EntidadGrafica;
 import Grafica.Entidades.Enemigos.ThanosGrafico;
-import Logica.Colisionadores.ColisionadorAtacante;
+import Logica.Colisionadores.VisitorEnemigo;
 import Logica.Entidades.Entidad;
 import Logica.Mapa.Mapa;
 
@@ -16,7 +16,7 @@ public class Thanos extends Enemigo {
 		this.movementSpeed = 2;
 		this.range = 3;
 		this.grafico = new ThanosGrafico(x, y, m.getPanelMapa(), this);
-		super.col = new ColisionadorAtacante(this);
+		super.col = new VisitorEnemigo(this);
 	}
 
 	@Override

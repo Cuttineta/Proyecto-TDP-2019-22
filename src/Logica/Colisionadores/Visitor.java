@@ -5,7 +5,7 @@ import Logica.Entidades.Enemigos.*;
 import Logica.Entidades.Obstaculos.Barro;
 import Logica.Entidades.Obstaculos.Piedra;
 
-public abstract class Colisionador {
+public abstract class Visitor {
 		
 	public abstract void serChocado(Thanos e);
 	public abstract void serChocado(DrStrange e);

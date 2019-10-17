@@ -58,7 +58,7 @@ public class PanelStats extends JPanel {
 		});
 		pause.setBounds(10, 0,70,50);
 		pause.setIcon(new ImageIcon("Sprites/Botones/BotonPausa.png"));
-		pause.setRolloverIcon(new ImageIcon("Sprites/Botones/BotonPausaEntered.png"));
+		//pause.setRolloverIcon(new ImageIcon("Sprites/Botones/BotonPausaEntered.png"));
 		add(pause);	
 	}
 	
@@ -73,7 +73,7 @@ public class PanelStats extends JPanel {
 		add(eliminarNinja);	
 	}
 	
-	public void actualizarOro(int o) {
-		monedasLabel.setText(""+o);
+	public void actualizarOro(int oro) {
+		monedasLabel.setText(""+oro);
 	}
 }

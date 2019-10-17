@@ -21,6 +21,7 @@ public class PanelMapa extends JPanel {
 	// private Image fondocongrilla;
 	// private JLabel fondomapa;
 	// private Posicion pos;
+	private Aliado toSet;
 	private JLabel enemigo;
 	private Entidad entidad;
 	private Mapa mapa;
@@ -31,7 +32,7 @@ public class PanelMapa extends JPanel {
 		this.setBounds(100, 50, 1100, 650);
 		this.addMouseListener(new OyenteMouse());
 
-		entidad = new Thanos(1200, 470, mapa);
+		entidad = new Thanos(1200, 460, mapa);
 		enemigo = entidad.getGrafico().getGraficoActual();
 		this.add(enemigo);
 
@@ -86,13 +87,13 @@ public class PanelMapa extends JPanel {
 			int y1 = e.getY();
 
 			x = (x1 / 110) * 110 +15; // Lo posiciona en el eje x
-			y = (y1 / 104) * 104 +26;// Lo posiciona en el eje y
+			y = (y1 / 104) * 104 +27;// Lo posiciona en el eje y
 			
-			Aliado aColocar = mapa.getTienda().getPersonajeActual();
-			if (y != 0 && aColocar != null && !mapa.hayEnPos(x,y)) {
-				aColocar.cambiarPosLogica(x, y);
-				mapa.setEntidad(aColocar);
-				JLabel nuevo = aColocar.getGrafico().getGraficoActual();
+			toSet = mapa.getTienda().getPersonajeActual();
+			if (y != 0 && toSet != null && !mapa.hayEnPos(x,y)) {
+				toSet.cambiarPosLogica(x, y);
+				mapa.setEntidad(toSet);
+				JLabel nuevo = toSet.getGrafico().getGraficoActual();
 				add(nuevo);
 				repaint();
 			}			

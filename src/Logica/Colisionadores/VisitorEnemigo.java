@@ -1,17 +1,23 @@
-package Logica.Colisionadores.ColisionadoresObstaculo;
+package Logica.Colisionadores;
 
-import Logica.Colisionadores.Colisionador;
 import Logica.Entidades.Aliados.DrStrange;
 import Logica.Entidades.Aliados.Ironman;
 import Logica.Entidades.Aliados.Hulk;
 import Logica.Entidades.Aliados.Hawkeye;
 import Logica.Entidades.Aliados.CapAmerica;
 import Logica.Entidades.Aliados.Thor;
+import Logica.Entidades.Enemigos.Enemigo;
 import Logica.Entidades.Enemigos.Thanos;
 import Logica.Entidades.Obstaculos.Barro;
 import Logica.Entidades.Obstaculos.Piedra;
 
-public class ColisionadorObstaculo extends Colisionador{
+public class VisitorEnemigo extends Visitor{
+	
+	private Enemigo ataq;
+	
+	public VisitorEnemigo(Enemigo a) {
+		ataq = a;
+	}
 
 	@Override
 	public void serChocado(Thanos e) {
@@ -67,6 +73,5 @@ public class ColisionadorObstaculo extends Colisionador{
 		
 	}
 
-	
 
 }
