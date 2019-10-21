@@ -18,10 +18,7 @@ import Logica.Mapa.Mapa;
 public class PanelMapa extends JPanel {
 	private static final long serialVersionUID = 1L;
 	private Image fondo = new ImageIcon("SpritesAvengers/Fondo/asfalto.png").getImage();
-	// private Image fondocongrilla;
-	// private JLabel fondomapa;
-	// private Posicion pos;
-	private Aliado toSet;
+	private Aliado aColocar;
 	private JLabel enemigo;
 	private Entidad entidad;
 	private Mapa mapa;
@@ -81,19 +78,17 @@ public class PanelMapa extends JPanel {
 
 		@Override
 		public void mousePressed(MouseEvent e) {
-			int x = 0;
-			int y = 0;
-			int x1 = e.getX();
-			int y1 = e.getY();
+			int x = e.getX();
+			int y = e.getY();
 
-			x = (x1 / 110) * 110 +15; // Lo posiciona en el eje x
-			y = (y1 / 104) * 104 +27;// Lo posiciona en el eje y
+			x = (x / 110) * 110 +15; // Lo posiciona en el eje x
+			y = (y / 104) * 104 +27;// Lo posiciona en el eje y
 			
-			toSet = mapa.getTienda().getPersonajeActual();
-			if (y != 0 && toSet != null && !mapa.hayEnPos(x,y)) {
-				toSet.cambiarPosLogica(x, y);
-				mapa.setEntidad(toSet);
-				JLabel nuevo = toSet.getGrafico().getGraficoActual();
+			aColocar = mapa.getTienda().getPersonajeActual();
+			if (y != 0 && aColocar != null && !mapa.hayEnPos(x,y)) {
+				aColocar.cambiarPosLogica(x, y);
+				mapa.setEntidad(aColocar);
+				JLabel nuevo = aColocar.getGrafico().getGraficoActual();
 				add(nuevo);
 				repaint();
 			}			
@@ -106,6 +101,11 @@ public class PanelMapa extends JPanel {
 
 	}
 
+	public void setAColocar(Aliado a) {
+		//if chekeos plata y que no sea null
+		aColocar = a;
+		
+	}
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		g.drawImage(fondo, 0, 0, this.getWidth(), this.getHeight(), this);

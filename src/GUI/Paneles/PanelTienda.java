@@ -59,6 +59,7 @@ public class PanelTienda extends JPanel {
 		return tienda;
 	}
 	
+	
 	private class OyenteB implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
 			String s = e.getActionCommand();

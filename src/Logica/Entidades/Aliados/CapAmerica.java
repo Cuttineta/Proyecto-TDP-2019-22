@@ -13,10 +13,7 @@ public class CapAmerica extends Aliado {
 		this.grafico=new CapAmericaGrafico(x,y,m.getPanelMapa(),this);
 		super.col = new VisitorAliado(this);
 	}
-
-	public Aliado crear(Mapa m) {
-		return new CapAmerica(0,0,m);
-	}
+	
 	
 	@Override
 	public void chocar(Entidad e) {
