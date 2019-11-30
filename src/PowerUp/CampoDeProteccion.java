@@ -21,10 +21,6 @@ public class CampoDeProteccion extends PowerUp {
 
 	@Override
 	public void actuar() {
-		if (personaje == null) {
-			eliminarDeLaLista();
-			getGrafico().setVisible(false);
-		}
 		if (personaje != null) {
 			setPosicionY(personaje.getPosicionY());
 			setPosicionX(personaje.getPosicionX());
