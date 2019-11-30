@@ -1,0 +1,1276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.3" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="Fabrica.Boton" project="Vengadores" file="/Vengadores/src/Fabrica/Boton.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="123" width="155" x="1286" y="-130"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="PowerUp.CampoDeProteccion" project="Vengadores" 
+    file="/Vengadores/src/PowerUp/CampoDeProteccion.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="142" width="177" x="2488" y="1940"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="Disparo.DisparoEnemigo.DisparoSurtur" project="Vengadores" 
+    file="/Vengadores/src/Disparo/DisparoEnemigo/DisparoSurtur.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="88" width="181" x="1758" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="Entidad.Aliados.Ironman" project="Vengadores" 
+    file="/Vengadores/src/Entidad/Aliados/Ironman.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="133" x="849" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="Fabrica.BotonStrange" project="Vengadores" 
+    file="/Vengadores/src/Fabrica/BotonStrange.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="124" width="155" x="592" y="52"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="Fabrica.BotonBomba" project="Vengadores" 
+    file="/Vengadores/src/Fabrica/BotonBomba.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="124" width="155" x="787" y="52"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="Disparo.DisparoAliado.DisparoHulk" project="Vengadores" 
+    file="/Vengadores/src/Disparo/DisparoAliado/DisparoHulk.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="88" width="172" x="3133" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="Estado.Atacando" project="Vengadores" file="/Vengadores/src/Estado/Atacando.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="142" width="153" x="150" y="1940"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="Objetos.Paredon" project="Vengadores" file="/Vengadores/src/Objetos/Paredon.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="118" x="2926" y="2373"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="Fabrica.BotonCapAmerica" project="Vengadores" 
+    file="/Vengadores/src/Fabrica/BotonCapAmerica.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="124" width="174" x="982" y="52"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="Entidad.Aliados.DrStrange" project="Vengadores" 
+    file="/Vengadores/src/Entidad/Aliados/DrStrange.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="133" x="1022" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="Fabrica.BotonHawkeye" project="Vengadores" 
+    file="/Vengadores/src/Fabrica/BotonHawkeye.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="124" width="156" x="1196" y="52"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="GUI.Ventana.Oyente" project="Vengadores" file="/Vengadores/src/GUI/Ventana.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="178" width="224" x="1775" y="522"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="Disparo.DisparoEnemigo.DisparoNebula" project="Vengadores" 
+    file="/Vengadores/src/Disparo/DisparoEnemigo/DisparoNebula.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="88" width="186" x="1979" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="Disparo.DisparoEnemigo.DisparoYondu" project="Vengadores" 
+    file="/Vengadores/src/Disparo/DisparoEnemigo/DisparoYondu.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="88" width="182" x="2205" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="Entidad.Enemigos.Thanos" project="Vengadores" 
+    file="/Vengadores/src/Entidad/Enemigos/Thanos.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="133" x="-462" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="Fabrica.BotonParedon" project="Vengadores" 
+    file="/Vengadores/src/Fabrica/BotonParedon.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="124" width="155" x="1392" y="52"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="Fabrica.BotonCampoProteccion" project="Vengadores" 
+    file="/Vengadores/src/Fabrica/BotonCampoProteccion.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="206" x="122" y="52"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="Objetos.ObjetoVida" project="Vengadores" 
+    file="/Vengadores/src/Objetos/ObjetoVida.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="123" width="177" x="2922" y="1940"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="Entidad.Enemigos.Enemigo" project="Vengadores" 
+    file="/Vengadores/src/Entidad/Enemigos/Enemigo.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="177" width="177" x="344" y="2373"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="Objetos.Bomba" project="Vengadores" file="/Vengadores/src/Objetos/Bomba.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="124" width="177" x="3242" y="2373"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="PowerUp.PowerUp" project="Vengadores" file="/Vengadores/src/PowerUp/PowerUp.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="159" width="194" x="2010" y="1687"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="Visitor.VisitorEnemigo" project="Vengadores" 
+    file="/Vengadores/src/Visitor/VisitorEnemigo.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="196" width="212" x="1097" y="1940"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="Fabrica.BotonCampoMuerte" project="Vengadores" 
+    file="/Vengadores/src/Fabrica/BotonCampoMuerte.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="184" x="368" y="52"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="Objetos.Charco" project="Vengadores" file="/Vengadores/src/Objetos/Charco.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="177" x="3459" y="2373"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="Visitor.VisitorBomba" project="Vengadores" 
+    file="/Vengadores/src/Visitor/VisitorBomba.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="196" width="212" x="2194" y="1940"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="Niveles.Nivel2" project="Vengadores" file="/Vengadores/src/Niveles/Nivel2.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="214" width="159" x="3308" y="1940"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="Niveles.Nivel1" project="Vengadores" file="/Vengadores/src/Niveles/Nivel1.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="232" width="159" x="3507" y="1940"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="Entidad.Aliados.Hawkeye" project="Vengadores" 
+    file="/Vengadores/src/Entidad/Aliados/Hawkeye.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="133" x="1195" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="30" language="java" name="Disparo.DisparoAliado.DisparoThor" project="Vengadores" 
+    file="/Vengadores/src/Disparo/DisparoAliado/DisparoThor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="88" width="171" x="3345" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="Visitor.VisitorAliado" project="Vengadores" 
+    file="/Vengadores/src/Visitor/VisitorAliado.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="196" width="212" x="1349" y="1940"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="Visitor.VisitorDisparoEnemigo" project="Vengadores" 
+    file="/Vengadores/src/Visitor/VisitorDisparoEnemigo.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="196" width="261" x="1622" y="1940"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="Entidad.Enemigos.Yondu" project="Vengadores" 
+    file="/Vengadores/src/Entidad/Enemigos/Yondu.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="133" x="-289" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="34" language="java" name="Disparo.DisparoAliado.DisparoCapAmerica" project="Vengadores" 
+    file="/Vengadores/src/Disparo/DisparoAliado/DisparoCapAmerica.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="88" width="217" x="3556" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="35" language="java" name="Entidad.Aliados.Hulk" project="Vengadores" 
+    file="/Vengadores/src/Entidad/Aliados/Hulk.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="196" width="174" x="715" y="3007"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="36" language="java" name="Entidad.Enemigos.SentryUltron" project="Vengadores" 
+    file="/Vengadores/src/Entidad/Enemigos/SentryUltron.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="133" x="-116" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="37" language="java" name="Niveles.Nivel" project="Vengadores" file="/Vengadores/src/Niveles/Nivel.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="213" width="220" x="2681" y="1687"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="38" language="java" name="Disparo.DisparoEnemigo.DisparoEnemigo" project="Vengadores" 
+    file="/Vengadores/src/Disparo/DisparoEnemigo/DisparoEnemigo.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="358" width="237" x="2427" y="2373"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="39" language="java" name="Entidad.Aliados.Thor" project="Vengadores" 
+    file="/Vengadores/src/Entidad/Aliados/Thor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="133" x="1368" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="40" language="java" name="Estado.Muerto" project="Vengadores" file="/Vengadores/src/Estado/Muerto.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="160" width="212" x="343" y="1940"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="41" language="java" name="Entidad.Personaje" project="Vengadores" 
+    file="/Vengadores/src/Entidad/Personaje.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="393" width="221" x="836" y="1940"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="42" language="java" name="Entidad.Enemigos.Nebula" project="Vengadores" 
+    file="/Vengadores/src/Entidad/Enemigos/Nebula.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="124" width="177" x="57" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="43" language="java" name="Tienda.tienda" project="Vengadores" file="/Vengadores/src/Tienda/tienda.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="322" width="256" x="1469" y="522"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="44" language="java" name="Entidad.Aliados.Aliado" project="Vengadores" 
+    file="/Vengadores/src/Entidad/Aliados/Aliado.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="213" width="177" x="1131" y="2373"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="45" language="java" name="Visitor.VisitorObjetoVida" project="Vengadores" 
+    file="/Vengadores/src/Visitor/VisitorObjetoVida.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="88" width="147" x="318" y="-130"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="46" language="java" name="Mapa.mapa" project="Vengadores" file="/Vengadores/src/Mapa/mapa.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="502" width="321" x="2039" y="522"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="47" language="java" name="Entidad.Aliados.HulkSegundaParte" project="Vengadores" 
+    file="/Vengadores/src/Entidad/Aliados/HulkSegundaParte.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="196" width="168" x="620" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="48" language="java" name="GUI.Ventana" project="Vengadores" file="/Vengadores/src/GUI/Ventana.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="430" width="219" x="2172" y="52"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="49" language="java" name="Disparo.DisparoEnemigo.DisparoUltron" project="Vengadores" 
+    file="/Vengadores/src/Disparo/DisparoEnemigo/DisparoUltron.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="88" width="180" x="2427" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="50" language="java" name="Objetos.Roca" project="Vengadores" file="/Vengadores/src/Objetos/Roca.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="118" x="3084" y="2373"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="51" language="java" name="Entidad.Enemigos.Surtur" project="Vengadores" 
+    file="/Vengadores/src/Entidad/Enemigos/Surtur.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="133" x="274" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="52" language="java" name="Fabrica.BotonIronman" project="Vengadores" 
+    file="/Vengadores/src/Fabrica/BotonIronman.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="124" width="155" x="1587" y="52"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="53" language="java" name="Visitor.VisitorDisparoAliado" project="Vengadores" 
+    file="/Vengadores/src/Visitor/VisitorDisparoAliado.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="214" width="231" x="1923" y="1940"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="54" language="java" name="Estado.Caminando" project="Vengadores" 
+    file="/Vengadores/src/Estado/Caminando.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="142" width="180" x="595" y="1940"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="55" language="java" name="Entidad.Aliados.CapAmerica" project="Vengadores" 
+    file="/Vengadores/src/Entidad/Aliados/CapAmerica.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="124" width="177" x="1541" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="56" language="java" name="Objetos.ObjetoTiempo" project="Vengadores" 
+    file="/Vengadores/src/Objetos/ObjetoTiempo.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="123" width="129" x="3139" y="1940"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="57" language="java" name="Disparo.DisparoAliado.DisparoIronman" project="Vengadores" 
+    file="/Vengadores/src/Disparo/DisparoAliado/DisparoIronman.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="88" width="192" x="3813" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="58" language="java" name="Hilos.HiloMovimiento" project="Vengadores" 
+    file="/Vengadores/src/Hilos/HiloMovimiento.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="142" width="179" x="2462" y="1687"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="59" language="java" name="Visitor.Visitor" project="Vengadores" file="/Vengadores/src/Visitor/Visitor.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="195" width="214" x="1347" y="1687"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="60" language="java" name="Estado.Estado" project="Vengadores" file="/Vengadores/src/Estado/Estado.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="177" width="180" x="595" y="1687"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="61" language="java" name="Fabrica.BotonThor" project="Vengadores" 
+    file="/Vengadores/src/Fabrica/BotonThor.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="124" width="155" x="1782" y="52"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="62" language="java" name="Disparo.DisparoEnemigo.DisparoSentryUltron" project="Vengadores" 
+    file="/Vengadores/src/Disparo/DisparoEnemigo/DisparoSentryUltron.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="88" width="218" x="2647" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="63" language="java" name="Objetos.Objeto" project="Vengadores" file="/Vengadores/src/Objetos/Objeto.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="141" width="178" x="2244" y="1687"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="64" language="java" name="Disparo.DisparoAliado.DisparoDrStrange" project="Vengadores" 
+    file="/Vengadores/src/Disparo/DisparoAliado/DisparoDrStrange.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="88" width="204" x="4045" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="65" language="java" name="Disparo.DisparoEnemigo.DisparoThanos" project="Vengadores" 
+    file="/Vengadores/src/Disparo/DisparoEnemigo/DisparoThanos.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="88" width="188" x="2905" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="66" language="java" name="Entidad.Entidad" project="Vengadores" file="/Vengadores/src/Entidad/Entidad.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="573" width="178" x="1383" y="1074"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="67" language="java" name="PowerUp.CampoDeMuerte" project="Vengadores" 
+    file="/Vengadores/src/PowerUp/CampoDeMuerte.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="124" width="177" x="2705" y="1940"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="68" language="java" name="Disparo.DisparoAliado.DisparoHawkeye" project="Vengadores" 
+    file="/Vengadores/src/Disparo/DisparoAliado/DisparoHawkeye.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="88" width="199" x="4289" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="69" language="java" name="Juego.Juego" project="Vengadores" file="/Vengadores/src/Juego/Juego.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="394" width="232" x="2418" y="1074"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="70" language="java" name="Disparo.DisparoAliado.DisparoAliado" project="Vengadores" 
+    file="/Vengadores/src/Disparo/DisparoAliado/DisparoAliado.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="142" width="182" x="2704" y="2373"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="71" language="java" name="Disparo.Disparo" project="Vengadores" file="/Vengadores/src/Disparo/Disparo.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="159" width="163" x="1807" y="1687"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="72" language="java" name="Hilos.HiloControl" project="Vengadores" 
+    file="/Vengadores/src/Hilos/HiloControl.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="142" width="155" x="2433" y="-130"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="73" language="java" name="Entidad.Enemigos.Ultron" project="Vengadores" 
+    file="/Vengadores/src/Entidad/Enemigos/Ultron.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="133" x="447" y="2771"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="74" language="java" name="Fabrica.BotonHulk" project="Vengadores" 
+    file="/Vengadores/src/Fabrica/BotonHulk.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="124" width="155" x="1977" y="52"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="75">    
+    <end type="SOURCE" refId="32" navigable="false">      
+      <attribute id="76" name="disparo"/>      
+      <multiplicity id="77" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="38" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="78">    
+    <end type="SOURCE" refId="69" navigable="false">      
+      <attribute id="79" name="mapa"/>      
+      <multiplicity id="80" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="81">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="59"/>  
+  </generalization>  
+  <generalization id="82">    
+    <end type="SOURCE" refId="42"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <generalization id="83">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <generalization id="84">    
+    <end type="SOURCE" refId="74"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <association id="85">    
+    <bendpoint x="2033" y="1074"/>    
+    <end type="SOURCE" refId="46" navigable="false">      
+      <attribute id="86" name="powerups"/>      
+      <multiplicity id="87" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="88">    
+    <end type="SOURCE" refId="61"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="89">    
+    <end type="SOURCE" refId="49"/>    
+    <end type="TARGET" refId="38"/>  
+  </generalization>  
+  <generalization id="90">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="59"/>  
+  </generalization>  
+  <association id="91">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="92" name="aliado"/>      
+      <multiplicity id="93" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="44" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="94">    
+    <end type="SOURCE" refId="63"/>    
+    <end type="TARGET" refId="66"/>  
+  </generalization>  
+  <association id="95">    
+    <end type="SOURCE" refId="43" navigable="false">      
+      <attribute id="96" name="aColocar"/>      
+      <multiplicity id="97" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="66" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="98">    
+    <end type="SOURCE" refId="64"/>    
+    <end type="TARGET" refId="70"/>  
+  </generalization>  
+  <association id="99">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="100" name="tienda"/>      
+      <multiplicity id="101" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="102">    
+    <bendpoint x="2400" y="522"/>    
+    <end type="SOURCE" refId="48" navigable="false">      
+      <attribute id="103" name="juego"/>      
+      <multiplicity id="104" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="69" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="105">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="70"/>  
+  </generalization>  
+  <association id="106">    
+    <end type="SOURCE" refId="69" navigable="false">      
+      <attribute id="107" name="miJuego"/>      
+      <multiplicity id="108" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="69" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="109">    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="59"/>  
+  </generalization>  
+  <association id="110">    
+    <end type="SOURCE" refId="60" navigable="false">      
+      <attribute id="111" name="personaje"/>      
+      <multiplicity id="112" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="41" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="113">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <association id="114">    
+    <end type="SOURCE" refId="59" navigable="false">      
+      <attribute id="115" name="miEntidad"/>      
+      <multiplicity id="116" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="66" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="117">    
+    <end type="SOURCE" refId="50"/>    
+    <end type="TARGET" refId="19"/>  
+  </generalization>  
+  <association id="118">    
+    <end type="SOURCE" refId="43" navigable="false">      
+      <attribute id="119" name="aColocarAux"/>      
+      <multiplicity id="120" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="66" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="121">    
+    <end type="SOURCE" refId="54"/>    
+    <end type="TARGET" refId="60"/>  
+  </generalization>  
+  <generalization id="122">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="123">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="19"/>  
+  </generalization>  
+  <generalization id="124">    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="70"/>  
+  </generalization>  
+  <generalization id="125">    
+    <end type="SOURCE" refId="44"/>    
+    <end type="TARGET" refId="41"/>  
+  </generalization>  
+  <generalization id="126">    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="44"/>  
+  </generalization>  
+  <association id="127">    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="128" name="otraParte"/>      
+      <multiplicity id="129" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="47" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="130">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="44"/>  
+  </generalization>  
+  <association id="131">    
+    <end type="SOURCE" refId="47" navigable="false">      
+      <attribute id="132" name="hulk"/>      
+      <multiplicity id="133" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="35" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="134">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="60"/>  
+  </generalization>  
+  <generalization id="135">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <association id="136">    
+    <end type="SOURCE" refId="66" navigable="false">      
+      <attribute id="137" name="visitor"/>      
+      <multiplicity id="138" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="139">    
+    <bendpoint x="2150" y="1074"/>    
+    <end type="SOURCE" refId="46" navigable="false">      
+      <attribute id="140" name="objetos"/>      
+      <multiplicity id="141" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="63" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="142">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="59"/>  
+  </generalization>  
+  <generalization id="143">    
+    <bendpoint x="2436" y="1940"/>    
+    <end type="SOURCE" refId="38"/>    
+    <end type="TARGET" refId="71"/>  
+  </generalization>  
+  <association id="144">    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="145" name="disparo"/>      
+      <multiplicity id="146" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="70" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="147">    
+    <end type="SOURCE" refId="52"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <association id="148">    
+    <end type="SOURCE" refId="66" navigable="false">      
+      <attribute id="149" name="estado"/>      
+      <multiplicity id="150" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="60" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="151">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="44"/>  
+  </generalization>  
+  <generalization id="152">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="38"/>  
+  </generalization>  
+  <generalization id="153">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="44"/>  
+  </generalization>  
+  <association id="154">    
+    <bendpoint x="2463" y="522"/>    
+    <bendpoint x="2463" y="52"/>    
+    <end type="SOURCE" refId="69" navigable="false">      
+      <attribute id="155" name="control"/>      
+      <multiplicity id="156" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="72" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="157">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="59"/>  
+  </generalization>  
+  <generalization id="158">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="159">    
+    <end type="SOURCE" refId="51"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <association id="160">    
+    <end type="SOURCE" refId="43" navigable="false">      
+      <attribute id="161" name="juego"/>      
+      <multiplicity id="162" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="69" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="163">    
+    <end type="SOURCE" refId="58" navigable="false">      
+      <attribute id="164" name="juego"/>      
+      <multiplicity id="165" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="69" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="166">    
+    <bendpoint x="1591" y="1074"/>    
+    <bendpoint x="1591" y="1687"/>    
+    <bendpoint x="1591" y="1940"/>    
+    <end type="SOURCE" refId="46" navigable="false">      
+      <attribute id="167" name="aliados"/>      
+      <multiplicity id="168" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="44" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="169">    
+    <end type="SOURCE" refId="56"/>    
+    <end type="TARGET" refId="63"/>  
+  </generalization>  
+  <generalization id="170">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <generalization id="171">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="56"/>  
+  </generalization>  
+  <generalization id="172">    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="38"/>  
+  </generalization>  
+  <generalization id="173">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="174">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="63"/>  
+  </generalization>  
+  <generalization id="175">    
+    <bendpoint x="2457" y="1940"/>    
+    <end type="SOURCE" refId="70"/>    
+    <end type="TARGET" refId="71"/>  
+  </generalization>  
+  <generalization id="176">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="22"/>  
+  </generalization>  
+  <association id="177">    
+    <end type="SOURCE" refId="69" navigable="false">      
+      <attribute id="178" name="nivel"/>      
+      <multiplicity id="179" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="37" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="180">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="38"/>  
+  </generalization>  
+  <association id="181">    
+    <end type="SOURCE" refId="48" navigable="false">      
+      <attribute id="182" name="tienda"/>      
+      <multiplicity id="183" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="184">    
+    <end type="SOURCE" refId="67"/>    
+    <end type="TARGET" refId="22"/>  
+  </generalization>  
+  <generalization id="185">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="56"/>  
+  </generalization>  
+  <association id="186">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="187" name="tienda"/>      
+      <multiplicity id="188" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="189">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="190" name="enemigo"/>      
+      <multiplicity id="191" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="192">    
+    <end type="SOURCE" refId="72" navigable="false">      
+      <attribute id="193" name="ventana"/>      
+      <multiplicity id="194" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="48" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="195">    
+    <bendpoint x="818" y="2771"/>    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="44"/>  
+  </generalization>  
+  <generalization id="196">    
+    <end type="SOURCE" refId="40"/>    
+    <end type="TARGET" refId="60"/>  
+  </generalization>  
+  <association id="197">    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="198" name="personaje"/>      
+      <multiplicity id="199" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="41" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="200">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="66"/>  
+  </generalization>  
+  <generalization id="201">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="70"/>  
+  </generalization>  
+  <association id="202">    
+    <end type="SOURCE" refId="46" navigable="false">      
+      <attribute id="203" name="miMapa"/>      
+      <multiplicity id="204" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="205">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="37"/>  
+  </generalization>  
+  <association id="206">    
+    <end type="SOURCE" refId="69" navigable="false">      
+      <attribute id="207" name="hiloHordas"/>      
+      <multiplicity id="208" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="58" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="209">    
+    <end type="SOURCE" refId="48" navigable="false">      
+      <attribute id="210" name="mapa"/>      
+      <multiplicity id="211" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="212">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="213">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="41"/>  
+  </generalization>  
+  <generalization id="214">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="215">    
+    <end type="SOURCE" refId="65"/>    
+    <end type="TARGET" refId="38"/>  
+  </generalization>  
+  <association id="216">    
+    <end type="SOURCE" refId="69" navigable="false">      
+      <attribute id="217" name="tienda"/>      
+      <multiplicity id="218" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="219">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="220" name="juego"/>      
+      <multiplicity id="221" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="69" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="222">    
+    <bendpoint x="1118" y="1687"/>    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="66"/>  
+  </generalization>  
+  <association id="223">    
+    <end type="SOURCE" refId="69" navigable="false">      
+      <attribute id="224" name="hiloHorda"/>      
+      <multiplicity id="225" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="58" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="226">    
+    <bendpoint x="805" y="1074"/>    
+    <bendpoint x="805" y="1687"/>    
+    <bendpoint x="805" y="1940"/>    
+    <end type="SOURCE" refId="46" navigable="false">      
+      <attribute id="227" name="enemigos"/>      
+      <multiplicity id="228" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="229">    
+    <bendpoint x="2421" y="522"/>    
+    <end type="SOURCE" refId="69" navigable="false">      
+      <attribute id="230" name="ventana"/>      
+      <multiplicity id="231" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="48" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="232">    
+    <end type="SOURCE" refId="48"/>    
+    <end type="TARGET" refId="13"/>  
+  </nesting>  
+  <association id="233">    
+    <bendpoint x="2421" y="52"/>    
+    <end type="SOURCE" refId="72" navigable="false">      
+      <attribute id="234" name="mapa"/>      
+      <multiplicity id="235" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="236">    
+    <end type="SOURCE" refId="71"/>    
+    <end type="TARGET" refId="66"/>  
+  </generalization>  
+  <generalization id="237">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="38"/>  
+  </generalization>  
+  <generalization id="238">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="70"/>  
+  </generalization>  
+  <generalization id="239">    
+    <end type="SOURCE" refId="68"/>    
+    <end type="TARGET" refId="70"/>  
+  </generalization>  
+  <generalization id="240">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="44"/>  
+  </generalization>  
+  <association id="241">    
+    <bendpoint x="2442" y="52"/>    
+    <bendpoint x="2442" y="522"/>    
+    <end type="SOURCE" refId="72" navigable="false">      
+      <attribute id="242" name="juego"/>      
+      <multiplicity id="243" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="69" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="244">    
+    <bendpoint x="1748" y="1074"/>    
+    <end type="SOURCE" refId="43" navigable="false">      
+      <attribute id="245" name="poweraColocar"/>      
+      <multiplicity id="246" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="247">    
+    <end type="SOURCE" refId="43" navigable="false">      
+      <attribute id="248" name="miTienda"/>      
+      <multiplicity id="249" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="250">    
+    <end type="SOURCE" refId="55"/>    
+    <end type="TARGET" refId="44"/>  
+  </generalization>  
+  <generalization id="251">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <association id="252">    
+    <bendpoint x="2690" y="52"/>    
+    <bendpoint x="2690" y="522"/>    
+    <bendpoint x="2690" y="1074"/>    
+    <end type="SOURCE" refId="72" navigable="false">      
+      <attribute id="253" name="nivel"/>      
+      <multiplicity id="254" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="37" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="255">    
+    <end type="SOURCE" refId="46" navigable="false">      
+      <attribute id="256" name="juego"/>      
+      <multiplicity id="257" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="69" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="258">    
+    <bendpoint x="1932" y="1074"/>    
+    <end type="SOURCE" refId="46" navigable="false">      
+      <attribute id="259" name="disparos"/>      
+      <multiplicity id="260" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="71" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

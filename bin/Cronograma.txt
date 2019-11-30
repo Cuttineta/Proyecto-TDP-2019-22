@@ -1,0 +1,38 @@
+dia 17
+*crear sistema de puntos.
+*pensar vida rango etc etc de aliados.
+
+dia 18
+*implementar boton vender aliado (si esta dañado recupera mitad de su valor sino la totalidad).
+*dividir el crear horda de nivel en 3 hordas (serian las oleadas) la cantidad es 6 en primer oleada, 9 2da y 15 3era.
+*Intentar que una vez que una vez terminado el nivel uno seinicialice nivel 2.
+*Crear personaje de dos casillas(esto implica tambien rediseñar disparo y coliciones etc etc).
+*Acomodar uml pensando en objetos.
+
+
+dia 19
+*crear objetos tienda y objetos mapa (implica crear objetos de vida y objetos de tiempo).
+	-crear 2 y 2 al menos
+	-los objetos mapa son aquellos que son dropeados aleatoriamente por los enemigos:(objetos = power up)
+
+*Crear objetos aleatorios en el mapa(estos realentizan a los enemigos ej roca lago).
+*Crear power ups (estos son de magia temporal o objetos preciosos)
+	-Magia temporal ejemplo: duplicar fuerza de un aliado, aumentar rango,.......
+		Si o si un power up tiene que ser un campo de protecion que el ser tocado por un enemigo este se muere.
+		Cada tanto un enemigo tiene q ser creado con algun tipo de magia temporal(campode proteccion).
+	-Objeto presioso: estos pueden ser por ej bombas o barricadas (la bomba ejerce daño tanto a aliados como a enemigos)
+
+dia 20
+*Buen funcionamiento de objetos o power ups
+dia 21
+dia 22
+dia 23
+dia 24
+dia 25
+dia 26
+
+
+
+
+		
+
