@@ -12,7 +12,8 @@ public class Ironman extends Aliado {
 
 	public Ironman() {
 		rango = 300;
-		vida = 6;
+		vidaInicial = 10;
+		vida = vidaInicial;
 		precio = 25;
 		this.danio = 3;
 		estatico = new ImageIcon("Sprites/Aliados/Ironman/estatico.png");

@@ -34,7 +34,7 @@ public class Bomba extends ObjetoTiempo {
 					aliado.aceptarVisitor(visitor);
 					eliminarDeLaLista();
 					getGrafico().setVisible(false);
-				}
+				} 
 			}
 			
 			for (Enemigo enemigo: mapa.getMapa().getEnemigos()) {

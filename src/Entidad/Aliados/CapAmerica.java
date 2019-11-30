@@ -13,7 +13,8 @@ public class CapAmerica extends Aliado {
 
 	public CapAmerica() {
 		rango = 1;
-		vida = 20;
+		vidaInicial = 25;
+		vida = vidaInicial;
 		precio = 25;
 		danio = 0;
 		estatico = new ImageIcon("Sprites/Aliados/Cap America/estatico.png");

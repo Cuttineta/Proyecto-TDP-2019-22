@@ -35,7 +35,7 @@ public class CampoDeMuerte extends PowerUp {
 
 			}
 
-		}
+		} 
 		for (Enemigo enemigo : mapa.getMapa().getEnemigos()) {
 
 			if (enemigo != personaje && this.getPosicionY() == enemigo.getPosicionY() && enemigo.getPosicionX() - this.getPosicionX() <= 50

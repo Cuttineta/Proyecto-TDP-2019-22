@@ -19,5 +19,5 @@ public class BotonParedon extends Boton {
 	public Entidad crearEntidad() {
 		return new Paredon();
 	}
-
+ 
 }

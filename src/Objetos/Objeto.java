@@ -16,3 +16,4 @@ public abstract class Objeto extends Entidad {
 		mapa.getMapa().agregar(this);
 	}
 }
+ 

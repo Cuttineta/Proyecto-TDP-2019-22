@@ -42,7 +42,7 @@ public class VisitorAliado extends Visitor {
 	@Override
 	public void visitar(Entidad e) {
 		// TODO Auto-generated method stub
-		
+		 
 	}
 
 	@Override

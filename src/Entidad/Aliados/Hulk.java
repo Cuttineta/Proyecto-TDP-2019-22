@@ -19,7 +19,8 @@ public class Hulk extends Aliado{
 
 	public Hulk() {
 		rango = 25;
-		vida = 15;
+		vidaInicial = 12;
+		vida = vidaInicial;
 		precio = 20;
 		danio = 4;
 		estatico = new ImageIcon("Sprites/Aliados/Hulk/estatico.png");

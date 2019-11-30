@@ -18,5 +18,5 @@ public class BotonBomba extends Boton {
 	public Entidad crearEntidad() {
 		return new Bomba();
 	}
-
+ 
 }

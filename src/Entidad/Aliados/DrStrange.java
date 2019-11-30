@@ -12,7 +12,8 @@ public class DrStrange extends Aliado {
 
 	public DrStrange() {
 		rango = 180;
-		vida = 10;
+		vidaInicial = 10;
+		vida = vidaInicial;
 		precio = 25;
 		danio = 4;
 		estatico = new ImageIcon("Sprites/Aliados/Dr Strange/estatico.png");

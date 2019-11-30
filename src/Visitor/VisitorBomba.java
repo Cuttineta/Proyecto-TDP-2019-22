@@ -31,7 +31,7 @@ public class VisitorBomba extends Visitor {
 	public void visitar(Entidad e) {
 		// TODO Auto-generated method stub
 
-	}
+	} 
 
 	@Override
 	public void visitar(ObjetoVida e) {

@@ -35,7 +35,7 @@ public class DisparoAliado extends Disparo {
 			if (this.getPosicionY() == power.getPosicionY() && power.getPosicionX() - this.getPosicionX() <= 40
 					&& power.getPosicionX() - this.getPosicionX() >= 25) {
 				power.aceptarVisitor(visitor);
-				colision = true;
+				colision = true; 
 
 			}
 		}

@@ -44,3 +44,4 @@ bin/GUI/Ventana.class
 *.class
 *.class
 *.class
+/bin/

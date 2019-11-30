@@ -13,7 +13,8 @@ public class Hawkeye extends Aliado {
 
 	public Hawkeye() {
 		rango = 200;
-		vida = 9;
+		vidaInicial = 9;
+		vida = vidaInicial;
 		precio = 25;
 		danio = 2;
 		estatico = new ImageIcon("Sprites/Aliados/Hawkeye/estatico.png");

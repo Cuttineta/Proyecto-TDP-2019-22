@@ -20,5 +20,5 @@ public class Charco extends ObjetoTiempo {
 		v.visitar(this);
 
 	}
-
+ 
 }

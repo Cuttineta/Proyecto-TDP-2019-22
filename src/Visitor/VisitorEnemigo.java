@@ -45,7 +45,7 @@ public class VisitorEnemigo extends Visitor {
 		// TODO Auto-generated method stub
 		
 	}
-
+ 
 	@Override
 	public void visitar(ObjetoVida e) {
 		enemigo.atacar();

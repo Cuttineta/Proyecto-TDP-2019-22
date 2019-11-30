@@ -17,6 +17,10 @@ public abstract class Aliado extends Personaje {
 		visitor = new VisitorAliado(this);
 	}
 	
+	public int getVidaInicial() {
+		return vidaInicial;
+	}
+	
 	public int getRango() {
 		return rango;
 	}

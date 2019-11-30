@@ -64,7 +64,6 @@ public class mapa {
 	
 	
 	public boolean hayEnPos(int x, int y , PowerUp a) {
-		System.out.println("hay en pos con powerup");
 		Iterator<PowerUp> it = powerups.iterator();
 		boolean encontre = false;
 		PowerUp actual;
@@ -81,6 +80,12 @@ public class mapa {
 	}
 
 	public void eliminar(Aliado aliado) {
+		for(PowerUp power : powerups) {
+			if(power.getPersonaje() == aliado) {
+				power.getGrafico().setVisible(false);
+				power.eliminarDeLaLista();
+			}
+		}
 		aliados.remove(aliado);
 	}
 

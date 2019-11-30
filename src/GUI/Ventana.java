@@ -69,7 +69,7 @@ public class Ventana extends JFrame {
 
 	public Ventana() {
 		super("Avengers");
-	
+
 		juego = Juego.getJuego(this);
 		this.setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -88,23 +88,23 @@ public class Ventana extends JFrame {
 		mapa = juego.getMapa();
 		creacionBotones();
 		creacionPaneles(); // Creacion de panelMapa y panelTienda
-		
+
 		juego.iniciarHilos();
 
 		repaint();
 	}
 
 	public void mostrarGano(int p) {
-		JOptionPane.showMessageDialog(null, "Salvaste la galaxia.Tus puntos obtenidos son:"+p);
+		JOptionPane.showMessageDialog(null, "Salvaste la galaxia.Tus puntos obtenidos son:" + p);
 		System.exit(0);
 	}
-	
+
 	public void mostrarCambioDeNivel() {
 		JOptionPane.showMessageDialog(null, "Cambio de nivel");
 	}
 
 	public void mostrarPerdio(int p) {
-		JOptionPane.showMessageDialog(null, "Despedite de la mitad de la poblacion...Tus puntos obtenidos son:"+p);
+		JOptionPane.showMessageDialog(null, "Despedite de la mitad de la poblacion...Tus puntos obtenidos son:" + p);
 		System.exit(0);
 	}
 
@@ -132,7 +132,7 @@ public class Ventana extends JFrame {
 				tienda.getEntidadAColocar();
 				tienda.getEntidadAColocarAux();
 				vender = true;
-			}	
+			}
 		});
 
 		getContentPane().add(panelMapa);
@@ -197,7 +197,7 @@ public class Ventana extends JFrame {
 		boton.setFocusable(false);
 		boton.setBounds(10, 360, 80, 80);
 		panelTienda.add(boton);
-		
+
 		boton = new BotonBomba(tienda);
 		boton.setBorder(null);
 		boton.setBorderPainted(false);
@@ -206,7 +206,7 @@ public class Ventana extends JFrame {
 		boton.setFocusable(false);
 		boton.setBounds(10, 430, 80, 80);
 		panelTienda.add(boton);
-		
+
 		boton = new BotonParedon(tienda);
 		boton.setBorder(null);
 		boton.setBorderPainted(false);
@@ -227,8 +227,6 @@ public class Ventana extends JFrame {
 	public void actualizarMonedas() {
 		monedas.setText("" + tienda.getMonedas());
 	}
-	
-	
 
 	private class Oyente implements MouseListener {
 
@@ -239,23 +237,23 @@ public class Ventana extends JFrame {
 
 			x = (x / 110) * 110 + 25; // Lo posiciona en el eje x
 			y = (y / 116) * 116 + 35;// Lo posiciona en el eje y
-		
+
 			Entidad aColocar = tienda.getEntidadAColocar();
 			PowerUp poweraColocar = tienda.getPowerAColocar();
 			Entidad aColocarAux = tienda.getEntidadAColocarAux();
-			
-			if (y != 0 && aColocarAux == null && aColocar == null && poweraColocar != null && !mapa.hayEnPos(x, y , poweraColocar)) {
-				System.out.println("pongo el power");
+
+			if (y != 0 && aColocarAux == null && aColocar == null && poweraColocar != null
+					&& !mapa.hayEnPos(x, y, poweraColocar)) {
 				poweraColocar.setPosicionX(x);
 				poweraColocar.setPosicionY(y);
-				poweraColocar.setPersonaje(mapa.getPersonajeAliadoEnPos(x,y));
+				poweraColocar.setPersonaje(mapa.getPersonajeAliadoEnPos(x, y));
 				poweraColocar.agregarALaLista();
 				fondo.add(poweraColocar.getGrafico());
-				
+
 				repaint();
 			}
-			
-			if (y != 0 && aColocarAux == null && aColocar != null && !mapa.hayEnPos(x, y , aColocar)) {
+
+			if (y != 0 && aColocarAux == null && aColocar != null && !mapa.hayEnPos(x, y, aColocar)) {
 				tienda.restarMonedas(aColocar.getPrecio());
 				actualizarMonedas();
 				aColocar.setPosicionX(x);
@@ -265,24 +263,31 @@ public class Ventana extends JFrame {
 				fondo.add(nuevo);
 				repaint();
 			}
-			
-			if (y != 0 && aColocarAux != null && aColocar != null && !mapa.hayEnPos(x, y ,aColocar) && !mapa.hayEnPos(x, y+116) && y<=499) {
+
+			if (y != 0 && aColocarAux != null && aColocar != null && !mapa.hayEnPos(x, y, aColocar)
+					&& !mapa.hayEnPos(x, y + 116) && y <= 499) {
 				tienda.restarMonedas(aColocar.getPrecio());
 				actualizarMonedas();
 				aColocar.setPosicionX(x);
 				aColocar.setPosicionY(y);
-				aColocar.agregarALaLista();;
+				aColocar.agregarALaLista();
+				;
 				aColocarAux.agregarALaLista();
 				JLabel nuevo = aColocar.getGrafico();
 				fondo.add(nuevo);
 				repaint();
 			}
-			
+
 			if (y != 0 && aColocarAux == null && aColocar == null && vender) {
 				vender = false;
-				Personaje aVender = mapa.getPersonajeAliadoEnPos(x,y);
-				if(aVender != null) {
-					tienda.sumarMonedas(aVender.getPrecio());
+				Personaje aVender = mapa.getPersonajeAliadoEnPos(x, y);
+				if (aVender != null) {
+					if (aVender.getVida() == aVender.getVidaInicial()) {
+						tienda.sumarMonedas(aVender.getPrecio());
+					} else {
+						tienda.sumarMonedas(aVender.getPrecio() / 2);
+					}
+
 					aVender.getEstado().cambiarAMuerto();
 					actualizarMonedas();
 				}
@@ -314,10 +319,7 @@ public class Ventana extends JFrame {
 
 	}
 
-
-
 	public void CrearBotonMuerte(int x, int y) {
-		System.out.println("salio boton m");
 		JButton boton = new BotonCampoMuerte(tienda);
 		boton.setBorder(null);
 		boton.setBorderPainted(false);
@@ -326,11 +328,10 @@ public class Ventana extends JFrame {
 		boton.setFocusable(false);
 		boton.setBounds(x, y, 80, 80);
 		fondo.add(boton);
-		
+
 	}
-	
+
 	public void CrearBotonProteccion(int x, int y) {
-		System.out.println("salio boton p");
 		JButton boton = new BotonCampoProteccion(tienda);
 		boton.setBorder(null);
 		boton.setBorderPainted(false);
@@ -339,7 +340,7 @@ public class Ventana extends JFrame {
 		boton.setFocusable(false);
 		boton.setBounds(x, y, 80, 80);
 		fondo.add(boton);
-		
+
 	}
 
 }

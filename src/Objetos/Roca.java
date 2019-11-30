@@ -29,6 +29,6 @@ public class Roca extends ObjetoVida {
 			this.grafico.setVisible(false);
 		}
 	}
-
+ 
 	
 }

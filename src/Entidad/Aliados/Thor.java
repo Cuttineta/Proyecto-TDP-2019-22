@@ -13,7 +13,8 @@ public class Thor extends Aliado {
 
 	public Thor() {
 		rango = 1;
-		vida = 12;
+		vidaInicial = 12;
+		vida = vidaInicial;
 		precio = 25;
 		danio = 2;
 		estatico = new ImageIcon("Sprites/Aliados/Thor/estatico.png");

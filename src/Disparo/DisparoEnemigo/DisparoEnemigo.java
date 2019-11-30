@@ -38,7 +38,7 @@ public class DisparoEnemigo extends Disparo {
 				power.aceptarVisitor(visitor);
 
 			}
-		}
+		} 
 		for (Aliado aliado : mapa.getMapa().getAliados()) {
 			for (Objeto objeto : mapa.getMapa().getObjetos()) {
 				if ((this.getPosicionY() == aliado.getPosicionY() && this.getPosicionX() - aliado.getPosicionX() <= 20

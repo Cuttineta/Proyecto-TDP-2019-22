@@ -25,5 +25,5 @@ public abstract class PowerUp extends Entidad{
 		mapa.getMapa().eliminar(this);
 		
 	}
-
+ 
 }
