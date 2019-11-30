@@ -52,14 +52,12 @@ public class VisitorDisparoAliado extends Visitor {
 
 	@Override
 	public void visitar(CampoDeProteccion e) {
-		System.out.println("visitar campo");
 		disparo.eliminarDisparo();
 		disparo.eliminarDeLaLista();
 		
 	}
 	
 	public void visitar(CampoDeMuerte e) {
-		System.out.println("visitar campo");
 		disparo.eliminarDisparo();
 		disparo.eliminarDeLaLista();
 		

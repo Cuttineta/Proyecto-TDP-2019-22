@@ -31,7 +31,6 @@ public class CampoDeProteccion extends PowerUp {
 		}
 		tiempoDeProteccion--;
 		if (tiempoDeProteccion <= 0) {
-			System.out.println("muriocampo");
 			eliminarDeLaLista();
 			grafico.setVisible(false);
 		}

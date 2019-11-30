@@ -23,7 +23,6 @@ public class BotonCampoProteccion extends JButton{
 	}
 
 	public PowerUp crearPower() {
-		System.out.println("coloco en a colocar muerte");
 		this.setVisible(false);
 		return new CampoDeProteccion();
 	}
