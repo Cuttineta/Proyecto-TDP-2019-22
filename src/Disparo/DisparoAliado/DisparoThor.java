@@ -3,8 +3,6 @@ package Disparo.DisparoAliado;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-import Disparo.Disparo;
-
 public class DisparoThor extends DisparoAliado {
 
 	public DisparoThor(int danio, int rango, int x, int y) {

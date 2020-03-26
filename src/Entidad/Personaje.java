@@ -1,13 +1,12 @@
 package Entidad;
 
-import Disparo.Disparo;
 import Visitor.Visitor;
 
 public abstract class Personaje extends Entidad {
-	protected int recompensaMonedas,recompensaPuntos;
-	protected int velocidadInicial,velocidad;
+	protected int recompensaMonedas, recompensaPuntos;
+	protected int velocidadInicial, velocidad;
 	protected int vidaInicial;
-	protected int i,a;
+	protected int i, a;
 
 	public void cambiarGraficoEstatico() {
 		grafico.setIcon(estatico);
@@ -22,9 +21,10 @@ public abstract class Personaje extends Entidad {
 	}
 
 	public void setVelocidad(int velocidad) {
-		if(a == 0) {
-		this.velocidad = velocidad;
-		a++;}
+		if (a == 0) {
+			this.velocidad = velocidad;
+			a++;
+		}
 	}
 
 	public void atacar() {
@@ -44,19 +44,19 @@ public abstract class Personaje extends Entidad {
 
 		}
 	}
-	
+
 	public int getRecompensaMonedas() {
 		return recompensaMonedas;
 	}
-	
+
 	public int getVidaInicial() {
 		return vidaInicial;
 	}
-	
+
 	public void setRecompensaMonedas(int recompensaM) {
 		this.recompensaMonedas = recompensaM;
 	}
-	
+
 	public int getRecompensaPuntos() {
 		return recompensaPuntos;
 	}
@@ -64,6 +64,5 @@ public abstract class Personaje extends Entidad {
 	public abstract void aceptarVisitor(Visitor v);
 
 	public abstract void crearDisparo();
-
 
 }

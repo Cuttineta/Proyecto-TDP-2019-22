@@ -1,14 +1,11 @@
 package Visitor;
 
-import Disparo.DisparoAliado.DisparoAliado;
 import Disparo.DisparoEnemigo.DisparoEnemigo;
 import Entidad.Entidad;
 import Entidad.Aliados.Aliado;
 import Entidad.Enemigos.Enemigo;
-import Objetos.Objeto;
 import Objetos.ObjetoTiempo;
 import Objetos.ObjetoVida;
-import Objetos.Roca;
 import PowerUp.CampoDeProteccion;
 
 public class VisitorDisparoEnemigo extends Visitor {

@@ -1,8 +1,6 @@
 package Tienda;
 
 import Entidad.Entidad;
-import Entidad.Aliados.Aliado;
-import Entidad.Enemigos.Enemigo;
 import Juego.Juego;
 import PowerUp.PowerUp;
 

@@ -4,10 +4,8 @@ import Disparo.DisparoAliado.DisparoAliado;
 import Entidad.Entidad;
 import Entidad.Aliados.Aliado;
 import Entidad.Enemigos.Enemigo;
-import Objetos.Objeto;
 import Objetos.ObjetoTiempo;
 import Objetos.ObjetoVida;
-import Objetos.Roca;
 import PowerUp.CampoDeMuerte;
 import PowerUp.CampoDeProteccion;
 

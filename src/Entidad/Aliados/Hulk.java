@@ -5,16 +5,13 @@ import java.util.Iterator;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-import Disparo.Disparo;
-import Disparo.DisparoAliado.DisparoDrStrange;
 import Disparo.DisparoAliado.DisparoHulk;
 import Entidad.Enemigos.Enemigo;
 import Estado.Caminando;
 import Mapa.mapa;
-import Visitor.Visitor;
 
-public class Hulk extends Aliado{
-	
+public class Hulk extends Aliado {
+
 	private HulkSegundaParte otraParte;
 
 	public Hulk() {
@@ -24,13 +21,13 @@ public class Hulk extends Aliado{
 		precio = 20;
 		danio = 4;
 		estatico = new ImageIcon("Sprites/Aliados/Hulk/estatico.png");
-		atacando = new ImageIcon("Sprites/Aliados/Hulk/atacando.gif");	
+		atacando = new ImageIcon("Sprites/Aliados/Hulk/atacando.gif");
 		grafico = new JLabel();
 		estado = new Caminando(this);
 		estado.actuar();
 		otraParte = new HulkSegundaParte(this);
-		}
-	
+	}
+
 	public void actuar() {
 		Iterator itEnemigos = mapa.getMapa().getEnemigos().iterator();
 		Enemigo enemigo;
@@ -43,8 +40,8 @@ public class Hulk extends Aliado{
 				enemigo.aceptarVisitor(this.getVisitor());
 				encontreColision = true;
 			}
-			
-			if (this.getPosicionY()+116 == enemigo.getPosicionY()
+
+			if (this.getPosicionY() + 116 == enemigo.getPosicionY()
 					&& enemigo.getPosicionX() - this.getPosicionX() <= this.getRango() + 50
 					&& enemigo.getPosicionX() - this.getPosicionX() >= 10) {
 				enemigo.aceptarVisitor(otraParte.getVisitor());
@@ -52,25 +49,27 @@ public class Hulk extends Aliado{
 			}
 
 		}
-		if(encontreColision == false)
+		if (encontreColision == false)
 			estado.cambiarACaminando();
 	}
-	
+
 	public void crearDisparo() {
 		DisparoHulk disparo = new DisparoHulk(danio, rango, posicionX, posicionY);
-		
+
 	}
-	
+
 	public Aliado getSegundaParte() {
 		return otraParte;
 	}
+
 	public void setPosicionY(int posicionY) {
 		this.posicionY = posicionY;
 		if (grafico != null) {
 			grafico.setBounds(posicionX, posicionY, 100, 200);
 		}
-		otraParte.setPosicionY(posicionY+116);
+		otraParte.setPosicionY(posicionY + 116);
 	}
+
 	public void setPosicionX(int posicionX) {
 		this.posicionX = posicionX;
 		if (grafico != null) {
@@ -78,11 +77,10 @@ public class Hulk extends Aliado{
 			otraParte.setPosicionX(posicionX);
 		}
 	}
-	
+
 	public void eliminarDeLaLista() {
 		mapa.getMapa().eliminar(this);
 		mapa.getMapa().eliminar(otraParte);
 	}
-	
-	
+
 }

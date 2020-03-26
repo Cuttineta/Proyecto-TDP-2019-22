@@ -1,10 +1,7 @@
 package Hilos;
 
-import java.util.Iterator;
 import java.util.Random;
 
-import Disparo.Disparo;
-import Entidad.Aliados.Aliado;
 import Entidad.Enemigos.Enemigo;
 import GUI.Ventana;
 import Juego.Juego;
@@ -90,7 +87,8 @@ public class HiloControl extends Thread {
 						nuevaRoca.setPosicionX(ejeX);
 						nuevaRoca.setPosicionY(ejeY);
 
-						juego.getVentana().getFondo().add(nuevaRoca.getGrafico());
+						juego.getVentana();
+						Ventana.getFondo().add(nuevaRoca.getGrafico());
 						juego.getVentana().repaint();
 
 					}
@@ -108,7 +106,8 @@ public class HiloControl extends Thread {
 						nuevoCharco.setPosicionX(ejeX);
 						nuevoCharco.setPosicionY(ejeY);
 
-						juego.getVentana().getFondo().add(nuevoCharco.getGrafico());
+						juego.getVentana();
+						Ventana.getFondo().add(nuevoCharco.getGrafico());
 						juego.getVentana().repaint();
 
 					}

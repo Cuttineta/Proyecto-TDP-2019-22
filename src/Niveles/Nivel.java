@@ -9,7 +9,6 @@ import Entidad.Enemigos.Surtur;
 import Entidad.Enemigos.Thanos;
 import Entidad.Enemigos.Ultron;
 import Entidad.Enemigos.Yondu;
-import GUI.Ventana;
 import Juego.Juego;
 import PowerUp.CampoDeMuerte;
 import PowerUp.CampoDeProteccion;

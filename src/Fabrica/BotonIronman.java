@@ -1,12 +1,11 @@
 package Fabrica;
 
 import Entidad.Entidad;
-import Entidad.Aliados.Aliado;
 import Entidad.Aliados.Ironman;
 import Tienda.tienda;
 
-public class BotonIronman extends Boton{
-	
+public class BotonIronman extends Boton {
+
 	public BotonIronman(tienda t) {
 		super(t);
 	}

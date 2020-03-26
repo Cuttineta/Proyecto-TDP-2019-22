@@ -1,13 +1,11 @@
 package Visitor;
 
-import Entidad.Enemigos.*;
-import Objetos.Objeto;
+import Entidad.Entidad;
+import Entidad.Aliados.Aliado;
+import Entidad.Enemigos.Enemigo;
 import Objetos.ObjetoTiempo;
 import Objetos.ObjetoVida;
-import Objetos.Roca;
 import PowerUp.CampoDeProteccion;
-import Entidad.Entidad;
-import Entidad.Aliados.*;
 
 public abstract class Visitor {
 	

@@ -3,11 +3,8 @@ package Entidad.Enemigos;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-import Disparo.Disparo;
-import Disparo.DisparoEnemigo.DisparoNebula;
 import Disparo.DisparoEnemigo.DisparoUltron;
 import Estado.Caminando;
-import Visitor.Visitor;
 
 public class Ultron extends Enemigo {
 
@@ -25,9 +22,8 @@ public class Ultron extends Enemigo {
 		estado.actuar();
 	}
 
-	
 	public void crearDisparo() {
 		DisparoUltron disparo = new DisparoUltron(danio, 30, posicionX, posicionY);
-		
+
 	}
 }

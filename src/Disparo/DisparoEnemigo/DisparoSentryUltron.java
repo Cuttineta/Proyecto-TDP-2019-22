@@ -1,9 +1,6 @@
 package Disparo.DisparoEnemigo;
 
-import javax.swing.ImageIcon;
 import javax.swing.JLabel;
-
-import Disparo.Disparo;
 
 public class DisparoSentryUltron extends DisparoEnemigo {
 	

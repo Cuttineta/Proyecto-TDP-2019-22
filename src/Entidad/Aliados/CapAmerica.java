@@ -3,9 +3,7 @@ package Entidad.Aliados;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-import Disparo.Disparo;
 import Disparo.DisparoAliado.DisparoCapAmerica;
-import Disparo.DisparoAliado.DisparoIronman;
 import Estado.Caminando;
 import Visitor.Visitor;
 
@@ -24,14 +22,14 @@ public class CapAmerica extends Aliado {
 		estado.actuar();
 
 	}
-	
+
 	public void crearDisparo() {
 		DisparoCapAmerica disparo = new DisparoCapAmerica(danio, rango, posicionX, posicionY);
 	}
 
 	@Override
 	public void aceptarVisitor(Visitor v) {
-		v.visitar(this);		
+		v.visitar(this);
 	}
 
 }

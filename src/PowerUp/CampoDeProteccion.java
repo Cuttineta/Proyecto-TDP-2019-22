@@ -3,8 +3,6 @@ package PowerUp;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-import Entidad.Entidad;
-import Estado.Caminando;
 import Visitor.Visitor;
 
 public class CampoDeProteccion extends PowerUp {

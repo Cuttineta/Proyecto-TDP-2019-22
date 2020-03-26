@@ -3,8 +3,6 @@ package Disparo.DisparoEnemigo;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-import Disparo.Disparo;
-
 public class DisparoNebula extends DisparoEnemigo {
 	
 	public DisparoNebula(int danio, int rango, int x, int y) {

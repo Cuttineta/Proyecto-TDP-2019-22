@@ -1,7 +1,6 @@
 package Fabrica;
 
 import Entidad.Entidad;
-import Entidad.Aliados.Aliado;
 import Entidad.Aliados.Hawkeye;
 import Tienda.tienda;
 

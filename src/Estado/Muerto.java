@@ -1,8 +1,6 @@
 package Estado;
 
 import Entidad.Personaje;
-import Entidad.Aliados.Aliado;
-import Entidad.Enemigos.Enemigo;
 import Juego.Juego;
 import Tienda.tienda;
 

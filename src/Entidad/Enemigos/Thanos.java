@@ -3,12 +3,8 @@ package Entidad.Enemigos;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-import Disparo.Disparo;
-import Disparo.DisparoEnemigo.DisparoNebula;
 import Disparo.DisparoEnemigo.DisparoThanos;
-import Estado.Atacando;
 import Estado.Caminando;
-import Visitor.Visitor;
 
 public class Thanos extends Enemigo {
 
@@ -25,8 +21,6 @@ public class Thanos extends Enemigo {
 		estado = new Caminando(this);
 		estado.actuar();
 	}
-
-	
 
 	public void crearDisparo() {
 		DisparoThanos disparo = new DisparoThanos(danio, 30, posicionX, posicionY);

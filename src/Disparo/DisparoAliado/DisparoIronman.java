@@ -3,7 +3,6 @@ package Disparo.DisparoAliado;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-import Disparo.Disparo;
 import GUI.Ventana;
 
 public class DisparoIronman extends DisparoAliado {

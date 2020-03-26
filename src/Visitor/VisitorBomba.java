@@ -3,7 +3,6 @@ package Visitor;
 import Entidad.Entidad;
 import Entidad.Aliados.Aliado;
 import Entidad.Enemigos.Enemigo;
-import Objetos.Bomba;
 import Objetos.ObjetoTiempo;
 import Objetos.ObjetoVida;
 import PowerUp.CampoDeProteccion;

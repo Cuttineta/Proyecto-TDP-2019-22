@@ -3,7 +3,6 @@ package Entidad.Enemigos;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-import Disparo.Disparo;
 import Disparo.DisparoEnemigo.DisparoNebula;
 import Estado.Caminando;
 import Visitor.Visitor;
@@ -26,15 +25,13 @@ public class Nebula extends Enemigo {
 
 	@Override
 	public void aceptarVisitor(Visitor v) {
-		v.visitar(this);	
+		v.visitar(this);
 
 	}
-	
+
 	public void crearDisparo() {
 		DisparoNebula disparo = new DisparoNebula(danio, 30, posicionX, posicionY);
-		
+
 	}
 
-	
 }
-

@@ -1,11 +1,6 @@
 package Entidad.Aliados;
 
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-
 import Disparo.DisparoAliado.DisparoHulk;
-import Estado.Caminando;
-import Mapa.mapa;
 
 public class HulkSegundaParte extends Aliado {
 	private Hulk hulk;
@@ -20,8 +15,9 @@ public class HulkSegundaParte extends Aliado {
 		estado = hulk.getEstado();
 		estado.actuar();
 	}
-	
-	public void actuar() {}
+
+	public void actuar() {
+	}
 
 	public void setVida(int v) {
 		hulk.setVida(v);
@@ -34,6 +30,7 @@ public class HulkSegundaParte extends Aliado {
 	public void setPosicionX(int posicionX) {
 		this.posicionX = posicionX;
 	}
+
 	public void setPosicionY(int posicionY) {
 		this.posicionY = posicionY;
 	}

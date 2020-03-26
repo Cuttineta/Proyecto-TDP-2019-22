@@ -3,11 +3,8 @@ package Entidad.Aliados;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-import Disparo.Disparo;
-import Disparo.DisparoAliado.DisparoDrStrange;
 import Disparo.DisparoAliado.DisparoHawkeye;
 import Estado.Caminando;
-import Visitor.Visitor;
 
 public class Hawkeye extends Aliado {
 
@@ -24,11 +21,9 @@ public class Hawkeye extends Aliado {
 		estado.actuar();
 	}
 
-	
-	
 	public void crearDisparo() {
 		DisparoHawkeye disparo = new DisparoHawkeye(danio, rango, posicionX, posicionY);
-		
+
 	}
 
 }

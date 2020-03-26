@@ -1,8 +1,6 @@
 package Fabrica;
 
 import Entidad.Entidad;
-import Entidad.Aliados.Aliado;
-import Entidad.Aliados.CapAmerica;
 import Objetos.Bomba;
 import Tienda.tienda;
 
@@ -18,5 +16,5 @@ public class BotonBomba extends Boton {
 	public Entidad crearEntidad() {
 		return new Bomba();
 	}
- 
+
 }

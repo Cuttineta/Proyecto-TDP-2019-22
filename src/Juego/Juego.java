@@ -16,7 +16,6 @@ public class Juego {
 	protected tienda tienda;
 	protected Nivel nivel;
 	protected int puntosPartida;
-	private HiloMovimiento hiloHordas;
 	protected Ventana ventana;
 	protected HiloMovimiento hiloHorda;
 	protected HiloControl control;
@@ -31,8 +30,8 @@ public class Juego {
 		puntosPartida = 0;
 		ventana = vent;
 		nivel = new Nivel1(this);
-		tienda = tienda.getTienda(this);
-		mapa = mapa.getMapa();
+		tienda = Tienda.tienda.getTienda(this);
+		mapa = Mapa.mapa.getMapa();
 		mapa.setJuego(this);
 		hiloHorda = new HiloMovimiento(this);
 		control = new HiloControl(this);
@@ -98,7 +97,7 @@ public class Juego {
 	
 
 	public void agregarEnemigoAMapa(JLabel grafico) {
-		ventana.getFondo().add(grafico);
+		Ventana.getFondo().add(grafico);
 		
 	}
 

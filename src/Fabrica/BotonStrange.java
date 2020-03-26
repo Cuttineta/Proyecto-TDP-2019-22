@@ -1,9 +1,7 @@
 package Fabrica;
 
 import Entidad.Entidad;
-import Entidad.Aliados.Aliado;
 import Entidad.Aliados.DrStrange;
-import Entidad.Aliados.Hawkeye;
 import Tienda.tienda;
 
 public class BotonStrange extends Boton {

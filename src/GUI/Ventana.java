@@ -1,19 +1,21 @@
 package GUI;
 
 import java.awt.EventQueue;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 import Entidad.Entidad;
 import Entidad.Personaje;
-import Entidad.Aliados.Aliado;
-import Entidad.Enemigos.Enemigo;
 import Fabrica.BotonBomba;
 import Fabrica.BotonCampoMuerte;
 import Fabrica.BotonCampoProteccion;
@@ -24,24 +26,18 @@ import Fabrica.BotonIronman;
 import Fabrica.BotonParedon;
 import Fabrica.BotonStrange;
 import Fabrica.BotonThor;
-import Hilos.HiloControl;
-import Hilos.HiloMovimiento;
 import Juego.Juego;
-
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JButton;
 import Mapa.mapa;
 import PowerUp.PowerUp;
 import Tienda.tienda;
-import java.awt.Font;
 
 public class Ventana extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private static final int AnchoVentana = 1200;
 	private static final int AltoVentana = 740;
-	private static JLabel fondo, monedas;
+	private static JLabel fondo;
+	private JLabel monedas;
 	private JPanel panelTienda, panelMapa;
 	private mapa mapa;
 	private tienda tienda;

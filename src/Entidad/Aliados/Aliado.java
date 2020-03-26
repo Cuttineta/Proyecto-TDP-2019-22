@@ -7,43 +7,41 @@ import Entidad.Enemigos.Enemigo;
 import Mapa.mapa;
 import Visitor.Visitor;
 import Visitor.VisitorAliado;
-import Visitor.VisitorEnemigo;
 
 public abstract class Aliado extends Personaje {
-	
+
 	protected int rango;
-	
+
 	public Aliado() {
 		visitor = new VisitorAliado(this);
 	}
-	
+
 	public int getVidaInicial() {
 		return vidaInicial;
 	}
-	
+
 	public int getRango() {
 		return rango;
 	}
+
 	public void setRango(int rango) {
 		this.rango = rango;
 	}
 
-
-	
-	
 	public void eliminarDeLaLista() {
 		mapa.getMapa().eliminar(this);
 	}
+
 	public void agregarALaLista() {
 		mapa.getMapa().agregar(this);
 	}
-	
+
 	public void aceptarVisitor(Visitor v) {
 		v.visitar(this);
 	}
 
 	public void actuar() {
-		Iterator itEnemigos = mapa.getMapa().getEnemigos().iterator();
+		Iterator<Enemigo> itEnemigos = mapa.getMapa().getEnemigos().iterator();
 		Enemigo enemigo;
 		boolean encontreColision = false;
 		while (itEnemigos.hasNext() && encontreColision == false) {
@@ -56,7 +54,7 @@ public abstract class Aliado extends Personaje {
 			}
 
 		}
-		if(encontreColision == false)
+		if (encontreColision == false)
 			estado.cambiarACaminando();
 	}
 }

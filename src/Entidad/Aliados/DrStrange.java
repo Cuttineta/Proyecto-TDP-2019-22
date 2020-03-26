@@ -3,10 +3,8 @@ package Entidad.Aliados;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-import Disparo.Disparo;
 import Disparo.DisparoAliado.DisparoDrStrange;
 import Estado.Caminando;
-import Visitor.Visitor;
 
 public class DrStrange extends Aliado {
 
@@ -24,12 +22,10 @@ public class DrStrange extends Aliado {
 
 	}
 
-	
-
 	@Override
 	public void crearDisparo() {
 		DisparoDrStrange disparo = new DisparoDrStrange(4, rango, posicionX, posicionY);
-		
+
 	}
 
 }

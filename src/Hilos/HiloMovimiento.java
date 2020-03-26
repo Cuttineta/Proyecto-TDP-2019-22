@@ -1,17 +1,8 @@
 package Hilos;
 
-import javax.swing.JOptionPane;
-
 import Disparo.Disparo;
 import Entidad.Aliados.Aliado;
-import Entidad.Enemigos.Enemigo;
-import Estado.Atacando;
-import Estado.Estado;
-import GUI.Ventana;
 import Juego.Juego;
-import Mapa.mapa;
-import Niveles.Nivel;
-import Niveles.Nivel1;
 import Objetos.Objeto;
 import PowerUp.PowerUp;
 

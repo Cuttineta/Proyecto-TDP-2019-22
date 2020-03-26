@@ -1,8 +1,6 @@
 package Disparo;
 
 import Entidad.*;
-import Entidad.Aliados.*;
-import Entidad.Enemigos.*;
 import Mapa.mapa;
 
 public abstract class Disparo extends Entidad {

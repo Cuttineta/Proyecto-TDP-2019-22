@@ -37,7 +37,7 @@ public class mapa {
 		powerups = new ConcurrentLinkedDeque<PowerUp>();
 	}
 
-	public boolean hayEnPos(int x, int y , Entidad a) {
+	public boolean hayEnPos(int x, int y, Entidad a) {
 		Iterator<Aliado> it = aliados.iterator();
 		boolean encontre = false;
 		Aliado actual;
@@ -48,8 +48,8 @@ public class mapa {
 		}
 		return encontre;
 	}
-	
-	public boolean hayEnPos(int x, int y ) {
+
+	public boolean hayEnPos(int x, int y) {
 		Iterator<Aliado> it = aliados.iterator();
 		boolean encontre = false;
 		Aliado actual;
@@ -60,10 +60,8 @@ public class mapa {
 		}
 		return encontre;
 	}
-	
-	
-	
-	public boolean hayEnPos(int x, int y , PowerUp a) {
+
+	public boolean hayEnPos(int x, int y, PowerUp a) {
 		Iterator<PowerUp> it = powerups.iterator();
 		boolean encontre = false;
 		PowerUp actual;
@@ -72,7 +70,7 @@ public class mapa {
 			if ((actual.getPosicionX() == x) && (actual.getPosicionY() == y))
 				encontre = true;
 		}
-		return encontre && hayEnPos(x,y);
+		return encontre && hayEnPos(x, y);
 	}
 
 	public void agregar(Aliado aliado) {
@@ -80,8 +78,8 @@ public class mapa {
 	}
 
 	public void eliminar(Aliado aliado) {
-		for(PowerUp power : powerups) {
-			if(power.getPersonaje() == aliado) {
+		for (PowerUp power : powerups) {
+			if (power.getPersonaje() == aliado) {
 				power.getGrafico().setVisible(false);
 				power.eliminarDeLaLista();
 			}
@@ -102,14 +100,14 @@ public class mapa {
 	}
 
 	public void eliminar(Enemigo enemigo) {
-		
-		for(PowerUp power : powerups) {
-			if(power.getPersonaje() == enemigo) {
+
+		for (PowerUp power : powerups) {
+			if (power.getPersonaje() == enemigo) {
 				power.getGrafico().setVisible(false);
 				power.eliminarDeLaLista();
 			}
 		}
-		
+
 		enemigos.remove(enemigo);
 	}
 
@@ -172,7 +170,6 @@ public class mapa {
 		boolean encontre = false;
 		Personaje salida = null;
 		Aliado actualA;
-		Enemigo actualE;
 		while (itA.hasNext() && !encontre) {
 			actualA = itA.next();
 			if ((actualA.getPosicionX() == x) && (actualA.getPosicionY() == y))

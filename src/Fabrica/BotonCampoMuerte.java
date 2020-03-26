@@ -5,20 +5,21 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 
-import Entidad.Entidad;
 import PowerUp.CampoDeMuerte;
-import PowerUp.CampoDeProteccion;
 import PowerUp.PowerUp;
 import Tienda.tienda;
 
-public class BotonCampoMuerte extends JButton{
+@SuppressWarnings("serial")
+public class BotonCampoMuerte extends JButton {
+
 	protected tienda tienda;
+
 	public BotonCampoMuerte(tienda t) {
 		addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				PowerUp power = crearPower();
 				t.setPowerAColocar(power);
-			}	
+			}
 		});
 	}
 
